@@ -4,17 +4,17 @@ import Courses from './pages/Courses/Courses'
 import Blog from './pages/Blog/Blog'
 import ArticlePage from './pages/ArticlePage/ArticlePage'
 import './../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import { Route, Routes } from 'react-router-dom'
+import { Route,Routes } from 'react-router-dom'
 
 function App() {
   
   return (
     <>
       <Routes>
-        <Route path='/' element={<MainPage />} />
-        <Route path='/courses' element={<Courses />} />
-        <Route path='/blog' element={<Blog/>} />
-        <Route path='/article' element={<ArticlePage/>} />
+        <Route path='/Courses-Platform/' element={<MainPage />} />
+        <Route path='/Courses-Platform/courses' element={<Courses />} />
+        <Route path='/Courses-Platform/blog' element={<Blog/>} />
+        <Route path='/Courses-Platform/article' element={<ArticlePage/>} />
       </Routes>
     </>
   )
