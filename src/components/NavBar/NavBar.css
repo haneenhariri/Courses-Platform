@@ -1,0 +1,85 @@
+.BA-navbar {
+  transition: .25s ease-in-out;
+}
+.BA-navbar-normal {
+  background-color: transparent;
+  top: 35px !important;
+  padding: 0 12.5% !important;
+  height: 46px;
+}
+.BA-navbar-scroll {
+  background-color: var(--DarkPrimary);
+  padding: 0 12.5% !important;
+    height: 66px;
+}
+.BH-logo {
+  margin-right: 68px !important;
+  font-size: 24px;
+  font-weight: 800;
+  padding-top: 6px !important;
+  transition: 0.25s ease-in-out;
+}
+.BA-img {
+  margin-right: 14px !important;
+}
+.BH-link {
+  font-size: 18px !important;
+  font-weight: 600;
+  margin-right: 46px;
+  padding: 0 !important;
+  padding-top: 11px !important;
+}
+.BH-link-light , .BH-bg-light {
+  color: var(--PrimaryColo) !important;
+}
+.BH-link-dark , .BH-bg-dark{
+  color: var(--DarkPrimary) !important;
+}
+.BH-nav-btn {
+  max-width: 153px;
+  max-height: 46px;
+  padding: 12px 37px 12px 37px;
+  border: none;
+  transition: 0.25s ease-in-out;
+}
+.BA-nav1 .BH-nav-btn:hover {
+  background-color: blueviolet !important;
+  transition: 0.25s ease-in-out;
+  border-radius: 10px;
+}
+.sidebar-BA-navbar {
+  background-color: var(--PrimaryColo);
+  backdrop-filter: blur(10px);
+}
+.BH-nav-btn-scroll {
+  background-color: var(--PrimaryColo);
+  color: var(--DarkPrimary);
+}
+.BH-nav-btn-normal {
+  background-color: var(--DarkPrimary);
+  color: var(--PrimaryColo);
+}
+@media (min-width: 992px) and (max-width: 1366px) {
+  .BH-nav-btn {
+    max-width: 145px;
+  }
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+  .BA-navbar {
+    padding: 0 10% !important;
+  }
+  .BH-link {
+    margin-right: 38px !important;
+    font-size: 15px !important;
+  }
+}
+@media (max-width: 991px) {
+  .sidebar-BA-navbar-scroll {
+    background-color: var(--DarkPrimary) !important;
+  }
+}
+@media (max-width: 576px) {
+  .BA-navbar {
+    padding: 0 5% !important;
+  }
+}
