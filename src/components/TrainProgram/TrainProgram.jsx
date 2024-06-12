@@ -1,3 +1,4 @@
+import './TrainProgram.css'
 import Acordeon from '../../components/Acordeon/Acordeon'
 
 export default function TrainProgram() {
