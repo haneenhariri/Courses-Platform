@@ -6,6 +6,7 @@
     display: flex;
     color: var(--PrimaryColo);
     position: relative;
+    overflow: hidden;
 }
 .HH-info
 {

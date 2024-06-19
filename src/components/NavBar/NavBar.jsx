@@ -53,7 +53,7 @@ export default function NavBar() {
 
               <Nav className=" flex-grow-1 pe-3 BA-nav d-flex justify-content-start">
                 
-                <Nav.Link className={`BH-link ${header ? 'BH-link-light' : 'BH-link-dark'}`} href="#" >
+                <Nav.Link className={`BH-link ${header ? 'BH-link-light' : 'BH-link-dark'}`} href="./courses" >
                   Courses <img className='BH-icon-dropdown' src={`./image/NavImg/${header ? 'Icon CoursesWhite' : 'Icon Courses'}.svg`} />
                 </Nav.Link>
 
