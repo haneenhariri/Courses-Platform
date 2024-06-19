@@ -1,0 +1,117 @@
+.HH-Std
+{
+    padding: 9% 12.5%;
+    background-color: #FBFBFC;
+
+}
+.HH-h2
+{
+    width: 32%;
+    font-family: 'Inter';
+    font-size: 35px;
+    font-weight: 600;
+}
+.HH-icon
+{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 26px;
+}
+.HH-icon-arow
+{
+    width: 2.5%;
+    height: 20px;
+    margin-left: 20px;
+}
+.HH-cards
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.HH-card{
+    width: 49% ;
+    border: 1px solid #19191C;
+    padding-left:28px;
+}
+.HH-cardImg
+{
+    width: 34px;
+    margin-right: 10px;
+}
+.HH-cardInfo
+{
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+}
+.HH-cardTitle
+{
+    font-family: 'Inter';
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.HH-CardP
+{
+    font-family: 'Inter';
+    font-size: 15px;
+    margin-bottom: 0;
+    line-height:20px;
+    color: #6D6D77;
+}
+.HH-CardText
+{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    color: #6D6D77;
+    margin-top: 22px;
+    margin-bottom: 46px;
+    width: 79%;
+}
+@media (max-width:1200px) and (min-width:992px)
+{
+    
+}
+@media (max-width:992px) and (min-width:768px)
+{
+    .HH-cards
+    {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .HH-card
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:768px) and (min-width:576px)
+{
+    .HH-cards
+    {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .HH-card
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:576px) and (min-width:300px)
+{
+    .HH-cards
+    {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .HH-card
+    {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,143 @@
+.HH-course
+{
+    padding: 0 12.5%;
+    height: 150px;
+    background-color: var(--DarkPrimary);
+    display: flex;
+    color: var(--PrimaryColo);
+    position: relative;
+}
+.HH-info
+{
+    font-family: 'Inter';
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0;
+}
+.HH-span
+{
+    font-family: 'Inter';
+    font-size: 12px;
+    margin-right: 9px;
+    font-weight: bold;
+}
+.HH-text
+{
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+.HH-p
+{
+    width: 50%;
+    height: 100%;
+    font-size: 12px;
+    margin-left: 10%;
+    margin-top: 10px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.HH-btn
+{
+    width: 151.25px !important;
+    padding: 10px 27px;
+    height: max-content;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    color: var(--PrimaryColo);
+    background-color: var(--priceCard2);
+}
+.HH-rectangle1
+{
+    position: absolute;
+    left:4% ;
+    top: -13px;
+    width: 25px;
+    height: max-content;
+}
+.HH-Ellipse1
+{
+
+    width: 18px;
+    position: absolute;
+    bottom: 0;
+    left: -6%;
+}
+.HH-rectangle2
+{
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    left: 50%;
+    top: 83%;
+    transform: rotate(30deg);
+}
+.HH-Ellipse2
+{
+    position: absolute;
+    width: 18px;
+    left: 57%;
+    top: 22%;
+}
+.HH-Vector
+{
+    width: 110px;
+    margin-right: 30px;
+    margin-bottom: 60px;
+
+}
+.HH-rectangle3
+{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    bottom: 13px;
+    left: 75.9%;
+
+}
+.HH-Ellipse3
+{
+    position: absolute;
+    width: 30px;
+    left: 84%;
+    bottom: 92.5%;
+}
+.HH-div2
+{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.HH-btn-v
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.HH-i{
+    width: 70%;
+}
+@media (max-width:1200px) and (min-width:992px)
+{
+
+}
+@media (max-width:992px) and (min-width:768px)
+{
+
+}
+@media (max-width:1200px) and (min-width:992px)
+{
+    .HH-course
+    {
+        padding:0 5%;
+    }
+}
+@media (max-width:1200px) and (min-width:992px)
+{
+
+}

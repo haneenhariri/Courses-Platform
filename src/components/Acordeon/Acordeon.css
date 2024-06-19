@@ -19,7 +19,7 @@
 }
 .accordion-button:not(.collapsed)
 {
-    color: #19191C !important;
+    color: var(--DarkPrimary)!important;
     background-color:transparent !important;
     box-shadow: none !important;
 }
@@ -28,12 +28,12 @@
 .HH-accordion
 {
     margin:0 12.5%;
-    border-bottom: 2px solid #19191C;
+    border-bottom: 2px solid var(--DarkPrimary);
 }
 .HH-item
 {
     padding: 4% 0;
-    border-top: 2px solid #19191C !important;
+    border-top: 2px solid var(--DarkPrimary) !important;
 }
 .HH-title
 {
@@ -48,9 +48,9 @@
     height: max-content;
     margin-right: 3%;
     padding: 12px 15px;
-    background-color: #19191C;
+    background-color: var(--DarkPrimary);
     gap: 10px;
-    color: white;
+    color: var( --PrimaryColo);
 }
 .month-h6
 {
