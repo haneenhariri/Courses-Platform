@@ -3,8 +3,8 @@ import Acordeon from '../../components/Acordeon/Acordeon'
 
 export default function TrainProgram() {
   return (
-    <>
-      <Acordeon page={false}/>
-    </>
+    <section className='HH-train'>
+      {/* <Acordeon page={false}/> */}
+    </section>
   )
 }
