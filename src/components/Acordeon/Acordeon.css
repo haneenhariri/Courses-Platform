@@ -1,0 +1,118 @@
+/* bootstrap button change  */
+.accordion-button::after {
+    background-image: url(./public/image/MainPageImg/AccordionIcon/Icon\ plus.svg) !important;
+}
+.accordion-button:not(.collapsed)::after
+{
+    background-image: url(./public/image/MainPageImg/AccordionIcon/bx-minus.svg) !important;
+}
+.accordion-button {
+    width: 75%;
+    padding:0 !important;
+}
+.accordion-button:focus{
+    box-shadow: none !important;
+}
+.accordion-body
+{
+    padding: 20PX 0 !important;
+}
+.accordion-button:not(.collapsed)
+{
+    color: #19191C !important;
+    background-color:transparent !important;
+    box-shadow: none !important;
+}
+
+/* accordion styling  */
+.HH-accordion
+{
+    margin:0 12.5%;
+    border-bottom: 2px solid #19191C;
+}
+.HH-item
+{
+    padding: 4% 0;
+    border-top: 2px solid #19191C !important;
+}
+.HH-title
+{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+}
+.month
+{
+    width: max-content;
+    height: max-content;
+    margin-right: 3%;
+    padding: 12px 15px;
+    background-color: #19191C;
+    gap: 10px;
+    color: white;
+}
+.month-h6
+{
+    margin: 0;
+    font-family: 'Inter';
+}
+@media (max-width:1200px) and (min-width:992px)
+{
+
+}
+@media (max-width:992px)and (min-width:768px)
+{
+    .month
+    {
+        padding: 9px 9px;
+    }
+    .month-h6
+    {
+        font-size: 15px;
+    }
+}
+@media (max-width:768px) and (min-width:576px)
+{
+    .HH-accordion
+    {
+        margin:0 10%;
+    }
+    .HH-title
+    {
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .month
+    {
+        padding: 8px;
+    }
+    .month-h6
+    {
+        font-size: 12px;
+    }
+}
+@media (max-width:576px) and (min-width:300px)
+{
+    .HH-accordion
+    {
+        margin:0 10%;
+    }
+    .HH-title
+    {
+        font-family: 'Inter';
+        font-weight: 100;
+        font-size: small !important;
+        line-height: normal;
+    }
+    .month
+    {
+        padding: 8px;
+    }
+    .month-h6
+    {
+        font-size: 10px;
+    }
+}
