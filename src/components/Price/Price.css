@@ -1,0 +1,171 @@
+.OE_price {
+    background-color: var(--DarkPrimary);
+    padding: 0 12.5%;
+    font-family: Inter;
+}
+
+.OE_price_cards {
+    display: flex;
+}
+
+.OE_price_h1 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40.19px;
+    color: var(--SecondColor);
+    /* margin-left: 14%; */
+    padding-top: 12%;
+}
+
+.OE_item1 {
+    width: 32.86%;
+    background-color: var(--SecondColor);
+    color: var(--DarkPrimary);
+    margin-top: 9%;
+    margin-bottom: 12.8%;
+}
+
+.OE_item2 {
+    width: 32.86%;
+    height: 67.7%;
+    background-color: var(--priceCard2);
+    margin: 0 1%;
+    margin-top: 3.5%;
+    color: var(--SecondColor);
+}
+
+.OE_item3 {
+    width: 32.86%;
+    margin-top: 9%;
+    background-color: #DEEFE4;
+    color: var(--DarkPrimary);
+    margin-bottom: 12.8%;
+}
+
+.OE_price_h2 {
+    font-family: 'Inter';
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 41.15px;
+    text-align: left;
+    margin-top: 6.5%;
+    margin-left: 14%;
+}
+
+.OE_ul {
+    list-style-type: square;
+
+}
+
+.OE_li_1 {
+    margin-top: 9%;
+    margin-left: 14%;
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+}
+
+.OE_li_2,
+.OE_li_3,
+.OE_li_4,
+.OE_li_5 {
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    margin-top: 4%;
+    margin-left: 14%;
+}
+
+.OE_price1 {
+    margin-top: 16%;
+    margin-left: 14%;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: left;
+}
+
+.OE_item1 .OE_price1 {
+    margin-top: 40.4%;
+}
+
+.OE_price2 {
+    margin-top: 2%;
+    margin-left: 14%;
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40.19px;
+    text-align: left;
+}
+
+.OE_price_button {
+    max-width: 163px;
+    max-height: 58px;
+    padding: 10px 27px;
+    gap: 10px;
+    opacity: 0px;
+    background-color: var(--DarkPrimary);
+    margin-top: 3.8%;
+    margin-left: 14%;
+    margin-bottom: 7%;
+}
+
+@media (min-width: 200px) and (max-width: 576px) {
+    .OE_price_cards {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .OE_item2,
+    .OE_item1,
+    .OE_item3 {
+        width: 60.86vw;
+        margin: 9% auto;
+    }
+    .OE_price_h2 {
+        font-size: 20px;
+    }
+}
+
+.OE_price2 {
+    font-size: 20px;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .OE_price_cards {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .OE_item2,
+    .OE_item1,
+    .OE_item3 {
+        width: 39.86vw;
+        margin: 9% auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .OE_price_cards {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .OE_item2 {
+        width: 39.86%;
+        margin-top: 9%;
+        margin-bottom: 12.8%;
+    }
+    .OE_item1 {
+        width: 39.86%;
+    }
+    .OE_item3 {
+        width: 39.86%;
+    }
+    .OE_item1 .OE_price1 {
+        margin-top: 31.4%;
+    }
+}
