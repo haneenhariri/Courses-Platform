@@ -1,0 +1,56 @@
+.FM-main-section-2  {
+    width: 100%;
+    padding: 8.75% 0;
+    background-color: var(--SecondColor);
+}
+.FM-main-section-2-content {
+    width: 75%;
+    margin: 0 auto;
+}
+.FM-main-section-2-content h2{
+    color: var(--DarkPrimary);
+    width: 42.26%;
+    font-family: 'Inter';
+    font-size: 2.48rem;
+    font-weight: 700;
+    margin-bottom: 3.8%;
+}
+.FM-main-section-2-content-links{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.FM-main-section-2-content-links div:nth-child(1){
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.FM-main-section-2-content-links div:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.FM-main-section-2-content-links div:nth-child(2) h6{
+    width: 70px;
+}
+.FM-main-section-2-content-links h6{
+    font-family: 'Inter';
+    font-size: 0.80rem;
+    font-weight: 700;
+    line-height: 21.78px;
+    margin-right: 5%;
+}
+.FM-main-section-2-content-links div:nth-child(1) h6:nth-child(1){
+    border-bottom: 4px solid var(--DarkPrimary);
+}
+.FM-discoverData-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media screen and (max-width:1200px) {
+    .FM-main-section-2-content h2{
+        font-size: 1.87rem;
+    }
+}
