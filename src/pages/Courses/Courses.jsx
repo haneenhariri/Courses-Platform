@@ -2,6 +2,8 @@ import ProjStd from '../../components/ProjStd/ProjStd'
 import Hero from '../../components/Hero/Hero'
 import NavBar from '../../components/NavBar/NavBar'
 import FOOTER from '../../components/Footer/Footer'
+import Price from '../../components/Price/Price'
+
 import './Courses.css'
 export default function Courses() {
   return (
@@ -11,7 +13,10 @@ export default function Courses() {
       courses={false} classImg1={'OE_courses_image1'} classImg2={'OE_courses_image2'} classVector={'OE_courses_vector'}
       />
       <NavBar />
+      <Price/>
       <FOOTER />
     </>
   )
 }
+
+
