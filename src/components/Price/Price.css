@@ -1,7 +1,7 @@
 .OE_price {
     background-color: var(--DarkPrimary);
     padding: 0 12.5%;
-    font-family: Inter;
+    font-family:" Inter";
 }
 
 .OE_price_cards {
@@ -13,7 +13,6 @@
     font-weight: 700;
     line-height: 40.19px;
     color: var(--SecondColor);
-    /* margin-left: 14%; */
     padding-top: 12%;
 }
 
@@ -37,7 +36,7 @@
 .OE_item3 {
     width: 32.86%;
     margin-top: 9%;
-    background-color: #DEEFE4;
+    background-color: var(--MainCard1);
     color: var(--DarkPrimary);
     margin-bottom: 12.8%;
 }
@@ -92,6 +91,12 @@
 
 .OE_item1 .OE_price1 {
     margin-top: 40.4%;
+    color: #6D6D77;
+}
+
+.OE_item3 .OE_price1 {
+
+    color: #6D6D77;
 }
 
 .OE_price2 {
@@ -110,11 +115,23 @@
     padding: 10px 27px;
     gap: 10px;
     opacity: 0px;
-    background-color: var(--DarkPrimary);
+    
     margin-top: 3.8%;
     margin-left: 14%;
     margin-bottom: 7%;
+    border: none;
 }
+
+.OE_item1 .OE_price_button,.OE_item3 .OE_price_button{
+    color: var(--SecondColor);
+    background-color: var(--DarkPrimary);
+}
+
+.OE_item2 .OE_price_button{
+    color:var(--priceCard2);
+    background-color: var(--SecondColor);
+}
+
 
 @media (min-width: 200px) and (max-width: 576px) {
     .OE_price_cards {
