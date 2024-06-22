@@ -25,7 +25,7 @@ export default function NavBar() {
     <>
       <Navbar className={`BA-navbar ${header? 'BA-navbar-scroll' : 'BA-navbar-normal'}`} expand="lg" fixed="top">
 
-          <Navbar.Brand className={`BH-logo ${header ? 'BH-link-light' : 'BH-link-dark'}`} href="#" >
+          <Navbar.Brand className={`BH-logo ${header ? 'BH-link-light' : 'BH-link-dark'}`} href="/" >
             <img className="BA-img" src={`./image/NavImg/logo${header ? "-2" : ""}.svg`} /> UpDate
           </Navbar.Brand>
 
