@@ -8,6 +8,7 @@ import AMTrain from "../../components/Training/Training";
 export default function MainPage() {
   return (
     <>
+    
       <NavBar />
       <WHatDiscover />
       <AMTrain />
