@@ -1,0 +1,28 @@
+.FM-main-section-4  {
+    width: 100%;
+    padding: 8.75% 0;
+    background-color: var(--PrimaryColo);
+    background-image: url(./image/MainPageImg/HeroImg/Hero_2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.FM-main-section-4-content {
+    width: 75%;
+    margin: 0 auto;
+}
+.FM-main-section-4-content .FM-card {
+    width: 32% !important;
+}
+.FM-main-section-4-content h2{
+    color: var(--DarkPrimary);
+    font-family: 'Inter';
+    font-size: 2.48rem;
+    font-weight: 700;
+    margin-bottom: 3.8%;
+}
+.FM-CardArticle-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

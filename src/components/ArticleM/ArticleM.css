@@ -1,0 +1,46 @@
+.OE_ArticleM {
+    padding: 8.7% 18.85%;
+    font-family: 'Inter';
+}
+
+.OE_ArticleM_h2 {
+    width: 91.666666%;
+    font-size: 3.625rem;
+    font-weight: 700;
+    line-height: 121%;
+    margin-bottom: 4.764%;
+}
+
+.OE_ArticleM_p {
+    color: #6D6D77;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 156%;
+}
+
+@media screen and (max-width:1500px) {
+    .OE_ArticleM_h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .OE_ArticleM_h2 {
+        font-size: 2.2rem;
+    }
+    .OE_ArticleM_p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .OE_ArticleM_p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .OE_ArticleM_h2 {
+        font-size: 1.8rem;
+    }
+}

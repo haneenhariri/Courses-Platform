@@ -1,14 +1,24 @@
 /* bootstrap button change  */
+.accordion
+{
+    --bs-accordion-btn-icon-width: 2rem !important;
+}
 .accordion-button::after {
+
     background-image: url(./public/image/MainPageImg/AccordionIcon/Icon\ plus.svg) !important;
 }
 .accordion-button:not(.collapsed)::after
 {
     background-image: url(./public/image/MainPageImg/AccordionIcon/bx-minus.svg) !important;
 }
-.accordion-button {
+.accordion-button,.accordion-body{
     width: 75%;
     padding:0 !important;
+    background-color: var(--PrimaryColo) !important;
+    font-size: 1rem !important;
+    font-family: 'Inter' !important;
+    font-weight: 700;
+    line-height: 1.62rem !important;
 }
 .accordion-button:focus{
     box-shadow: none !important;
@@ -19,7 +29,7 @@
 }
 .accordion-button:not(.collapsed)
 {
-    color: #19191C !important;
+    color: var(--DarkPrimary)!important;
     background-color:transparent !important;
     box-shadow: none !important;
 }
@@ -27,30 +37,24 @@
 /* accordion styling  */
 .HH-accordion
 {
-    margin:0 12.5%;
-    border-bottom: 2px solid #19191C;
+    border-bottom: 2px solid var(--DarkPrimary);
 }
 .HH-item
 {
+    background-color: var(--PrimaryColo) !important;
     padding: 4% 0;
-    border-top: 2px solid #19191C !important;
+    border-top: 2px solid var(--DarkPrimary) !important;
 }
-.HH-title
-{
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 26px;
-}
+
 .month
 {
     width: max-content;
     height: max-content;
     margin-right: 3%;
     padding: 12px 15px;
-    background-color: #19191C;
+    background-color: var(--DarkPrimary);
     gap: 10px;
-    color: white;
+    color: var( --PrimaryColo);
 }
 .month-h6
 {
@@ -74,10 +78,7 @@
 }
 @media (max-width:768px) and (min-width:576px)
 {
-    .HH-accordion
-    {
-        margin:0 10%;
-    }
+
     .HH-title
     {
         font-family: 'Inter';
@@ -96,10 +97,7 @@
 }
 @media (max-width:576px) and (min-width:300px)
 {
-    .HH-accordion
-    {
-        margin:0 10%;
-    }
+
     .HH-title
     {
         font-family: 'Inter';
