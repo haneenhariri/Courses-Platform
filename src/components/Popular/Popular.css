@@ -1,0 +1,132 @@
+.BA-Article {
+  padding: 0 12.5% !important;
+}
+.BA-Article .styles {
+  padding-top: 168px;
+  padding-left: 6.3% !important;
+}
+.BA-Article .styles p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #6d6d77;
+
+  max-width: 952px;
+}
+.BA-Article .styles p:first-of-type {
+  margin-bottom: 28px;
+}
+.BA-Article .styles .BA-Popular {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 168px;
+}
+.BA-Article .styles .BA-Popular .image {
+  display: flex;
+}
+
+.BA-Article .styles .BA-Popular img:first-of-type {
+  margin-right: 20px;
+  width: 223px;
+
+  height: 302px;
+}
+.BA-Article .styles .BA-Popular img:last-of-type {
+  height: 302px;
+  width: 243px;
+
+  margin-top: 104px;
+  margin-right: 60px;
+}
+
+.BA-Article .styles .BA-Popular1 h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #19191c;
+  margin-bottom: 28px;
+}
+.BA-Article .styles .BA-Popular1 p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #6d6d77;
+  max-width: 661px;
+}
+
+.BA-Article .styles h2 {
+  margin-top: 186px;
+  font-size: 58px;
+  font-weight: 700;
+  color: #19191c;
+  margin-bottom: 28px;
+  max-width: 952px;
+}
+.BA-Article .styles span {
+  color: #6d6d77;
+  max-width: 890px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 28px;
+  display: block;
+}
+.BA-Article .styles .consequuntur {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 168px;
+  width: 952px;
+}
+@media (max-width: 1200px) {
+  .BA-Article .styles .consequuntur {
+    width: 300px;
+  }
+}
+
+@media (max-width: 900px) {
+  .BA-Article .styles {
+    padding-top: 40px;
+  }
+
+  .BA-Article .styles p {
+    max-width: 400px;
+  }
+  .BA-Article .styles .BA-Popular {
+    margin-top: 70px;
+  }
+
+  .BA-Article .styles .BA-Popular1 h1 {
+    font-size: 40px;
+    max-width: 400px;
+  }
+  .BA-Article .styles .BA-Popular .image {
+    gap: 20px;
+  }
+
+  .BA-Article .styles .BA-Popular .image img {
+    margin-right: 0;
+  }
+
+  .BA-Article .styles h2 {
+    font-size: 30px;
+    margin-top: 40px;
+  }
+  .BA-Article .styles span {
+    width: 300px;
+  }
+
+  .BA-Article .styles .BA-Popular {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .BA-Article .styles .BA-Popular img:last-of-type {
+    margin-top: 0;
+  }
+}
+@media (max-width: 550px) {
+  .BA-Article .styles .BA-Popular .image {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .BA-Article .styles .BA-Popular .image img {
+    width: 300px;
+    margin: 0 auto;
+  }
+}

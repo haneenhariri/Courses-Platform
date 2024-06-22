@@ -1,9 +1,9 @@
-import './MainPage.css'   
+import NavBar from "../../components/NavBar/NavBar";
+import FOOTER from '../../components/Footer/Footer'
+import "./MainPage.css";  
 import Hero from '../../components/Hero/Hero'
 import DiscoverLearn from '../../components/DiscoverLearn/DiscoverLearn'
 import WhatLearn from '../../components/WhatLearn/WhatLearn'   
-import NavBar from "../../components/NavBar/NavBar";
-import FOOTER from '../../components/Footer/Footer'
 import ChooseCourse from "../../components/ChooseCourse/ChooseCourse";
 import StudentSay from "../../components/StudentSay/StudentSay";
 import FAQ from '../../components/FAQ/FAQ';
