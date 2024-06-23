@@ -1,0 +1,48 @@
+.AM-Programm .button{
+    display: flex;
+    gap: 5rem;
+    padding: 30px 0;
+    overflow: hidden;
+}
+.AM-Programm .button button{
+    outline: none;
+    padding: 4px 51px;
+    background-color: white;
+}
+@media (min-width:992px) and (max-width:1024px){
+    .AM-Programm .button button {
+        padding: 3px 41px;
+        background-color: white;
+    }
+    .AM-Programm .button {
+        gap: 2rem;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .AM-Programm .button button {
+        padding: 4px 21px;
+    }
+    .AM-Programm .button {
+        gap: 2rem;
+    }
+}
+@media (min-width:567px) and (max-width:767px){
+    .AM-Programm .button {
+        gap: 1rem;
+    }
+    .AM-Programm .button button {
+        padding: 2px 11px;
+    }
+}
+@media (min-width:300px) and (max-width:566px){
+    .AM-Programm .button button {
+        padding: 0px 17px;
+    }
+    .AM-Programm .button{
+        flex-wrap: wrap;
+    }
+    .AM-Programm .button {
+        gap: 4px;
+    }
+        
+}

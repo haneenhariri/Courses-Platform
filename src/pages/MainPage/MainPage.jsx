@@ -2,6 +2,9 @@ import NavBar from "../../components/NavBar/NavBar";
 import FOOTER from '../../components/Footer/Footer'
 import "./MainPage.css";
 import WHatDiscover from "../../components/WhatDiscover/WhatDiscover";
+import AMTrain from "../../components/Training/Training";
+import AMwhatLearn from "../../components/WhatLearnCourse/WhatLearnCourse";
+import Programm from "../../components/Programms/Programms";
 import AMTrain from "../../components/Training/Training"; 
 import Hero from '../../components/Hero/Hero'
 import { BtnsMainData } from '../../const/data/HeroData'
@@ -15,7 +18,6 @@ import FAQ from '../../components/FAQ/FAQ';
 export default function MainPage() {
   return (
     <>
-    
       <NavBar />
       <Hero title = {'Explore thousands of hands-on creative classes.'} 
             p = {'Start learning for'} 
