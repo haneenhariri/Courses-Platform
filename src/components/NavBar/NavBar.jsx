@@ -5,7 +5,8 @@ import "./NavBar.css"
 export default function NavBar() {
   const [header, setHeader] = useState(false)
 
-  function handleScroll () {
+  function handleScroll () 
+  {
     if (window.scrollY > 50) {
       setHeader(true)
     }
@@ -57,12 +58,12 @@ export default function NavBar() {
                   Courses <img className='BH-icon-dropdown' src={`./image/NavImg/${header ? 'Icon CoursesWhite' : 'Icon Courses'}.svg`} />
                 </Nav.Link>
 
-                <Nav.Link className={`BH-link ${header ? 'BH-link-light' : 'BH-link-dark'}`} href="#" >
-                  Teachers
-                </Nav.Link>
-
                 <Nav.Link className={`BH-link ${header ? 'BH-link-light' : 'BH-link-dark'}`} href="./blog" >
                   Blog
+                </Nav.Link>
+
+                <Nav.Link className={`BH-link ${header ? 'BH-link-light' : 'BH-link-dark'}`} href="./dash" >
+                  Dashboard
                 </Nav.Link>
 
               </Nav>

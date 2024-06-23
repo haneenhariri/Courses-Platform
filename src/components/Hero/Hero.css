@@ -1,393 +1,219 @@
-    .OE_Hero {
-        background-image: url(./image/MainPageImg/HeroImg/Hero_2.png);
-        background-size: cover;
-        font-family: "Inter";
-        /* width: 100%; */
-        padding: 0 12.5%;
-        min-height: 100vh;
-        display: flex;
-        background-color: var(--PrimaryColo);
-        position: relative;
+.OE-hero {
+    min-height: 100vh;
+    background-image: url(./image/MainPageImg/HeroImg/Hero_2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--PrimaryColo);
+    padding: 0 12.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.OE-hero-left-div {
+    margin-top: 24.8148vh;
+    width: 45%;
+    height: max-content;
+}
+.OE-hero-left-div .OE-hero-left-div-h1{
+    font-family: 'Inter';
+    font-size: 3.625rem;
+    font-weight: 700;
+    line-height: 6.65vh;
+    color: var(--DarkPrimary);
+    margin-bottom: 2.78%;
+}
+.OE-sec-h1 {
+    margin-bottom: 1.235% !important;
+}
+.OE-hero-left-div .OE-hero-left-div-p ,
+.OE-hero-left-div .OE-hero-left-div-span1{
+    font-family: 'Inter';
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 3.112vh;
+    margin-bottom: 9.57%;
+}
+.OE-course-p {
+    margin-bottom: 7.717% !important;
+}
+.OE-hero-left-div .OE-hero-left-div-p{
+    color: var(--DarkPrimary);
+}
+.OE-top-p {
+    display: none;
+    margin-bottom: 2px !important;
+}
+.OE-hero-left-div .OE-hero-left-div-span1{
+    color: var(--priceCard2);
+}
+.OE-hero-left-div .OE-hero-left-div-btn{
+    display: block;
+    padding: 1.39vh 2.7629vw;
+    border: none;
+    background-color: var(--priceCard2);
+    color: var(--SecondColor);
+    margin-bottom: 16.98%;
+}
+.OE-hero-left-div-footer {
+    position: relative;
+    width: max-content;
+    padding-right: 90px;
+}
+.OE-hero-left-div-h6 {
+    display: flex;
+}
+.OE-hero-left-div-footer img{
+    position: absolute;
+    right: 0;
+    bottom: -6px;
+}
+.OE-hero-left-div h6:nth-child(1) {
+    margin-right: 12px;
+}
+.OE-hero-left-div h6 {
+    font-family: 'Inter';
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 2.016vh;
+    margin-bottom: 0 !important;
+}
+.OE-hero-left-div .OE-top-h6 {
+    display: none;
+    width: max-content;
+    border-bottom: 4px solid var(--priceCard2);
+    margin-bottom: 3.7037vh !important;
+    padding-bottom: 0.89vh;
+}
+.OE-img-vector {
+    transform: rotate(-13.48deg);
+    bottom: 35px !important;
+}
+.OE-hero-right-div {
+    position: relative;
+    margin-top: 20.277vh;
+    width: 50%;
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+}
+.OE-hero-right-div-imgs {
+    position: relative;
+    height: 75vh;
+    display: flex;
+    align-items: end;
+}
+.OE-hero-right-div-imgs .OE-hero-right-div-img1{
+    display: block;
+    height: 65%;
+}
+.OE-hero-right-div-imgs .OE-hero-right-div-img2{
+    position: absolute;
+    display: block;
+    height: 90%;
+    right: -25px !important;
+    bottom: 0;
+}
+.OE-hero-right-div .OE-hero-right-div-btns{
+    position: absolute;
+    display: block;
+    padding: 1.31vh 1.8vw;
+    border: 2px solid var(--DarkPrimary);
+    color: var(--DarkPrimary);
+    font-family: 'Inter';
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 2.016vh;
+}
+.OE-hero-right-div .OE-hero-right-div-btn1{
+    top: 0;
+    right: 30%;
+}
+.OE-hero-right-div .OE-hero-right-div-btn2{
+    top: 9%;
+    left: 16%;
+}
+.OE-hero-right-div .OE-hero-right-div-btn3{
+    top: 10%;
+    right: 0;
+}
+.OE-hero-right-div .OE-hero-right-div-btn4{
+    top: 30.6577%;
+    left: -2.583%;
+}
+.OE-hero-right-div .OE-hero-right-div-btn5{
+    top: 50%;
+    left: -20%;
+}
+.OE-hero-right-div .OE-hero-right-div-btn6{
+    bottom: 25%;
+    left: -8%;
+}
+.OE-show {
+    display: block !important;
+}
+@media screen and (max-width:1366px){
+    .OE-hero-left-div .OE-hero-left-div-h1{
+        font-size: 2.6rem;
     }
-    
-    .OE_profession {
-        font-size: 12.5px;
-        font-weight: 400;
-        line-height: 28px;
-        text-align: left;
+    .OE-img-vector {
+        bottom: 0 !important;
     }
-    
-    .OE_month {
-        font-family: Inter;
-        font-size: 18px;
-        line-height: 21.78px;
-        text-align: left;
-        font-weight: bold;
+    .OE-hero-left-div .OE-hero-left-div-p ,
+    .OE-hero-left-div .OE-hero-left-div-span1{
+        width: 85%;
     }
-    
-    .OE_titleSection {
-        top: 10%;
-        width: 35%;
-        height: 500px;
-        position: absolute;
-      
-    }
-    
-    .OE_imgSection {
-        display: flex;
+}
+@media screen and (max-width:992px){
+    .OE-hero {
+        padding: 12.5% 12.5% 0 12.5%; 
         flex-direction: column;
-        justify-content: end;
-        align-items: end;
-       
     }
-    
-    .OE_h1 {
-        font-family: Inter;
-        font-size: 41px;
-        font-weight: 700;
-        line-height: 70.19px;
-        text-align: left;
+    .OE-hero-left-div .OE-hero-left-div-p ,
+    .OE-hero-left-div .OE-hero-left-div-span1{
+        line-height: 3.3vh;
     }
-    
-    .OE_p {
-        font-family: Inter;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 28px;
-        text-align: left;
-        width: 75%;
+    .OE-hero-left-div , .OE-hero-right-div{
+        margin-top: 40px;
     }
-    
-    .OE_span {
-     
-        color: var(--priceCard2);
+    .OE-hero-left-div ,
+    .OE-hero-right-div{
+        width: 100% !important;
     }
-    
-    .OE_button {
-     
-        margin-top: 20px;
-        padding: 13px 33px;
-        background-color: var(--priceCard2);
-        color: var(--SecondColor);
-        border: none;
-        outline: none;
+    .OE-hero-right-div .OE-hero-right-div-btn5{
+        left: -8%;
+        top: 55%;
     }
-    
-    .OE_days {
-        display: flex;
+    .OE-hero-right-div .OE-hero-right-div-btn4{
+        left: -4%;
+        top: 35.6577%;
     }
-    
-    .OE_50 {
-        width: 90px;
-        font-family: Inter;
-        font-size: 40px;
-        font-weight: bold;
-        line-height: 57px;
-        text-align: left;
-        margin-top: 60px;
-      
+    .OE-hero-right-div .OE-hero-right-div-btn6{
+        bottom: 15%;
+        left: -4%;
     }
-    
-    .OE_days h6 {
-      
-        display: inline-block;
-        margin-right: 8px;
+}
+@media screen and (max-width:768px){
+    .OE-hero-right-div-imgs .OE-hero-right-div-img1{
+        height: 55%;
     }
-    
-    .OE_main_vector {
-        position: absolute;
-        width: 44px;
-        height: 99px;
-       
-        transform: rotate(5deg);
-        margin-top: 92px;
-        margin-left: -36px;
+    .OE-hero-right-div-imgs .OE-hero-right-div-img2{
+        height: 77%;
     }
-    
-    .OE_courses_vector {
-        position: absolute;
-        width: 69px;
-        height: 99px;
-        margin-top: 294px;
-      
-        transform: rotate(-13.48deg);
-        margin-top: 83px;
-        margin-left: -14px;
+}
+@media screen and (max-width:576px){
+    .OE-hero-left-div .OE-hero-left-div-h1{
+        font-size: 1.8rem;
     }
-    
-    .OE_main_image1 {
-       
-        width: 22.3vw;
-        position: absolute;
-      
-        bottom: 0;
-        right: 12.5%;
+    .OE-hero-right-div-imgs {
+        height: 48vh; 
     }
-    
-    .OE_main_image2 {
-        width: 50vw;
-        /* height: 40%; */
-        /* width: 650px;; */
-        bottom: 0;
-        right: 6.19%;
-        position: absolute;
+    .OE-hero-right-div .OE-hero-right-div-btns {
+        font-size: 1rem;
+        padding: 0.5vh 1.8vw;
     }
-    
-    .OE_courses_image1 {
-       
-        width: 24vw;
-        position: absolute;
-        bottom: 0;
-        right: 14.5%;
+    .OE-hero-right-div .OE-hero-right-div-btn2,
+    .OE-hero-right-div .OE-hero-right-div-btn3{
+        top: 15%;
     }
-    
-    .OE_courses_image2 {
-        width: 42vw;
-       
-        bottom: 0;
-        right: 2.5%;
-        position: absolute;
-    }
-    
-    .OE_main1,
-    .OE_courses1 {
-        max-width: 100px;
-        max-height: 38px;
-        Top: 29vh;
-        right: 12.5vw;
-        padding: 5px 15px 5px 15px;
-        border: 2px solid #19191C;
-        position: absolute;
-    }
-    
-    .OE_main2,
-    .OE_courses2 {
-        max-width: 157px;
-        max-height: 54px;
-        right: 24.1vw;
-        top: 20vh;
-        padding: 5px 15px 5px 15px;
-        border: 2px solid #19191C;
-        position: absolute;
-    }
-    
-    .OE_main3,
-    .OE_courses3 {
-        max-width: 152px;
-        max-height: 54px;
-        Top: 27vh;
-        right: 36.5vw;
-        padding: 5px 15px 5px 15px;
-        border: 2px solid #19191C;
-        position: absolute;
-    }
-    
-    .OE_main4,
-    .OE_courses4 {
-        max-width: 128px;
-        max-height: 38px;
-        Top: 45.7vh;
-        right: 42.2vw;
-        padding: 5px 15px 5px 15px;
-        border: 2px solid #19191C;
-        position: absolute;
-    }
-    
-    .OE_main5,
-    .OE_courses5 {
-        max-width: 151px;
-        max-height: 54px;
-        /* Top: 382px;
-    right: 592px; */
-        top: 60vh;
-        right: 49vw;
-        padding: 5px 15px 5px 15px;
-        border: 2px solid #19191C;
-        position: absolute;
-    }
-    
-    .OE_main6,
-    .OE_courses6 {
-        max-width: 192px;
-        max-height: 54px;
-        Top: 75vh;
-        Left: 43.1vw;
-        padding: 5px 15px 5px 15px;
-        border: 2px solid #19191C;
-        position: absolute;
-    }
-    
- 
-    
-    @media (min-width: 992px) and (max-width: 1200px) {
-        .OE_courses_vector{margin-top: 53px;}
-        .OE_h1,
-        .OE_50 {
-            font-size: 25px;
-            line-height: 45.19px;
-        }
-        .OE_50 {
-            margin-top: 35px;
-        }
-        /* OE_main_image2 {
-        width: 622px;
-    }
-    .OE_main_image1 {
-        width: 276px;
-    }
-    .OE_main1 {
-        Top: 163px;
-        Left: 878px;
-    }
-    .OE_main2 {
-        left: 699px;
-        top: 86px;
-    }
-    .OE_main3 {
-        Top: 152px;
-        Left: 564px;
-    }
-    .OE_main4 {
-        Top: 275px;
-        Left: 471px;
-    }
-    .OE_main5 {
-        Top: 382px;
-        Left: 411px;
-        padding: 5px 15px 5px 15px;
-    }
-    .OE_main6,
-    .OE_courses6 {
-        Top: 499px;
-        Left: 459px;
-    }
-    .OE_courses1 {
-        Top: 163px;
-        Left: 878px;
-    }
-    .OE_courses2 {
-        left: 763px;
-        top: 86px;
-    }
-    .OE_courses3 {
-        Top: 175px;
-        Left: 660px;
-    }
-    .OE_courses4 {
-        Top: 275px;
-        Left: 598px;
-    }
-    .OE_courses5 {
-        Top: 382px;
-        Left: 552px;
-    } */
-    }
-    
-    
-    @media (min-width: 768px) and (max-width: 992px) {
-        .OE_h1,
-        .OE_50 {
-            font-size: 25px;
-            line-height: 45.19px;
-        }
-        .OE_courses_vector {
-            margin-top: 53px;
-        }
-        .OE_50 {
-            margin-top: 35px;
-        }
-        .OE_main_image2 {
-            /* width: 622px; */
-        }
-        .OE_main_image1 {
-            /* width: 276px; */
-        }
-        .OE_nextToImg {
-            display: none;
-        }
-        .OE_titleSection {
-            top: 5%;
-             width: 70%;
-        }
-    }
-    
-    @media (min-width: 576px) and (max-width: 768px) {
-        .OE_h1,
-        .OE_50 {
-            font-size: 25px;
-            line-height: 45.19px;
-        }
-        .OE_courses_vector {
-            margin-top: 53px;
-        }
-        .OE_p {
-            font-size: 16px;
-        }
-        
-        .OE_50 {
-            margin-top: 35px;
-        }
-        .OE_main_image2 {
-            /* width: 522px; */
-        }
-        .OE_main_image1 {
-            /* width: 237px; */
-        }
-        .OE_nextToImg {
-            display: none;
-        }
-        .OE_titleSection {
-            top: 5%;
-             width: 70%;
-        }
-        
-    }
-    
-    @media (min-width: 200px) and (max-width: 398px) {
-        .OE_button {
-            padding: 2px 6px !important;
-        }
-        .OE_main_vector{margin-top: 61px !important;}
-    }
-    @media (min-width: 200px) and (max-width: 397px) {
-        .OE_courses_vector{
-            margin-top: 44px !important;
-            width: 57px !important;
-            height: 78px !important;
-        }
-    }
-    
-    @media (min-width: 200px) and (max-width: 576px) {
-        .OE_p {
-            font-size: 13px;
-            width: 100%;
-        }
-        
-        .OE_nextToImg {
-            display: none;
-        }
-        .OE_h1,
-        .OE_50 {
-            font-size: 20px;
-            line-height: 45.19px;
-        }
-        .OE_days h6 {
-            font-size: 15px;
-        }
-        .OE_50 {
-            margin-top: 35px;
-        }
-        .OE_titleSection {
-            top: 5%;
-             width: 70%;
-        }
-        .OE_button {
-            padding: 13px 6px;
-        }
-        .OE_main_vector {
-            margin-top: 80px;
-            height: 77px;
-        }
-        .OE_courses_vector{margin-top: 49px;}
-    }
-
+}

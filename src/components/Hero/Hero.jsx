@@ -1,53 +1,36 @@
-import React from 'react'
 import './Hero.css'
-import { CoursesData, MainData } from '../../const/data/HeroData'
-export default function Hero({ h1, p, span, button, discount, days, time, img, month, profession, courses, classImg1, classImg2,classVector }){
-  return (
-    
-    <section className='OE_Hero'>
-    
-        <div className='OE_titleSection'>
-        <h6 className='OE_'>{month}</h6>
-        <p className='OE_profession'>{ profession}</p>
-          <h1 className='OE_h1'>{courses}{h1}</h1>
-        <p className='OE_p'>{p}
-          <span className='OE_span'>{ span}</span>
-        </p>
-       <div>
-          <button className='OE_button'>{button}</button>
-          <img className={classVector} src="./image\MainPageImg\HeroImg\Vector.png" alt="" />
-       </div>
-        <h2 className='OE_50'>{discount }</h2>     
-        <div className='OE_days'>
-          <h6>{ days}</h6>
-          <h6>{time}</h6>
-        </div>  
-      
-   
-       
-      </div>
 
-      
-        <div className='OE_imgSection'>
-          <img className={classImg1} src="./image\MainPageImg\HeroImg\Hero_3.png" alt="" />
-          <img className={classImg2} src={img} alt="" />
-        <div className="OE_nextToImg"> {courses ?
-          MainData.map((item, index) => {
-              return (
-                <div className={item.class} key={index}>{ item.title}</div>      
-              )
-          }
-          ) : CoursesData.map((item, index) => {
-            return(<div className={item.class} key={index}>{ item.title}</div>  )
-          }
-          )}</div>
-          
+export default function Hero({top_h6, top_p, title, mb_p, p, span1, btn, num1, num2, img_vector, imgURL, BtnsData , show}) {
 
-         
-       
-      </div>
-      </section>
-
-
-  )
+    return (
+        <section className='OE-hero'>
+            <div className='OE-hero-left-div'>
+                <h6 className={`OE-top-h6 ${show}`}>{top_h6}</h6>
+                <p className={`OE-hero-left-div-p OE-top-p ${show}`}>{top_p}</p>
+                <h1 className='OE-hero-left-div-h1'>{title}</h1>
+                <p className={`OE-hero-left-div-p ${mb_p}`}>{p} <span className='OE-hero-left-div-span1'>{span1}</span></p> 
+                <button className='OE-hero-left-div-btn'>{btn}</button>
+                <div className='OE-hero-left-div-footer'>
+                    <h1 className='OE-hero-left-div-h1 OE-sec-h1'>{num1}</h1>
+                    <div className='OE-hero-left-div-h6'>
+                        <h6>{num2} Days</h6>
+                        <h6>17:44:16</h6>
+                    </div>
+                    <img className={img_vector} src="./image/MainPageImg/HeroImg/Vector.png"/>
+                </div>
+                
+            </div>
+            <div className='OE-hero-right-div'>
+                <div className='OE-hero-right-div-imgs'>
+                    <img className='OE-hero-right-div-img1' src="./image/MainPageImg/HeroImg/Hero_3.png" />
+                    <img className='OE-hero-right-div-img2' src={imgURL} />
+                </div>
+                {BtnsData.map(element => {
+                    return (
+                        <button key={element.id} className={`OE-hero-right-div-btns OE-hero-right-div-btn${element.id}`}>{element.btnContent}</button>
+                    )
+                })}
+            </div>
+        </section>
+    )
 }

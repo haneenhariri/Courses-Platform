@@ -5,6 +5,7 @@ import Blog from './pages/Blog/Blog'
 import ArticlePage from './pages/ArticlePage/ArticlePage'
 import './../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { Route,Routes } from 'react-router-dom'
+import Dashboard from './pages/Dashboard/Dashboard'
 
 function App() {
   
@@ -15,6 +16,7 @@ function App() {
         <Route path='/courses' element={<Courses />} />
         <Route path='/blog' element={<Blog/>} />
         <Route path='/article' element={<ArticlePage/>} />
+        <Route path='/dash' element={<Dashboard/>} />
       </Routes>
     </>
   )
