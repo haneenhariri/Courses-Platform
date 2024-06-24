@@ -9,7 +9,7 @@ export default function WHatDiscover(){
             <button>Try free</button>
           </div>
           
-
+          
           <div className="card1">
             <img src="./image/MainPageImg/WhatDiscoverImg/card_1.png" alt="" />
             <p>Photo & Film</p>

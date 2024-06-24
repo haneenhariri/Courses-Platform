@@ -5,7 +5,8 @@ import "./NavBar.css"
 export default function NavBar() {
   const [header, setHeader] = useState(false)
 
-  function handleScroll () {
+  function handleScroll () 
+  {
     if (window.scrollY > 50) {
       setHeader(true)
     }
@@ -25,7 +26,7 @@ export default function NavBar() {
     <>
       <Navbar className={`BA-navbar ${header? 'BA-navbar-scroll' : 'BA-navbar-normal'}`} expand="lg" fixed="top">
 
-          <Navbar.Brand className={`BH-logo ${header ? 'BH-link-light' : 'BH-link-dark'}`} href="#" >
+          <Navbar.Brand className={`BH-logo ${header ? 'BH-link-light' : 'BH-link-dark'}`} href="/" >
             <img className="BA-img" src={`./image/NavImg/logo${header ? "-2" : ""}.svg`} /> UpDate
           </Navbar.Brand>
 
@@ -53,16 +54,16 @@ export default function NavBar() {
 
               <Nav className=" flex-grow-1 pe-3 BA-nav d-flex justify-content-start">
                 
-                <Nav.Link className={`BH-link ${header ? 'BH-link-light' : 'BH-link-dark'}`} href="#" >
+                <Nav.Link className={`BH-link ${header ? 'BH-link-light' : 'BH-link-dark'}`} href="./courses" >
                   Courses <img className='BH-icon-dropdown' src={`./image/NavImg/${header ? 'Icon CoursesWhite' : 'Icon Courses'}.svg`} />
-                </Nav.Link>
-
-                <Nav.Link className={`BH-link ${header ? 'BH-link-light' : 'BH-link-dark'}`} href="#" >
-                  Teachers
                 </Nav.Link>
 
                 <Nav.Link className={`BH-link ${header ? 'BH-link-light' : 'BH-link-dark'}`} href="./blog" >
                   Blog
+                </Nav.Link>
+
+                <Nav.Link className={`BH-link ${header ? 'BH-link-light' : 'BH-link-dark'}`} href="./dash" >
+                  Dashboard
                 </Nav.Link>
 
               </Nav>

@@ -1,0 +1,84 @@
+.FM-card {
+    width: 23.959% !important;
+    margin: 2.778% 0;
+}
+.FM-card-padding {
+    padding: 2.5% !important;
+    background-color: var(--SecondColor);
+    height: max-content;
+}
+.FM-card .header-img{
+    width: 100%;
+    margin-bottom: 8.12% !important;
+}
+.FM-card .header-img img{
+    width: 100%;
+}
+.FM-card-title {
+    height: 26px;
+    font-family: 'Inter';
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.FM-card-padding .FM-card-title {
+    width: 100%;
+    text-align: center !important;
+}
+.FM-card-footer {
+    margin-top: 11px !important;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Inter';
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 156%;
+}
+.card-show {
+    display: flex;
+}
+.FM-card-footer p {
+    width: max-content ;
+    height: 28px ;
+    margin-bottom: 0;
+}
+.desc-mb-normal {
+    margin-bottom: 12.825% !important;
+}
+.desc-mb-double {
+    margin-bottom: 71px !important;
+}
+@media (max-width:1366px) {
+    .FM-card-title {
+        font-size: 1.3rem !important;
+    }
+}
+@media (max-width:1200px) {
+    .FM-card-title {
+        font-size: 1.15rem !important;
+    }
+    .FM-card-footer {
+        font-size: 0.9rem;
+    }
+}
+@media (min-width:992px) {
+    .card-mt{
+        margin-top: 122px !important;
+    }
+}
+@media (max-width:993px) {
+    .FM-card {
+        width: 32% !important;
+    }
+}
+@media (max-width:768px) {
+    .FM-card {
+        width: 46% !important;
+    }
+}
+@media (max-width:576px) {
+    .FM-card {
+        width: 100% !important;
+    }
+}

@@ -1,1 +1,219 @@
-
+.OE-hero {
+    min-height: 100vh;
+    background-image: url(./image/MainPageImg/HeroImg/Hero_2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--PrimaryColo);
+    padding: 0 12.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.OE-hero-left-div {
+    margin-top: 24.8148vh;
+    width: 45%;
+    height: max-content;
+}
+.OE-hero-left-div .OE-hero-left-div-h1{
+    font-family: 'Inter';
+    font-size: 3.625rem;
+    font-weight: 700;
+    line-height: 6.65vh;
+    color: var(--DarkPrimary);
+    margin-bottom: 2.78%;
+}
+.OE-sec-h1 {
+    margin-bottom: 1.235% !important;
+}
+.OE-hero-left-div .OE-hero-left-div-p ,
+.OE-hero-left-div .OE-hero-left-div-span1{
+    font-family: 'Inter';
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 3.112vh;
+    margin-bottom: 9.57%;
+}
+.OE-course-p {
+    margin-bottom: 7.717% !important;
+}
+.OE-hero-left-div .OE-hero-left-div-p{
+    color: var(--DarkPrimary);
+}
+.OE-top-p {
+    display: none;
+    margin-bottom: 2px !important;
+}
+.OE-hero-left-div .OE-hero-left-div-span1{
+    color: var(--priceCard2);
+}
+.OE-hero-left-div .OE-hero-left-div-btn{
+    display: block;
+    padding: 1.39vh 2.7629vw;
+    border: none;
+    background-color: var(--priceCard2);
+    color: var(--SecondColor);
+    margin-bottom: 16.98%;
+}
+.OE-hero-left-div-footer {
+    position: relative;
+    width: max-content;
+    padding-right: 90px;
+}
+.OE-hero-left-div-h6 {
+    display: flex;
+}
+.OE-hero-left-div-footer img{
+    position: absolute;
+    right: 0;
+    bottom: -6px;
+}
+.OE-hero-left-div h6:nth-child(1) {
+    margin-right: 12px;
+}
+.OE-hero-left-div h6 {
+    font-family: 'Inter';
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 2.016vh;
+    margin-bottom: 0 !important;
+}
+.OE-hero-left-div .OE-top-h6 {
+    display: none;
+    width: max-content;
+    border-bottom: 4px solid var(--priceCard2);
+    margin-bottom: 3.7037vh !important;
+    padding-bottom: 0.89vh;
+}
+.OE-img-vector {
+    transform: rotate(-13.48deg);
+    bottom: 35px !important;
+}
+.OE-hero-right-div {
+    position: relative;
+    margin-top: 20.277vh;
+    width: 50%;
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+}
+.OE-hero-right-div-imgs {
+    position: relative;
+    height: 75vh;
+    display: flex;
+    align-items: end;
+}
+.OE-hero-right-div-imgs .OE-hero-right-div-img1{
+    display: block;
+    height: 65%;
+}
+.OE-hero-right-div-imgs .OE-hero-right-div-img2{
+    position: absolute;
+    display: block;
+    height: 90%;
+    right: -25px !important;
+    bottom: 0;
+}
+.OE-hero-right-div .OE-hero-right-div-btns{
+    position: absolute;
+    display: block;
+    padding: 1.31vh 1.8vw;
+    border: 2px solid var(--DarkPrimary);
+    color: var(--DarkPrimary);
+    font-family: 'Inter';
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 2.016vh;
+}
+.OE-hero-right-div .OE-hero-right-div-btn1{
+    top: 0;
+    right: 30%;
+}
+.OE-hero-right-div .OE-hero-right-div-btn2{
+    top: 9%;
+    left: 16%;
+}
+.OE-hero-right-div .OE-hero-right-div-btn3{
+    top: 10%;
+    right: 0;
+}
+.OE-hero-right-div .OE-hero-right-div-btn4{
+    top: 30.6577%;
+    left: -2.583%;
+}
+.OE-hero-right-div .OE-hero-right-div-btn5{
+    top: 50%;
+    left: -20%;
+}
+.OE-hero-right-div .OE-hero-right-div-btn6{
+    bottom: 25%;
+    left: -8%;
+}
+.OE-show {
+    display: block !important;
+}
+@media screen and (max-width:1366px){
+    .OE-hero-left-div .OE-hero-left-div-h1{
+        font-size: 2.6rem;
+    }
+    .OE-img-vector {
+        bottom: 0 !important;
+    }
+    .OE-hero-left-div .OE-hero-left-div-p ,
+    .OE-hero-left-div .OE-hero-left-div-span1{
+        width: 85%;
+    }
+}
+@media screen and (max-width:992px){
+    .OE-hero {
+        padding: 12.5% 12.5% 0 12.5%; 
+        flex-direction: column;
+    }
+    .OE-hero-left-div .OE-hero-left-div-p ,
+    .OE-hero-left-div .OE-hero-left-div-span1{
+        line-height: 3.3vh;
+    }
+    .OE-hero-left-div , .OE-hero-right-div{
+        margin-top: 40px;
+    }
+    .OE-hero-left-div ,
+    .OE-hero-right-div{
+        width: 100% !important;
+    }
+    .OE-hero-right-div .OE-hero-right-div-btn5{
+        left: -8%;
+        top: 55%;
+    }
+    .OE-hero-right-div .OE-hero-right-div-btn4{
+        left: -4%;
+        top: 35.6577%;
+    }
+    .OE-hero-right-div .OE-hero-right-div-btn6{
+        bottom: 15%;
+        left: -4%;
+    }
+}
+@media screen and (max-width:768px){
+    .OE-hero-right-div-imgs .OE-hero-right-div-img1{
+        height: 55%;
+    }
+    .OE-hero-right-div-imgs .OE-hero-right-div-img2{
+        height: 77%;
+    }
+}
+@media screen and (max-width:576px){
+    .OE-hero-left-div .OE-hero-left-div-h1{
+        font-size: 1.8rem;
+    }
+    .OE-hero-right-div-imgs {
+        height: 48vh; 
+    }
+    .OE-hero-right-div .OE-hero-right-div-btns {
+        font-size: 1rem;
+        padding: 0.5vh 1.8vw;
+    }
+    .OE-hero-right-div .OE-hero-right-div-btn2,
+    .OE-hero-right-div .OE-hero-right-div-btn3{
+        top: 15%;
+    }
+}

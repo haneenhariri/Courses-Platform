@@ -1,0 +1,17 @@
+.faq
+{
+    padding-top: 11rem;
+    padding-bottom: 12rem;
+    padding-left:  12.5%;
+    padding-right:  12.5%;
+    background-color: var(--PrimaryColo);
+}
+.HH-F-title
+{
+    margin-bottom: 4.25rem;
+    font-family: 'Inter';
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4.38rem;
+    color: #19191C;
+}

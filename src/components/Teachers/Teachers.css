@@ -1,0 +1,47 @@
+.FM-courses-section-7 {
+    position: relative;
+    width: 100%;
+    padding: 4.281% 12.5% 8.562% 12.5%;
+    background-color: var(--SecondColor);
+}
+.FM-courses-section-7-content {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.FM-courses-section-7 h2{
+    color: var(--DarkPrimary);
+    width: 49.237%;
+    font-family: 'Inter';
+    font-size: 3.625rem;
+    font-weight: 700;
+    line-height: 121%;
+    margin-bottom: 1.25%;
+}
+.FM-Teachers-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media screen and (max-width:1366px){
+    .FM-courses-section-7 h2{
+        font-size: 2.6rem;
+    }
+}
+@media screen and (max-width:1200px){
+    .FM-courses-section-7 h2{
+        font-size: 2.2rem;
+    }
+}
+@media screen and (max-width:992px){
+    .FM-courses-section-7 h2{
+        width: 100%;
+    }
+}
+@media screen and (max-width:576px){
+    .FM-courses-section-7 h2{
+        font-size: 1.8rem;
+    }
+}

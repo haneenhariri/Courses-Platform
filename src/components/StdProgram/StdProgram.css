@@ -1,0 +1,268 @@
+.ma-prog *{
+    font-family:'Inter';
+   }
+   .ma-prog{
+    display: flex;
+    justify-content: center;
+    padding: 8.75% 12.5%;
+    width: 100%;
+    background-color: var(--MainSection8 );
+   }
+   .ma-text-prog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin-right: 5%;
+    height: 100%;
+    gap: 28px;
+
+   }
+   
+   .ma-sign-in{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 53.9%;
+   }
+   .ma-inp-prog{
+     background-color: transparent;
+     border: none;
+     border-bottom: 2px solid var(--DarkPrimary);
+     margin-bottom: 48px;
+     font-size: 18px;
+     font-weight: 400;
+     line-height: 28px;
+     padding: 6px 0;
+   }
+   .ma-inp-prog::placeholder{
+    color: black;
+   }
+   #h2-prog{
+    width: 100%;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 70.19px;
+   }
+   #p-prog{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    
+   }
+   #prog-but{
+     max-width: 144px;
+     background-color: var(--DarkPrimary);
+     color: var(--SecondColor) ;
+     font-size: 18px;
+     padding: 16px 36px;
+     font-weight: 700;
+     line-height: 21.78px;
+     border: none;
+   }
+   #ma2-img{
+    width: 164.23px;
+    height: 56.12px;
+    position:relative;
+    top:-108px ;
+    right: 199px;
+   
+   
+   }
+   @media(max-width:1200px) and (min-width:992px){
+   .ma-prog{
+    /* display: block; */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+   }
+   .ma-text-prog{
+    width: 100%;
+    margin: 0;
+    }
+    .ma-sign-in
+    {
+      width: 100%;
+      gap: 20px;
+    }
+    #ma2-img{
+    top: -90px;
+    right: -162px;
+    rotate: 132deg;
+   
+    }
+    #h2-prog
+    {
+      font-size: 2.2rem;
+      width: 25rem;
+      line-height: normal;
+    }
+    #prog-but
+    {
+      min-width: min-content;
+      padding: 11px;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    #p-prog
+    {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 20px;
+    }
+    .ma-inp-prog{
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 20px;
+    }
+   
+   }
+   @media (max-width:992px) and (min-width: 768px)
+   {
+    .ma-prog{
+      /* display: block; */
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+     }
+     .ma-text-prog{
+      width: 100%;
+      margin: 0;
+      }
+      .ma-sign-in
+      {
+        width: 100%;
+        gap: 20px;
+      }
+      #ma2-img
+      {
+        top: 0;
+        left: 40px;
+        transform: rotate(-180deg);
+      }
+      #h2-prog
+      {
+        font-size: 2.2rem;
+        width: 25rem;
+        line-height: normal;
+      }
+      #p-prog
+      {
+        font-size: 0.80rem;
+        font-weight: 400;
+        line-height: 20px;
+      }
+      .ma-inp-prog{
+        font-size: 0.80rem;
+        font-weight: 400;
+        line-height: 20px;
+      }
+      #prog-but
+      {
+        min-width: min-content;
+        padding: 11px 25px;
+        font-size: 0.80rem;
+        font-weight: 500;
+      }
+   }
+   @media (max-width:768px) and (min-width:576px)
+   {
+    .ma-prog{
+      /* display: block; */
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+     }
+     .ma-text-prog{
+      width: 100%;
+      margin: 0;
+      }
+      .ma-sign-in
+      {
+        width: 100%;
+        gap: 20px;
+      }
+      #ma2-img
+      {
+        top: 0;
+        left: 40px;
+        transform: rotate(-180deg);
+        width: 100px;
+        height: max-content;
+      }
+      #h2-prog
+      {
+        font-size: 2.2rem;
+        width: 25rem;
+        line-height: normal;
+      }
+      #p-prog
+      {
+        font-size: 0.80rem;
+        font-weight: 400;
+        line-height: 20px;
+      }
+      .ma-inp-prog{
+        font-size: 0.80rem;
+        font-weight: 400;
+        line-height: 20px;
+      }
+      #prog-but
+      {
+        min-width: min-content;
+        padding: 11px;
+        font-size: 0.80rem;
+        font-weight: 500;
+      }
+   }
+   @media (max-width:576px) and (min-width:300px)
+   {
+    .ma-prog{
+      /* display: block; */
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+     }
+     .ma-text-prog{
+      width: 100%;
+      margin: 0;
+      }
+      .ma-sign-in
+      {
+        width: 100%;
+        gap: 20px;
+      }
+      #ma2-img
+      {
+        top: 0;
+        left: 40px;
+        transform: rotate(-180deg);
+        width: 100px;
+        height: max-content;
+      }
+      #h2-prog
+      {
+        font-size: 1.5rem;
+        width: 15rem;
+        line-height: normal;
+      }
+      #p-prog
+      {
+        font-size: 0.80rem;
+        font-weight: 400;
+        line-height: 20px;
+      }
+      .ma-inp-prog{
+        font-size: 0.80rem;
+        font-weight: 400;
+        line-height: 20px;
+      }
+      #prog-but
+      {
+        min-width: min-content;
+        padding: 11px;
+        font-size: 0.80rem;
+        font-weight: 500;
+      }
+   }

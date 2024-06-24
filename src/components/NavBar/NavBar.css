@@ -14,20 +14,33 @@
 }
 .BH-logo {
   margin-right: 68px !important;
-  font-size: 24px;
+  font-size: 24px !important;
   font-weight: 800;
-  padding-top: 6px !important;
+  font-family: 'Inter';
+  line-height: 29.05px;
   transition: 0.25s ease-in-out;
+  padding-top:6px !important;
+  padding-bottom: 11px;
 }
 .BA-img {
   margin-right: 14px !important;
+  width: 42px;
+  padding-top: 2px !important;
+  padding-bottom: 8px;
 }
 .BH-link {
   font-size: 18px !important;
-  font-weight: 600;
+  font-weight: 600 !important;
   margin-right: 46px;
   padding: 0 !important;
+  line-height: 21.78px;
+  font-family: 'Inter';
   padding-top: 11px !important;
+}
+/* Hover link color  */
+.BH-logo:hover,.BH-link:hover
+{
+  color: var(--priceCard2) !important;
 }
 .BH-link-light , .BH-bg-light {
   color: var(--PrimaryColo) !important;
@@ -36,20 +49,24 @@
   color: var(--DarkPrimary) !important;
 }
 .BH-nav-btn {
-  max-width: 153px;
+  min-width: 153px;
   max-height: 46px;
-  padding: 12px 37px 12px 37px;
+  padding: 12px 37px;
   border: none;
   transition: 0.25s ease-in-out;
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.78px;
 }
 .BA-nav1 .BH-nav-btn:hover {
-  background-color: blueviolet !important;
+  background-color: var(--priceCard2) !important;
   transition: 0.25s ease-in-out;
   border-radius: 10px;
 }
 .sidebar-BA-navbar {
-  background-color: var(--PrimaryColo);
-  backdrop-filter: blur(10px);
+  background-color: var(--PrimaryColo) !important;
+  backdrop-filter: blur(20px) !important;
 }
 .BH-nav-btn-scroll {
   background-color: var(--PrimaryColo);
@@ -59,27 +76,42 @@
   background-color: var(--DarkPrimary);
   color: var(--PrimaryColo);
 }
-@media (min-width: 992px) and (max-width: 1366px) {
-  .BH-nav-btn {
-    max-width: 145px;
-  }
-}
-@media (min-width: 991px) and (max-width: 1200px) {
+
+@media (min-width: 992px) and (max-width: 1200px) {
   .BA-navbar {
     padding: 0 10% !important;
   }
   .BH-link {
-    margin-right: 38px !important;
+    margin-right: 28px !important;
+    font-size: 15px !important;
+  }
+  .BH-nav-btn {
+    min-width: min-content;
+    padding: 12px 27px;
     font-size: 15px !important;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .sidebar-BA-navbar-scroll {
     background-color: var(--DarkPrimary) !important;
+  }
+  .BH-link {
+    margin-right: 28px !important;
+    font-size: 15px !important;
+  }
+  .BH-nav-btn {
+    min-width: min-content;
+    padding: 12px 27px;
+    font-size: 15px !important;
   }
 }
 @media (max-width: 576px) {
   .BA-navbar {
-    padding: 0 5% !important;
+    padding: 0 7% !important;
+  }
+  .BH-logo
+  {
+    margin-right: 5px;
+    font-size: 18px !important;
   }
 }
