@@ -7,6 +7,7 @@ import FOOTER from '../../components/Footer/Footer'
 import Price from '../../components/Price/Price'
 import TrainProgram from './../../components/TrainProgram/TrainProgram'
 import './Courses.css'
+import Teachers from "../../components/Teachers/Teachers";
 export default function Courses() {
   return (
     <>
@@ -30,6 +31,7 @@ export default function Courses() {
        <UiDesign />
       <ProjStd />
       <TrainProgram/>
+      <Teachers />
       <Price/>
       <FOOTER />
     </>

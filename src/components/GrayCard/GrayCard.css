@@ -1,0 +1,80 @@
+.FM-main-section-7 {
+    position: relative;
+    width: 100%;
+    padding: 4.281% 12.5% 8.562% 12.5%;
+    background-color: var(--SecondColor);
+}
+.FM-main-section-7-content {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.FM-main-section-7 h2{
+    color: var(--DarkPrimary);
+    width: 49.237%;
+    font-family: 'Inter';
+    font-size: 3.625rem;
+    font-weight: 700;
+    line-height: 121%;
+    margin-bottom: 1.25%;
+}
+.FM-main-section-7-content p {
+    color: var(--DarkPrimary);
+    width: 49.306%;
+    font-family: 'Inter';
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 156%;
+    margin-bottom: 0;
+}
+.FM-main-section-7-content-see-more {
+    width: max-content;
+    height: 39.6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.FM-main-section-7-content-see-more h6{
+    width: max-content !important;
+    font-family: 'Inter';
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 21.78px;
+    margin-right: 18px;
+    margin-bottom: 0;
+}
+.FM-GrayCard-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media screen and (max-width:1366px){
+    .FM-main-section-7 h2{
+        font-size: 2.6rem;
+    }
+}
+@media screen and (max-width:1200px){
+    .FM-main-section-7 h2{
+        font-size: 2.2rem;
+    }
+    .FM-main-section-7-content p ,
+    .FM-main-section-7-content-see-more h6 {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:992px){
+    .FM-main-section-7 h2{
+        width: 100%;
+    }
+    .FM-main-section-7-content p {
+        width: 100% !important;
+        margin-bottom: 25px;
+    }
+}
+@media screen and (max-width:576px){
+    .FM-main-section-7 h2{
+        font-size: 1.8rem;
+    }
+}
