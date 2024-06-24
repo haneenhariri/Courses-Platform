@@ -14,7 +14,7 @@ export default function WHatDiscover(){
             <img src="./image/MainPageImg/WhatDiscoverImg/card_1.png" alt="" />
             <p>Photo & Film</p>
           </div>
-         
+          
           <img src="./image/MainPageImg/WhatDiscoverImg/Ellipse_gradient.png" alt="" className="img" />
           <div className="card2">
             <img src="./image/MainPageImg/WhatDiscoverImg/card_2.png" alt="" />
