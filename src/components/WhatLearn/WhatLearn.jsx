@@ -1,4 +1,3 @@
-import React from 'react'
 import {PData, divData, imgData} from '../../const/data/WhatLearnData'
 import './WhatLearn.css'
 
