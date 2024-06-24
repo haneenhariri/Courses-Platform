@@ -64,6 +64,26 @@
    right: 0;
    bottom: 5px;
 }
+@media(max-width:1200px) and (min-width:992px)
+{
+    .AM-DISCOVER .div1 h2
+    {
+        font-size: 2.2rem;
+        width: 25rem;
+        line-height: normal;
+    }
+    .AM-DISCOVER .div1 p
+    {
+        font-size: 1rem;
+    }
+    .AM-DISCOVER .div1 button
+    {
+        min-width: min-content;
+        padding: 11px;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
 @media (min-width:992px) and (max-width:1024px){
     .AM-DISCOVER  {
         padding: 190px 2.5%;}

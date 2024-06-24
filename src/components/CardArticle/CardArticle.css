@@ -1,4 +1,4 @@
-.FM-main-section-4  {
+.FM-article-section-4  {
     width: 100%;
     padding: 8.75% 18.85%;
     background-color: var(--PrimaryColo);
@@ -10,10 +10,7 @@
 .FM-main-section-4-content {
     margin: 0 auto;
 }
-.FM-main-section-4-content .FM-card {
-    width: 32% !important;
-}
-.FM-main-section-4-content h2{
+.FM-article-section-4-content h2{
     color: var(--DarkPrimary);
     font-family: 'Inter';
     font-size: 2.48rem;
@@ -24,4 +21,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+@media (min-width:1200px) {
+    .FM-article-section-4-content h2 {
+        font-size: 2.2rem;
+    }
+}
+@media (min-width:993px) {
+    .FM-article-section-4-content .FM-card {
+        width: 32% !important;
+    }
 }

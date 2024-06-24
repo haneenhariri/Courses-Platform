@@ -7,6 +7,7 @@ import FOOTER from '../../components/Footer/Footer'
 import Price from '../../components/Price/Price'
 import TrainProgram from './../../components/TrainProgram/TrainProgram'
 import './Courses.css'
+import Teachers from "../../components/Teachers/Teachers";
 import Programm from '../../components/Programms/Programms'
 import AMwhatLearn from '../../components/WhatLearnCourse/WhatLearnCourse'
 export default function Courses() {
@@ -34,6 +35,7 @@ export default function Courses() {
       <Programm />
       <ProjStd />
       <TrainProgram/>
+      <Teachers />
       <Price/>
       <FOOTER />
     </>

@@ -1,6 +1,6 @@
 .FM-card {
     width: 23.959% !important;
-    margin: 3% 0;
+    margin: 2.778% 0;
 }
 .FM-card-padding {
     padding: 2.5% !important;
@@ -15,12 +15,11 @@
     width: 100%;
 }
 .FM-card-title {
-    width: 190px;
     height: 26px;
     font-family: 'Inter';
     font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 3.19%;
+    margin-bottom: 0;
 }
 .FM-card-padding .FM-card-title {
     width: 100%;
@@ -28,7 +27,7 @@
 }
 .FM-card-footer {
     margin-top: 11px !important;
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     font-family: 'Inter';
@@ -36,21 +35,31 @@
     font-weight: 400;
     line-height: 156%;
 }
+.card-show {
+    display: flex;
+}
 .FM-card-footer p {
     width: max-content ;
     height: 28px ;
+    margin-bottom: 0;
 }
-.desc-mb {
-    margin-bottom: 71px;
+.desc-mb-normal {
+    margin-bottom: 12.825% !important;
+}
+.desc-mb-double {
+    margin-bottom: 71px !important;
 }
 @media (max-width:1366px) {
     .FM-card-title {
-        font-size: 1.4rem !important;
+        font-size: 1.3rem !important;
     }
 }
 @media (max-width:1200px) {
+    .FM-card-title {
+        font-size: 1.15rem !important;
+    }
     .FM-card-footer {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }
 @media (min-width:992px) {

@@ -10,6 +10,8 @@ import WhatLearn from '../../components/WhatLearn/WhatLearn'
 import ChooseCourse from "../../components/ChooseCourse/ChooseCourse";
 import StudentSay from "../../components/StudentSay/StudentSay";
 import FAQ from '../../components/FAQ/FAQ';
+import "./MainPage.css";  
+import GrayCard from "../../components/GrayCard/GrayCard";
 import StdProgram from "../../components/StdProgram/StdProgram";
 
 
@@ -32,6 +34,7 @@ export default function MainPage() {
       <AMTrain />
       <ChooseCourse/>
       <StudentSay/>
+      <GrayCard />
       <StdProgram/>
       <FAQ/>
       <FOOTER />
