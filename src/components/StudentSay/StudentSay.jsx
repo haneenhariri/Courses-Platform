@@ -25,12 +25,12 @@ export default function StudentSay() {
         <div className='HH-cardInfo'>
                 <img className='HH-cardImg' src="./public/image/MainPageImg/StudentSayImg/user_icon_left.svg" alt="" />
                 <div>
-                    <h3 className='HH-cardTitle'> Guy Hawkins</h3>
-                    <p className='HH-CardP'>Lifestyle</p>
+                    <h3 className='HH-cardTitle'> Jane Cooper</h3>
+                    <p className='HH-CardP'>Write</p>
                 </div>
             </div>
             <div>
-                <p className='HH-CardText'>Ugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem</p>
+                <p className='HH-CardText'>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
             </div>
         </div>
       </div>

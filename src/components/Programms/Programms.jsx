@@ -1,19 +1,37 @@
-import "./Programms.css"
-
-export default function Programms() {
-  return (
-    <section className="ma-prog">
-        <div className="ma-text-prog">
-            <h2 id="h2-prog">Can&#39;t find a suitable program?</h2>
-            <p id="p-prog">We will help you with the choice!</p>
+import './Programms.css'
+export default function Programm(){
+    const AMbutton=[
+        {
+          text1 : 'InVision'
+        },
+        {
+          text1 : 'Photoshop'
+        },
+        {
+          text1 : 'Figma'
+        },
+        {
+          text1 : 'Illustrator'
+        },
+        {
+          text1 : 'Miro'
+        },
+        {
+          text1 : 'ProtoPie'
+        }
+      ];
+    return(
+        <>
+        <section className='AM-Programm'>
+        <div className='button'>
+          {AMbutton.map((item) => (
+            <button key={item.text1}>{item.text1}</button>
+          ))}
         </div>
-        <div className="ma-sign-in">
-            <input className="ma-inp-prog" type="text" placeholder="Name"/>
-            <input className="ma-inp-prog" type="email" placeholder="Email" />
-            <button id="prog-but">Help me</button>
-            <img id="ma2-img" src="./public/image/MainPageImg/StdProgramImg/vector.png" alt="arrow" />
-        </div>
-    </section>
-  )
+      </section>
+        
+        
+        
+        </>
+    )
 }
-

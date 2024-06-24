@@ -1,6 +1,6 @@
 .FM-main-section-4  {
     width: 100%;
-    padding: 8.75% 0;
+    padding: 8.75% 18.85%;
     background-color: var(--PrimaryColo);
     background-image: url(./image/MainPageImg/HeroImg/Hero_2.png);
     background-position: center;
@@ -8,7 +8,6 @@
     background-size: cover;
 }
 .FM-main-section-4-content {
-    width: 75%;
     margin: 0 auto;
 }
 .FM-main-section-4-content .FM-card {

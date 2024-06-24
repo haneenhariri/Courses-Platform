@@ -1,28 +1,36 @@
 .AM-DISCOVER{
-    padding: 200px 12.5% ;
+    padding: 8.75% 12.5% ;
     background-color: var( --PrimaryColo);
     position: relative;  
 }
 .AM-DISCOVER .div1{
-    width: 30%;
+
     display: flex;
-    flex-direction: column;
-    gap: 17px;   
+    flex-direction: column; 
 }
 .AM-DISCOVER .div1 p{
     color: #6D6D77;
+    width: 25.35%;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: 'Inter';
+    margin-bottom: 62px;
 
 }
 .AM-DISCOVER .div1 h2{
-    font-weight: bold;
-    font-size: 2.3rem;
+    font-weight: 700;
+    font-size: 3.625rem;
+    font-family: 'Inter';
+    width: 30.91%;
+    margin-bottom: 28px;
 }
 .AM-DISCOVER .div1 button{
-    width: 34%;
-    padding: 10px;
+    width: 141px;
+    padding: 16px 36px;
     color: white;
-    background-color: black;
-    border: none;
+    background-color: #19191C;
+    border: 1px solid #19191C;
 }
 .AM-DISCOVER .card1 img {
     padding: 25px;

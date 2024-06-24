@@ -1,0 +1,208 @@
+.AM-willLearn{
+    background-color: var(--DarkPrimary);
+    padding: 30px 12.5% ;
+    display: flex;
+    color: var(--PrimaryColo);
+    position: relative;
+    overflow: hidden;
+}
+.AM-willLearn .div1 ,.AM-willLearn .parentCard{
+    width: 50%;
+}
+.AM-willLearn .parentCard {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.AM-willLearn .parentCard .cards .card{
+    background-color: var(--DarkPrimary);
+    border: none;
+    color: var(--PrimaryColo);
+    
+}
+.AM-willLearn .div1 h2{
+    font-size: 2.6rem;
+    padding-bottom: 1rem;
+}
+.AM-willLearn .div1 p ,.AM-willLearn .parentCard .cards .card p{
+    font-size: 0.9rem;
+    
+}
+.AM-willLearn .div1 .p{
+    width: 75%;
+}
+
+.AM-willLearn .parentCard .cards .card  .div{
+    position: relative;
+
+}
+
+.AM-willLearn .parentCard .cards .card  .div::after{
+    content: "";
+    border: 1px solid white;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 12.86rem;
+    top: 3px;
+
+}
+.AM-willLearn .bigCircle, .AM-willLearn .bigSquare{
+    width: 2.3rem ;
+}
+.AM-willLearn .smallCircle , .AM-willLearn .smallSquare{
+    width: 1.2rem;
+}
+.AM-willLearn  .bigCircle{
+    position: absolute;
+    top: 20.7rem;
+    left: 22rem;
+}
+.AM-willLearn .bigSquare{
+    position: absolute;
+    top: 17.3rem;
+    left: 30rem;
+}
+.AM-willLearn .smallCircle{
+    position: absolute;
+    top: 21rem;
+    right: 47rem;
+}
+.AM-willLearn .smallSquare{
+    position: absolute;
+    bottom: 4rem;
+    left: 11rem;
+}
+@media (min-width:992px) and (max-width:1024px){
+    .AM-willLearn{
+        padding: 150px 2.5%;
+    }
+    .AM-willLearn .parentCard .cards .card .div::after {
+        right: 11.8rem;
+        top: 2px;
+    }
+    .AM-willLearn .bigCircle {
+        top: 35.9rem;
+        left: 13rem;
+    }
+    .AM-willLearn .bigSquare {
+        top: 29.3rem;
+        left: 16rem;
+    }
+    .AM-willLearn .smallCircle {
+        position: absolute;
+        top: 32rem;
+        right: 38rem;
+    }
+    .AM-willLearn .smallSquare {
+        left: 7rem;
+    }
+
+
+}
+@media (min-width:768px) and (max-width:991px){
+    .AM-willLearn{
+        padding: 150px 2.5%;
+    }
+    .AM-willLearn .div1 h2 {
+        font-size: 2rem;
+    }
+    .AM-willLearn .parentCard .cards .card .div::after {
+        right: 8.36rem;
+        top: 1px;
+    }
+    .AM-willLearn .bigCircle {
+        top: 38.1rem;
+        left: 12rem;
+    }
+    .AM-willLearn .bigSquare {
+        top: 32.3rem;
+        left: 16rem;
+    }
+    .AM-willLearn .smallSquare {
+        left: 4rem;
+    }
+    .AM-willLearn .smallCircle {
+        top: 35rem;
+        right: 26rem;
+    }
+}
+@media (min-width:567px) and (max-width:767px){
+    .AM-willLearn .div1, .AM-willLearn .parentCard {
+        width: 100%;
+    }
+    .AM-willLearn{
+        flex-direction: column;
+        gap: 20px;
+    }.AM-willLearn .div1 p{
+        text-align: center;
+    }
+    .AM-willLearn .parentCard .cards .card .div::after {
+        right: 10.4rem;
+        top: 1px;
+    }
+    .AM-willLearn .bigCircle {
+        top: 35.7rem;
+        left: 8rem;
+    }
+    .AM-willLearn .bigSquare {
+        top: 27.3rem;
+        
+    }
+    .AM-willLearn .smallSquare {
+        bottom: 7rem;
+        left: 16rem;
+    }
+    .AM-willLearn .smallCircle {
+        right: 35px;
+    }
+    .AM-willLearn .div1 .p {
+        width: 100%;
+    }
+    .AM-willLearn .div1 h2 {
+        text-align: center;
+    }
+    
+
+}
+@media (min-width:300px) and (max-width:566px){
+    .AM-willLearn .div1, .AM-willLearn .parentCard {
+        width: 100%;
+    }
+    .AM-willLearn{
+        flex-direction: column;
+        gap: 20px;
+    }.AM-willLearn .div1 p{
+        text-align: center;
+        font-size: 0.7rem;
+    }
+    .AM-willLearn .parentCard .cards .card .div::after {
+        right: 4.1rem;
+        top: -2px;
+    }
+    .AM-willLearn .bigCircle {
+        top: 46.7rem;
+        left: -1rem;
+    }
+    .AM-willLearn .bigSquare {
+        top: 27.3rem;
+        left: 17rem;
+    }
+    .AM-willLearn .smallSquare {
+        left: 17rem;
+    }
+    .AM-willLearn .smallCircle {
+        right: -3px;
+    } 
+    .AM-willLearn .div1 h2 {
+        font-size: 1.6rem;
+    }
+    
+    .AM-willLearn .div1 .p {
+        width: 100%;
+    }
+    .parentCard .cards .card p{
+        font-size: 0.7rem;
+    }
+}
+

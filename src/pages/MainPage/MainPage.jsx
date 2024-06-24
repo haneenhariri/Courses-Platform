@@ -2,7 +2,7 @@ import NavBar from "../../components/NavBar/NavBar";
 import FOOTER from '../../components/Footer/Footer'
 import "./MainPage.css";
 import WHatDiscover from "../../components/WhatDiscover/WhatDiscover";
-import AMTrain from "../../components/Training/Training"; 
+import AMTrain from "../../components/Training/Training";
 import Hero from '../../components/Hero/Hero'
 import { BtnsMainData } from '../../const/data/HeroData'
 import DiscoverLearn from '../../components/DiscoverLearn/DiscoverLearn'
@@ -10,13 +10,12 @@ import WhatLearn from '../../components/WhatLearn/WhatLearn'
 import ChooseCourse from "../../components/ChooseCourse/ChooseCourse";
 import StudentSay from "../../components/StudentSay/StudentSay";
 import FAQ from '../../components/FAQ/FAQ';
-import Programms from "../../components/Programms/Programms";
+import StdProgram from "../../components/StdProgram/StdProgram";
 
 
 export default function MainPage() {
   return (
     <>
-    
       <NavBar />
       <Hero title = {'Explore thousands of hands-on creative classes.'} 
             p = {'Start learning for'} 
@@ -33,7 +32,7 @@ export default function MainPage() {
       <AMTrain />
       <ChooseCourse/>
       <StudentSay/>
-      <Programms/>
+      <StdProgram/>
       <FAQ/>
       <FOOTER />
     </>

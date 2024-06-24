@@ -4,7 +4,7 @@ export default function ChooseCourse() {
   return (
     <section className='HH-course'>
       <div className='HH-text'>
-        <div >
+        <div className='HH-text-div' >
           <h2 className='HH-info'>50%</h2>
           <span className='HH-span'>24 Days</span>
           <span className='HH-span'>17:44:16</span>
