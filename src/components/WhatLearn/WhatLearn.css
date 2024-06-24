@@ -16,7 +16,7 @@
 .FM-main-section-1-content .FM-main-section-1-content-left {
     width: 40.834%;
 }
-.FM-main-section-1-content h1{
+.FM-main-section-1-content h2{
     color: var(--SecondColor);
     width: 91.666666%;
     font-family: 'Inter';
@@ -46,7 +46,7 @@
     height: max-content;
     border-bottom: 4px solid var(--PrimaryColo);
 }
-.FM-main-section-1-content .FM-main-section-1-content-right div h1{
+.FM-main-section-1-content .FM-main-section-1-content-right div h2{
     margin-bottom: 0 !important;
     width: max-content !important;
 }
@@ -75,7 +75,7 @@
     right: 20.94%;
 }
 @media screen and (max-width:1500px){
-    .FM-main-section-1-content h1{
+    .FM-main-section-1-content h2{
         font-size: 2.5rem;
     }
 }

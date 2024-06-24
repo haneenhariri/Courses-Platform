@@ -13,6 +13,8 @@ import WhatLearn from '../../components/WhatLearn/WhatLearn'
 import ChooseCourse from "../../components/ChooseCourse/ChooseCourse";
 import StudentSay from "../../components/StudentSay/StudentSay";
 import FAQ from '../../components/FAQ/FAQ';
+import "./MainPage.css";  
+import GrayCard from "../../components/GrayCard/GrayCard";
 
 
 export default function MainPage() {
@@ -34,6 +36,7 @@ export default function MainPage() {
       <AMTrain />
       <ChooseCourse/>
       <StudentSay/>
+      <GrayCard />
       <FAQ/>
       <FOOTER />
     </>
