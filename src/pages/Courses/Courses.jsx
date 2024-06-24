@@ -8,6 +8,8 @@ import Price from '../../components/Price/Price'
 import TrainProgram from './../../components/TrainProgram/TrainProgram'
 import './Courses.css'
 import Teachers from "../../components/Teachers/Teachers";
+import Programm from '../../components/Programms/Programms'
+import AMwhatLearn from '../../components/WhatLearnCourse/WhatLearnCourse'
 export default function Courses() {
   return (
     <>
@@ -29,6 +31,8 @@ export default function Courses() {
             show = {'OE-show'}
       />
        <UiDesign />
+      <AMwhatLearn />
+      <Programm />
       <ProjStd />
       <TrainProgram/>
       <Teachers />
