@@ -46,3 +46,18 @@
     }
         
 }
+@media (min-width:1920px){
+    .AM-Programm .button button {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .AM-Programm .button button {
+        padding: 8px 116px;
+    }
+    .AM-Programm .button{
+        gap: 21px;
+    }
+
+
+
+}
