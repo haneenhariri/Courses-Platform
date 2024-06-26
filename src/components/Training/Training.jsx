@@ -6,16 +6,20 @@ export default function AMTrain() {
           id: '1.',
           text1:'Study the material on the platform at any convenient time'
           },
-          {id: '2.',
-          text1:'Do practical tasks, get feedback and consolidate knowledge'}]
+          {
+            id: '3.',
+            text1:'Prepare a project and add it to your portfolio'
+          }
+          ]
         },
         { ID :1 ,
-          div : [{
-          id: '3.',
-          text1:'Prepare a project and add it to your portfolio'
-        },
-        {id: '4.',
-          text1:'Prepare a project and add it to your portfolio'}]
+          div : [{id: '2.',
+            text1:'Do practical tasks, get feedback and consolidate knowledge'},
+            {id: '4.',
+              text1:'Prepare a project and add it to your portfolio'}
+           ]
+        
+          
         }
   
       ];
@@ -23,7 +27,8 @@ export default function AMTrain() {
       <>
        
         <section className="AM-traning">
-          <h2>How is the training going</h2>
+          <div className='h2'><h2>How is the training going</h2></div>
+          
   
           
           <div className="parentCard"> 

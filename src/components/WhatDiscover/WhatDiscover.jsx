@@ -12,13 +12,13 @@ export default function WHatDiscover(){
           
           <div className="card1">
             <img src="./image/MainPageImg/WhatDiscoverImg/card_1.png" alt="" />
-            <p>Photo & Film</p>
+            <h3>Photo & Film</h3>
           </div>
-         
+          
           <img src="./image/MainPageImg/WhatDiscoverImg/Ellipse_gradient.png" alt="" className="img" />
           <div className="card2">
             <img src="./image/MainPageImg/WhatDiscoverImg/card_2.png" alt="" />
-            <p>UI/UX Design</p>
+            <h3>UI/UX Design</h3>
           </div>   
       </section>
       

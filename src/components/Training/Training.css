@@ -106,3 +106,23 @@
         
 
 }
+@media (min-width:1920px){
+    .AM-traning .h2{
+        width: 40%;
+    }
+    .AM-traning h2 {
+        font-size: 4.5rem;
+    }
+    .AM-traning .parentCard .cards .card h3{
+        font-size: 3.75rem;
+    }
+    .AM-traning .parentCard .cards{
+        width: 38%;
+    }
+    .AM-traning .card .line::after {
+        bottom: 52%;
+    }
+    .AM-traning .parentCard {
+        justify-content: space-evenly;
+    }
+}

@@ -179,3 +179,27 @@
     }
   
 }
+@media (min-width:1920px){
+    .AM-DISCOVER{
+        padding: 312px 12.5%;
+    }
+    .AM-DISCOVER .card1{
+        height: 456px;
+        right: 38%;
+        top: 37%;
+
+    }
+    .AM-DISCOVER .card1 img{
+        width: 100%;
+        padding: 36px;
+    }
+    .AM-DISCOVER .card2{
+        height: 527px;
+       
+    }
+    .AM-DISCOVER .card2 img{
+        width: 100%;
+        padding: 36px;
+    }
+
+}
