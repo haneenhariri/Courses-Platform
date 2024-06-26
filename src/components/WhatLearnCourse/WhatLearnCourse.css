@@ -9,6 +9,7 @@
 .AM-willLearn .div1 ,.AM-willLearn .parentCard{
     width: 50%;
 }
+
 .AM-willLearn .parentCard {
     display: flex;
     justify-content: space-between;
@@ -26,10 +27,12 @@
 }
 .AM-willLearn .div1 p ,.AM-willLearn .parentCard .cards .card p{
     font-size: 0.9rem;
+    color: #EFEFF2;
     
 }
 .AM-willLearn .div1 .p{
     width: 75%;
+
 }
 
 .AM-willLearn .parentCard .cards .card  .div{
@@ -203,6 +206,52 @@
     }
     .parentCard .cards .card p{
         font-size: 0.7rem;
+    }
+}
+@media (min-width:1920px){
+    .AM-willLearn{
+        padding: 168px 12.5%;
+    }
+    .AM-willLearn .div1 h2 {
+        font-size: 3.6rem;
+    }
+    .AM-willLearn .div1 .p {
+        width: 60%;
+    }
+    .AM-willLearn .parentCard .cards .card .div::after {
+        right: 18.96rem;
+        top: 2px;
+    }
+    .AM-willLearn .parentCard .cards .card .div h3{
+        padding-left: 10px;
+    }
+    .parentCard .cards .card p {
+        font-size: 1.2rem;
+    }
+    .AM-willLearn .bigCircle {
+        top: 35.91rem;
+        left: 22.7rem;
+    }
+    .AM-willLearn .bigCircle, .AM-willLearn .bigSquare {
+        width: 2.7rem;
+    }
+    .AM-willLearn .smallCircle, .AM-willLearn .smallSquare {
+        width: 1.9rem;
+    }
+    .AM-willLearn .div1 p, .AM-willLearn .parentCard .cards .card p {
+        font-size: 1rem;
+    
+    }
+    .AM-willLearn .smallSquare {
+        left: 13.3rem;
+    }
+    .AM-willLearn .bigSquare {
+        top: 29.7rem;
+        left: 31.8rem;
+    }
+    .AM-willLearn .smallCircle {
+        top: 32.8rem;
+        right: 80rem;
     }
 }
 
