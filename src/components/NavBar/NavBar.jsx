@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Nav, Navbar, Offcanvas } from "react-bootstrap"
+import { Nav, Navbar, NavbarBrand, Offcanvas } from "react-bootstrap"
 import "./NavBar.css"
 import { Link } from "react-router-dom"
 
@@ -27,9 +27,9 @@ export default function NavBar() {
     <>
       <Navbar className={`BA-navbar ${header? 'BA-navbar-scroll' : 'BA-navbar-normal'}`} expand="lg" fixed="top">
 
-          <Navbar.Brand className={`BH-logo ${header ? 'BH-link-light' : 'BH-link-dark'}`} href="/" >
+          <NavbarBrand className={`BH-logo ${header ? 'BH-link-light' : 'BH-link-dark'}`} to={'/'} >
             <img className="BA-img" src={`./image/NavImg/logo${header ? "-2" : ""}.svg`} /> UpDate
-          </Navbar.Brand>
+          </NavbarBrand>
 
           <Navbar.Toggle className="border-0" aria-controls="offcanvasNavbar-expand-lg" data-bs-theme={`${header ? 'dark' : 'white'}`} />
 
@@ -43,9 +43,9 @@ export default function NavBar() {
 
               <Offcanvas.Title id="offcanvasNavbarLabel-expand-lg">
 
-                <Navbar.Brand to={'/'} className={`BH-logo ${header ? 'BH-link-light' : 'BH-link-dark'}`}>
+                <NavbarBrand to={'/'} className={`BH-logo ${header ? 'BH-link-light' : 'BH-link-dark'}`}>
                   <img className='BA-img' src={`./image/NavImg/logo${header ? "-2" : ""}.svg`} /> UpDate
-                </Navbar.Brand>
+                </NavbarBrand>
 
               </Offcanvas.Title>
 

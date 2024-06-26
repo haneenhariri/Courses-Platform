@@ -1,4 +1,3 @@
-import React from 'react'
 import Card from './../Card/Card.jsx'
 import {discoverData , H6Data} from '../../const/data/CardData.jsx'
 import './DiscoverLearn.css'

@@ -31,7 +31,9 @@
 }
 .AM-footer .footer1 .update .p1{
     display: inline;
-    font-weight: bold;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21.78px;
 }
 .AM-footer .footer2{
     display: flex;
