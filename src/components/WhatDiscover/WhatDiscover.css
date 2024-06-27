@@ -1,15 +1,19 @@
 .AM-DISCOVER{
-    padding: 186px 12.5% 238px 12.5%;
+    padding: 8.75% 12.5%;
     background-color: var( --PrimaryColo);
     display: flex;
-    gap: 163px; 
+    justify-content: space-between;
     position: relative;
+    overflow: hidden;
+    gap: 8.5%;
+    /* flex-wrap: wrap; */
 }
 .AM-DISCOVER .div1{
 
     display: flex;
     flex-direction: column; 
     margin-top: 85px;
+    width: 27.8125rem;
 }
 .AM-DISCOVER .div1 p{
     color: #6D6D77;
@@ -18,12 +22,15 @@
     line-height: 28px;
     font-family: 'Inter';
     margin-bottom: 62px;
+    width: 22.8125rem;
 }
 .AM-DISCOVER .div1 h2{
     font-weight: 700;
     font-size: 3.625rem;
     font-family: 'Inter';
     margin-bottom: 28px;
+    line-height: 70.19px;
+    width: 27.8125rem;
 }
 .AM-DISCOVER .div1 button{
     width: 141px;
@@ -41,7 +48,7 @@
     background-color: white;
     text-align: center;
     height: 456px;
-    width: 345px;
+    width: 21.5625rem;
     margin-top: 141px;
    
 }
@@ -49,12 +56,11 @@
     background-color: white;
     text-align: center; 
     height: 527px;
-    width: 467px;
+    width: 29.1875rem;
     
 }
 
 .AM-DISCOVER .img{
-   width: 40%;
    position: absolute;
    right: 2.85%;
    bottom: 7.69%;
@@ -63,6 +69,8 @@
     display: flex;
     gap: 20px;
     z-index: 1;
+    width:52rem;
+    
 }
 
 @media (min-width:992px) and (max-width:1200px)
