@@ -1,7 +1,7 @@
 .FM-main-section-1 {
     position: relative;
     width: 100%;
-    padding: 8.562% 12.5%;
+    padding: 8.75% 12.5%;
     background-color: var(--DarkPrimary);
 }
 .FM-main-section-1-content {
@@ -22,7 +22,7 @@
     font-family: 'Inter';
     font-size: 3.625rem;
     font-weight: 700;
-    line-height: 121%;
+    line-height:70.19px;
     margin-bottom: 4.764%;
 }
 .FM-main-section-1-content p{
@@ -31,7 +31,7 @@
     font-family: 'Inter';
     font-size: 1.125rem;
     font-weight: 400;
-    line-height: 156%;
+    line-height: 28px;
 }
 .FM-main-section-1-content .FM-main-section-1-content-left p:nth-child(2){
     margin-bottom: 4.084%;
@@ -51,7 +51,7 @@
     width: max-content !important;
 }
 .FM-main-section-1-content .FM-main-section-1-content-right div p{
-    margin-bottom: 11.92% !important;
+    margin-bottom: 22px !important;
     width: 71px !important;
 }
 .FM-Rectangle-1 {
@@ -74,20 +74,56 @@
     bottom: 13.51%;
     right: 20.94%;
 }
-@media screen and (max-width:1500px){
+@media(max-width:1500px) and (min-width:1200px){
     .FM-main-section-1-content h2{
-        font-size: 2.5rem;
+        font-size: 2.5rem;  
+    }
+}
+@media(max-width:1200px) and (min-width:992px){
+    .FM-main-section-1-content h2{
+        font-size: 2.2rem;
+        line-height: normal;
+    }
+    .FM-main-section-1-content p{
+        font-size: 1rem;
+    }
+}
+@media (max-width:992px) and (min-width:768px)
+{
+    .FM-main-section-1-content h2{
+        font-size: 2.2rem;
+        line-height: normal;
+    }
+    .FM-main-section-1-content p{
+        font-size: 0.80rem;
+        line-height: 20px;
+    }
+}
+@media (max-width:768px) and (min-width:576px)
+{
+    .FM-main-section-1-content h2{
+        font-size: 2.2rem;
+        line-height: normal;
+    }
+    .FM-main-section-1-content p{
+        font-size: 0.80rem;
+        line-height: 20px;
+    }
+}
+@media (max-width:576px) and (min-width:300px)
+{
+    .FM-main-section-1-content h2{
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+        .FM-main-section-1-content p{
+        font-size: 0.80rem;
+        line-height: 20px;
     }
 }
 @media screen and (max-width:1200px) {
     .FM-main-section-1-content .FM-main-section-1-content-left {
         width: 55%;
-    }
-    .FM-main-section-1-content h1{
-        font-size: 2.2rem;
-    }
-    .FM-main-section-1-content p{
-        font-size: 1rem;
     }
     .FM-main-section-1-content .FM-main-section-1-content-right {
         width: 40%;
@@ -101,9 +137,6 @@
     .FM-main-section-1-content .FM-main-section-1-content-right div {
         width: 100% !important;
         margin: 20px 0;
-    }
-    .FM-main-section-1-content p{
-        font-size: 0.8rem;
     }
     .FM-Rectangle-1 {
         left: 12.61%;

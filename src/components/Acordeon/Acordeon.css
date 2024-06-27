@@ -14,11 +14,11 @@
 .accordion-button,.accordion-body{
     width: 75%;
     padding:0 !important;
-    background-color: var(--PrimaryColo) !important;
-    font-size: 1rem !important;
+    background-color: transparent !important;
+    font-size: 1.5rem !important;
     font-family: 'Inter' !important;
     font-weight: 700;
-    line-height: 1.62rem !important;
+    line-height: 26px !important;
 }
 .accordion-button:focus{
     box-shadow: none !important;
@@ -41,8 +41,8 @@
 }
 .HH-item
 {
-    background-color: var(--PrimaryColo) !important;
-    padding: 4% 0;
+    background-color: transparent !important;
+    padding: 4.25rem 0;
     border-top: 2px solid var(--DarkPrimary) !important;
 }
 
@@ -63,10 +63,25 @@
 }
 @media (max-width:1200px) and (min-width:992px)
 {
-
+    .accordion-button,.accordion-body
+    {
+        font-size: 1.3rem !important;
+    }
+    .HH-item
+    {
+        padding: 3rem 0;
+    }
 }
 @media (max-width:992px)and (min-width:768px)
 {
+    .accordion-button,.accordion-body
+    {
+        font-size: 1.2rem !important;
+    }
+    .HH-item
+    {
+        padding: 2.5rem 0;
+    }
     .month
     {
         padding: 9px 9px;
@@ -78,13 +93,16 @@
 }
 @media (max-width:768px) and (min-width:576px)
 {
-
-    .HH-title
+    .accordion-button,.accordion-body
     {
-        font-family: 'Inter';
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 25px;
+        font-size: 1rem !important;
+    }
+    .HH-item
+    {
+        padding: 2rem 0;
+    }
+    .accordion {
+        --bs-accordion-btn-icon-width: 1rem !important;
     }
     .month
     {
@@ -98,12 +116,16 @@
 @media (max-width:576px) and (min-width:300px)
 {
 
-    .HH-title
+    .accordion-button,.accordion-body
     {
-        font-family: 'Inter';
-        font-weight: 100;
-        font-size: small !important;
-        line-height: normal;
+        font-size: 0.8rem !important;
+    }
+    .HH-item
+    {
+        padding: 1.5rem 0;
+    }
+    .accordion {
+        --bs-accordion-btn-icon-width: 1rem !important;
     }
     .month
     {

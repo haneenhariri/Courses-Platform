@@ -5,13 +5,13 @@ export default function StudentSay() {
     <section className='HH-Std'>
       <h2 className='HH-h2'>What our students have to say</h2>
       <div className='HH-icon'>
-        <img className='HH-icon-arow' src="./public/image/MainPageImg/StudentSayImg/Icon_arrow_left.svg" alt="" />
-        <img className='HH-icon-arow' src="./public/image/MainPageImg/StudentSayImg/Icon_arow_right.svg" alt="" />
+        <img className='HH-icon-arow' src="./image/MainPageImg/StudentSayImg/Icon_arrow_left.svg" alt="" />
+        <img className='HH-icon-arow' src="./image/MainPageImg/StudentSayImg/Icon_arow_right.svg" alt="" />
       </div>
       <div className='HH-cards'>
         <div className='HH-card'>
             <div className='HH-cardInfo'>
-                <img className='HH-cardImg' src="./public/image/MainPageImg/StudentSayImg/user_icon_left.svg" alt="" />
+                <img className='HH-cardImg' src="./image/MainPageImg/StudentSayImg/user_icon_left.svg" alt="" />
                 <div>
                     <h3 className='HH-cardTitle'> Guy Hawkins</h3>
                     <p className='HH-CardP'>Lifestyle</p>
@@ -23,7 +23,7 @@ export default function StudentSay() {
         </div>
         <div className='HH-card'>
         <div className='HH-cardInfo'>
-                <img className='HH-cardImg' src="./public/image/MainPageImg/StudentSayImg/user_icon_left.svg" alt="" />
+                <img className='HH-cardImg' src="./image/MainPageImg/StudentSayImg/user_icon_left.svg" alt="" />
                 <div>
                     <h3 className='HH-cardTitle'> Jane Cooper</h3>
                     <p className='HH-CardP'>Write</p>

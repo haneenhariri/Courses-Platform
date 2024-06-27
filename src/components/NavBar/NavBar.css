@@ -36,6 +36,7 @@
   line-height: 21.78px;
   font-family: 'Inter';
   padding-top: 11px !important;
+  text-decoration: none;
 }
 /* Hover link color  */
 .BH-logo:hover,.BH-link:hover

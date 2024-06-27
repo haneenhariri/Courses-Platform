@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
-import { Nav, Navbar, Offcanvas } from "react-bootstrap"
+import { Nav, Navbar, NavbarBrand, Offcanvas } from "react-bootstrap"
 import "./NavBar.css"
+import { Link } from "react-router-dom"
 
 export default function NavBar() {
   const [header, setHeader] = useState(false)
@@ -26,9 +27,11 @@ export default function NavBar() {
     <>
       <Navbar className={`BA-navbar ${header? 'BA-navbar-scroll' : 'BA-navbar-normal'}`} expand="lg" fixed="top">
 
-          <Navbar.Brand className={`BH-logo ${header ? 'BH-link-light' : 'BH-link-dark'}`} href="/" >
+          <NavbarBrand className={`BH-logo ${header ? 'BH-link-light' : 'BH-link-dark'}`}  >
+            <Link to={'/'}>
             <img className="BA-img" src={`./image/NavImg/logo${header ? "-2" : ""}.svg`} /> UpDate
-          </Navbar.Brand>
+            </Link>
+          </NavbarBrand>
 
           <Navbar.Toggle className="border-0" aria-controls="offcanvasNavbar-expand-lg" data-bs-theme={`${header ? 'dark' : 'white'}`} />
 
@@ -42,9 +45,9 @@ export default function NavBar() {
 
               <Offcanvas.Title id="offcanvasNavbarLabel-expand-lg">
 
-                <Navbar.Brand href="#" className={`BH-logo ${header ? 'BH-link-light' : 'BH-link-dark'}`}>
-                  <img className='BA-img' src={`./image/NavImg/logo${header ? "-2" : ""}.svg`} /> UpDate
-                </Navbar.Brand>
+                <NavbarBrand  className={`BH-logo ${header ? 'BH-link-light' : 'BH-link-dark'}`}>
+                  <Link to={'/'}><img className='BA-img' src={`./image/NavImg/logo${header ? "-2" : ""}.svg`} /> UpDate</Link>
+                </NavbarBrand>
 
               </Offcanvas.Title>
 
@@ -54,29 +57,29 @@ export default function NavBar() {
 
               <Nav className=" flex-grow-1 pe-3 BA-nav d-flex justify-content-start">
                 
-                <Nav.Link className={`BH-link ${header ? 'BH-link-light' : 'BH-link-dark'}`} href="./courses" >
-                  Courses <img className='BH-icon-dropdown' src={`./image/NavImg/${header ? 'Icon CoursesWhite' : 'Icon Courses'}.svg`} />
-                </Nav.Link>
+                <Link className={`BH-link ${header ? 'BH-link-light' : 'BH-link-dark'}`} to={'/courses'}>
+                  Courses <img className='BH-icon-dropdown' src={`./image/NavImg/${header ? 'Icon CoursesWhite' : 'Icon Courses'}.svg`} /> 
+                </Link>
 
-                <Nav.Link className={`BH-link ${header ? 'BH-link-light' : 'BH-link-dark'}`} href="./blog" >
+                <Link className={`BH-link ${header ? 'BH-link-light' : 'BH-link-dark'}`} to={'/blog'} >
                   Blog
-                </Nav.Link>
+                </Link>
 
-                <Nav.Link className={`BH-link ${header ? 'BH-link-light' : 'BH-link-dark'}`} href="./dash" >
+                <Link className={`BH-link ${header ? 'BH-link-light' : 'BH-link-dark'}`} to={'/dash'} >
                   Dashboard
-                </Nav.Link>
+                </Link>
 
               </Nav>
 
               <Nav className="BA-nav1">
 
-                <Nav.Link className={`BH-link ${header ? 'BH-link-light' : 'BH-link-dark'}`} href="#" >
+                <Link className={`BH-link ${header ? 'BH-link-light' : 'BH-link-dark'}`} to={'#'} >
                   En <img className='BH-icon-dropdown'  src={`./image/NavImg/${header ? 'Icon CoursesWhite' : 'Icon Courses'}.svg`} />
-                </Nav.Link>
+                </Link>
 
-                <Nav.Link className={`BH-link ${header ? 'BH-link-light' : 'BH-link-dark'}`} href="#">
+                <Link className={`BH-link ${header ? 'BH-link-light' : 'BH-link-dark'}`} to={'#'}>
                   Sign In
-                </Nav.Link>
+                </Link>
 
                 <button className={`BH-nav-btn mt-3 mt-lg-0 ${header ? 'BH-nav-btn-scroll' : 'BH-nav-btn-normal'}`}>Trial free</button>
               </Nav>
