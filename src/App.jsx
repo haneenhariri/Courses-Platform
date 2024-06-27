@@ -4,16 +4,16 @@ import Courses from './pages/Courses/Courses'
 import Blog from './pages/Blog/Blog'
 import ArticlePage from './pages/ArticlePage/ArticlePage'
 import './../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import {BrowserRouter as Router, Route,Routes } from 'react-router-dom'
+import { Route,Routes } from 'react-router-dom'
 import Dashboard from './pages/Dashboard/Dashboard'
-import DashArticles from './components/DashArticles/DashArticles'
-import AddStdSay from './components/AddStdSay/AddStdSay'
-import AddArticle from './components/AddArticle/AddArticle'
-import EditStd from './components/EditStd/EditStd'
-import EditArticle from './components/EditArticle/EditArticle'
-import ShowStd from './components/ShowStd/ShowStd'
-import ShowArticle from './components/ShowArticle/ShowArticle'
-import DashStdSay from './components/DashStdSay/DashStdSay'
+import DashArticlesList from './components/DashBoardComp/DashArticle/DashArticlesList/DashArticles'
+import AddStdSay from './components/DashBoardComp/StudentReviews/AddStdSay/AddStdSay'
+import AddArticle from './components/DashBoardComp/DashArticle/AddArticle/AddArticle'
+import EditStd from './components/DashBoardComp/StudentReviews/EditStd/EditStd'
+import EditArticle from './components/DashBoardComp/DashArticle/EditArticle/EditArticle'
+import ShowStd from './components/DashBoardComp/StudentReviews/ShowStd/ShowStd'
+import ShowArticle from './components/DashBoardComp/DashArticle/ShowArticle/ShowArticle'
+import DashStdSay from './components/DashBoardComp/StudentReviews/DashStdSay/DashStdSay'
 
 function App() {
   
@@ -27,15 +27,14 @@ function App() {
         <Route path='dash' element={<Dashboard/>}>
           <Route index element={<DashStdSay/>}/>
           <Route path='DashStdSay' element={<DashStdSay/>}/>
-          <Route path='dashArticle' element={<DashArticles/>} />
+          <Route path='DashStdSay/add' element={<AddStdSay/>}/>
+          <Route path='DashStdSay/edit/:id' element={<EditStd/>}/>
+          <Route path='DashStdSay/show/:id' element={<ShowStd/>}/>
+          <Route path='DashArticle' element={<DashArticlesList/>}/>
+          <Route path='DashArticle/add' element={<AddArticle/>}/>
+          <Route path='DashArticle/edit/:id' element={<EditArticle/>}/>
+          <Route path='DashArticle/show/:id' element={<ShowArticle/>}/>
         </Route>
-
-
-{/*         <Router>
-          <Routes>
-            
-          </Routes>
-        </Router> */}
       </Routes>
     </>
   )
