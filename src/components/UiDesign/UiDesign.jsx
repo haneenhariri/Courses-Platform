@@ -5,10 +5,10 @@ const UiDesign = () => {
     <div className="BA-Section">
       <div className="BA-UiDesign">
         <div className="BA-Profession">
-          <h3>
+          <h2>
             Profession <br />
             UI/UX designer
-          </h3>
+          </h2>
           <p>
             At vero eos et accusamus et iusto odio dignissimos ducimus qui
             blanditiis occaecati cupiditate non provident, similique sunt in
@@ -19,12 +19,12 @@ const UiDesign = () => {
         <div className="numbar"> 
 
         <div className="BA-Salary">
-          <h1>5 000 $</h1>
+          <h2>5 000 $</h2>
           <p>Salary</p>
           <span>Nam libero tempore, cum soluta nobis est</span>
         </div>
         <div className="BA-Salary1">
-          <h1>4 225</h1>
+          <h2>4 225</h2>
           <p>Vacancies</p>
           <span>Vero eos et accusamus</span>
         </div>

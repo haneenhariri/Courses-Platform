@@ -1,4 +1,3 @@
-import React from 'react'
 import Card from '../Card/Card'
 import {ProjStdData} from '../../const/data/CardData'
 import './ProjStd.css'

@@ -1,4 +1,3 @@
-import React from 'react'
 import Card from './../Card/Card.jsx'
 import {TeachersData} from '../../const/data/CardData.jsx'
 import './Teachers.css'

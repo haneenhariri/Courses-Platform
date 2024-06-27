@@ -21,6 +21,8 @@
   transition: 0.25s ease-in-out;
   padding-top:6px !important;
   padding-bottom: 11px;
+  text-decoration: none;
+
 }
 .BA-img {
   margin-right: 14px !important;
@@ -65,10 +67,7 @@
   transition: 0.25s ease-in-out;
   border-radius: 10px;
 }
-.sidebar-BA-navbar {
-  background-color: var(--PrimaryColo) !important;
-  backdrop-filter: blur(20px) !important;
-}
+
 .BH-nav-btn-scroll {
   background-color: var(--PrimaryColo);
   color: var(--DarkPrimary);
@@ -104,6 +103,10 @@
     min-width: min-content;
     padding: 12px 27px;
     font-size: 15px !important;
+  }
+  .sidebar-BA-navbar {
+    background-color: var(--PrimaryColo) !important;
+    backdrop-filter: blur(20px) !important;
   }
 }
 @media (max-width: 576px) {
