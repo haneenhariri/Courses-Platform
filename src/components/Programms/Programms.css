@@ -1,21 +1,24 @@
 .AM-Programm .button{
     display: flex;
-    gap: 5rem;
+    gap: 21px;
     padding: 30px 0;
     overflow: hidden;
 }
 .AM-Programm .button button{
     outline: none;
-    padding: 4px 51px;
+    padding: 8px 116px;
     background-color: white;
+    font-size: 18px;
+    font-weight: bold;
 }
-@media (min-width:992px) and (max-width:1024px){
+
+@media (min-width:992px) and (max-width:1200px){
     .AM-Programm .button button {
         padding: 3px 41px;
         background-color: white;
     }
     .AM-Programm .button {
-        gap: 2rem;
+        gap: 1rem;
     }
 }
 @media (min-width:768px) and (max-width:991px){
@@ -23,12 +26,14 @@
         padding: 4px 21px;
     }
     .AM-Programm .button {
-        gap: 2rem;
+        gap: 1rem;
     }
 }
 @media (min-width:567px) and (max-width:767px){
     .AM-Programm .button {
         gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .AM-Programm .button button {
         padding: 2px 11px;
@@ -40,24 +45,10 @@
     }
     .AM-Programm .button{
         flex-wrap: wrap;
+        justify-content: center;
     }
     .AM-Programm .button {
         gap: 4px;
     }
         
-}
-@media (min-width:1920px){
-    .AM-Programm .button button {
-        font-size: 18px;
-        font-weight: bold;
-    }
-    .AM-Programm .button button {
-        padding: 8px 116px;
-    }
-    .AM-Programm .button{
-        gap: 21px;
-    }
-
-
-
 }
