@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+.custom-form {
+  background-color: white;
+  padding-block: 80px;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 30px;
+  border-radius: 5px;
+  max-width: 728px;
+   font-family: "IBM Plex Sans"
+}
+.custom-form h2 {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 110px;
+  color: black;
+}
+
+.custom-form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+
+.custom-form label p {
+  color: #6f7482;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+.custom-form label p span {
+  color: #ed0131;
+}
+
+.custom-form label input,
+.custom-form label textarea {
+  resize: none;
+  padding-block: 5px;
+  padding-inline: 10px;
+  background-color: #f8fafc;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+.custom-form label input:focus,
+.custom-form label textarea:focus {
+  outline: 1px solid #999;
+}
+
+.custom-form label textarea {
+  height: 150px;
+}
+
+.custom-form label textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-form button {
+  width: fit-content;
+  padding-block: 11px;
+  padding-inline: 70px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: #504dee;
+  color: white;
+  margin-inline: auto;
+  margin-top: 50px;
+}
+@media(max-width:900px){
+  .custom-form label input,
+.custom-form label textarea {
+  width: 100%;
+}
+}
