@@ -19,15 +19,21 @@
     gap: 12px;
     font-size: 18px;
 }
-.space{
+.AM-footer .space{
     padding-bottom: 28px;
     margin-bottom: 0;
+    font-family: 'Inter';
+    line-height: 21.78px;
+    font-weight: 600;
+    font-size: 18px;
 }
 .AM-footer .footer1 a{
     text-decoration: none;
     cursor: pointer;
     color: var(--SecondColor);
+    
 }
+
 .AM-footer .footer1 .update .p1{
     display: inline;
     font-weight: 800;
@@ -40,9 +46,12 @@
     padding: 100px 0 0 36%;
     color:  #6D6D77;
 }
-.size{
+.AM-footer .footer1 .size{
     font-size: 24px;
     display: block;
+    font-family: 'Inter';
+    font-weight: 600;
+    line-height: 29.05px;
 }
 .AM-footer .footer1 .logo{
     width: 35px;
@@ -59,24 +68,36 @@
 .AM-footer .footer1 .update .a{
     padding-bottom: 28px;
 }
-.AM-footer .footer1 p{
-    font-size: 18px;
-    font-weight: bold;
-}
+
 .AM-footer .footer2 p{
     font-size: 18px;
 }
-.AM-footer .footer1 ul li{
+.AM-footer .footer1 ul li , .AM-footer .footer1 a{
     color: var(--PrimaryColo);
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 28px;
 }
 
-@media (min-width: 768px) and (max-width: 1200px){
-    .AM-footer .footer1{
-        padding:30px 5% ;
-        gap: 20px;
-    }
+@media (min-width: 768px) and (max-width: 992px){
+    
     .AM-footer{
         padding: 62px 12.5%;
+    }
+    
+    .AM-footer .footer2 {
+        gap: 16px;
+        padding: 88px 0 0 12%;
+        
+    }
+    .AM-footer p , .AM-footer a , .AM-footer span , .AM-footer ul li{
+        font-size: 0.80rem !important ;
+        font-weight: 400 !important;
+        line-height: 20px !important;
+    }  
+    .AM-footer .footer1 .update .icon img{
+        width: 1.125rem;
     }
 }
 @media (min-width: 576px) and (max-width: 767px){
@@ -95,11 +116,20 @@
         right: 98px;
         
     }
+    .AM-footer{
+        padding: 62px 12.5%;
+    }
     .AM-footer .footer2{
         padding: 20px 0 20px 21% ;
     }
-    
-
+    .AM-footer p , .AM-footer a ,.AM-footer span, .AM-footer ul li {
+        font-size: 0.80rem !important ;
+        font-weight: 400 !important;
+        line-height: 20px !important;
+    }    
+    .AM-footer .footer1 .update .icon img{
+        width: 1.125rem;
+    }
 
 }
 @media (min-width: 300px) and (max-width: 575px){
@@ -116,5 +146,14 @@
             
         
     }
+    .AM-footer p , .AM-footer a , .AM-footer span , .AM-footer ul li{
+        font-size: 0.80rem !important ;
+        font-weight: 400 !important;
+        line-height: 20px !important;
+    }  
+    .AM-footer .footer1 .update .icon img{
+        width: 1.125rem;
+    }
+
 }
 
