@@ -11,6 +11,7 @@ export default function Price(){
               return (
                 
                     <div className={item.class} key={index}>
+                      <div>
                       <h2 className='OE_price_h2'>
                       { item.title}
                       </h2>
@@ -19,15 +20,14 @@ export default function Price(){
                           <li className='OE_li_2'>{item.item2}</li>
                           <li className='OE_li_3'>{item.item3}</li>
                           <li className='OE_li_4'>{item.item4}</li>
-                          {item.item5 !== ' ' && <li className='OE_li_5'>{item.item5}</li>}
+                          {item.item5 !== ' ' && <li classNa me='OE_li_5'> {item.item5}</li>}
                         </ul>
-
-
-                    
+                      </div>
+                      <div>
                       <h3 className='OE_price1'>{item.price1}</h3>
                       <h2 className='OE_price2'>{item.price2}</h2>
                       <button className='OE_price_button'>Choose</button>
-                      
+                      </div>
                   </div>   
 
                   

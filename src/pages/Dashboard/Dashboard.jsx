@@ -1,4 +1,5 @@
-import Sidebar from './components/DashBordComp/Sidebar/Sidebar.jsx'
+import Sidebar from "../../components/DashBoardComp/Sidebar/Sidebar";
+
 
 export default function Dashboard() {
   return (

@@ -53,8 +53,7 @@ export default function Categorie() {
         };
     return (
     <section className="categorie-mj">
-        <nav className="nav-mj"> 
-                
+        <nav className="nav-mj">               
                 <ul id="ul-mj-1">
                     <li id="first-li-mj">
                         <a  href="#">All</a>
@@ -87,7 +86,7 @@ export default function Categorie() {
                         </a>
                     </li>
                 </ul>
-    </nav>
+        </nav>
         {Object.entries(text_ma).map(([id, text_ma]) => (
             <div className="card-mj" key={id}>
                 <img className="img-mj" src={text_ma.imageUrl} alt={text_ma.title} />
