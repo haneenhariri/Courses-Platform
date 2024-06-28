@@ -1,4 +1,3 @@
-import React from 'react'
 import './Price.css'
 import { PriceData } from '../../const/data/PriceData'
 

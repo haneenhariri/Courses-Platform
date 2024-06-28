@@ -164,6 +164,10 @@
         width: 85%;
     }
 }
+@media (max-width:1500px) and (min-width)
+{
+    
+}
 @media screen and (max-width:992px){
     .OE-hero {
         padding: 12.5% 12.5% 0 12.5%; 

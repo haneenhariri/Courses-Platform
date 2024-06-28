@@ -9,7 +9,7 @@
 }
 .FM-main-section-2-content h2{
     color: var(--DarkPrimary);
-    width: 42.26%;
+    width: 38.25rem;
     font-family: 'Inter';
     font-size: 3.625rem;
     font-weight: 700;
@@ -30,7 +30,7 @@
     font-family: 'Inter';
     font-size: 1.125rem;
     font-weight: 700;
-    line-height: 21.78px;
+    line-height: 28px;
     margin-right: 4.763%;
 }
 .FM-main-section-2-content-links div:nth-child(1) h6:nth-child(1){
@@ -54,23 +54,19 @@
     margin-right: 18px;
     margin-bottom: 0;
 }
-@media screen and (max-width:1366px) {
-    .FM-main-section-2-content h2{
-        font-size: 2.6rem;
-    }
-}
-@media screen and (max-width:1200px) {
+
+@media (max-width:1200px) and (min-width:576px) {
     .FM-main-section-2-content h2{
         font-size: 2.2rem;
+        width: 25rem;
+        line-height: normal;
     }
     .FM-main-section-2-content h6{
         font-size: 1rem;
     }
 }
 @media screen and (max-width:992px) {
-    .FM-main-section-2-content h2{
-        width: 100%;
-    }
+
     .FM-main-section-2-content-links{
         flex-direction: column;
         align-items: flex-start;
@@ -79,4 +75,17 @@
         width: 100% !important;
         margin-bottom: 25px;
     }
+}
+@media (max-width:576px) and (min-width:300px)
+{
+    .FM-main-section-2-content h2{
+        font-size: 1.5rem;
+        width: 15rem;
+        line-height: 30px;
+    }
+    .FM-main-section-2-content h6{
+        font-size: 0.80rem;
+        line-height: 20px;
+    }
+
 }

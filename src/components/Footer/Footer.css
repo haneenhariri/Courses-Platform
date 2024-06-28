@@ -2,13 +2,12 @@
 .AM-footer{
     background-color: var(--DarkPrimary);
     color: var(--SecondColor);
-    
+    padding: 62px 12.5%;
 
 }
 .AM-footer .footer1{
     display: flex;
     justify-content: space-between;
-    padding: 30px 12.5% ;
 
 
 }
@@ -31,14 +30,15 @@
 }
 .AM-footer .footer1 .update .p1{
     display: inline;
-    font-weight: bold;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21.78px;
 }
 .AM-footer .footer2{
     display: flex;
     gap: 28px;
-    padding: 20px 0 20px 40% ;
+    padding: 100px 0 0 36%;
     color:  #6D6D77;
-    ;
 }
 .size{
     font-size: 24px;
@@ -56,16 +56,27 @@
     display: flex;
     gap: 18px;
 }
+.AM-footer .footer1 .update .a{
+    padding-bottom: 28px;
+}
 .AM-footer .footer1 p{
+    font-size: 18px;
     font-weight: bold;
 }
-.AM-footer .footer1 .update .a{
-    padding-bottom: 10px;
+.AM-footer .footer2 p{
+    font-size: 18px;
+}
+.AM-footer .footer1 ul li{
+    color: var(--PrimaryColo);
 }
 
-@media (min-width: 768px) and (max-width: 900px){
+@media (min-width: 768px) and (max-width: 1200px){
     .AM-footer .footer1{
         padding:30px 5% ;
+        gap: 20px;
+    }
+    .AM-footer{
+        padding: 62px 12.5%;
     }
 }
 @media (min-width: 576px) and (max-width: 767px){
