@@ -7,6 +7,9 @@
     box-sizing:border-box ;
     padding: 30px;
     position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .card-mj{
     display: flex;
@@ -14,6 +17,7 @@
     justify-content: center;
     position: relative;
     flex-wrap: wrap;
+    margin-top: 100px;
 }
 .card-mj::after{
     content: "";
@@ -72,6 +76,50 @@ top: 40px;
 #clock{
     margin-right: 5px;
 }
+.nav-mj{
+    background-color: black;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    z-index: 5;
+    display: flex;
+    margin-bottom: 160px;
+}
+.nav-mj a{
+    color: white;
+    text-decoration: none;
+    
+}
+.nav-mj ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+}
+.nav-mj ul li{
+    padding: 30px 0 37px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+#ul-mj-1{
+    min-width: 742px;
+    margin-left: 12.5%;
+    margin-right: 32%;
+}
+#ul-mj-2{
+    text-wrap: nowrap;
+    margin-right:13.5% ;
+}
+#first-li-mj a{
+    border-bottom: 3px solid white;
+    padding: 5px 0;
+}
+#menu-mj{
+    width: 25px;
+    height: 25px;
+    display: none;
+}
 @media(max-width:1230px){
     .card-mj::after{
         margin-right: 663px;
@@ -81,6 +129,38 @@ top: 40px;
         left: unset;
     }
     
+}
+#img-mj-blog{
+    margin-left: 5px;
+}
+@media(max-width:1500px){
+    #ul-mj-1{
+        margin-right: 25%;
+        margin-left: 5%;
+    }
+}
+@media(max-width:1200px){
+    #ul-mj-1{
+        margin-right: 15%;
+        margin-left: 5%;
+    }
+}
+@media(max-width:1050px){
+    #ul-mj-1{
+        display: none;
+    }
+    #menu-mj{
+        display: inline;
+    }
+    .nav-mj{
+        justify-content: center;
+    }
+    #ul-mj-2{
+        width: 80%;
+        justify-content: space-between;
+        margin: 0;
+        align-items: center;
+    }
 }
 @media(max-width:775px){
 
@@ -96,12 +176,18 @@ top: 40px;
         justify-content: start;
     }
     .card-mj::after {
-        margin-right: 450px;
+        margin-right: 375px;
         width: 430px;
     }
     .img-mj{
         width: 386px;
         height: 270px;
         margin-right: 80px;
+    }
+    .card-mj{
+        margin:100px auto;
+    }
+    .img-mj{
+        margin-right: 0;
     }
 }
