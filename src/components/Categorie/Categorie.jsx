@@ -53,6 +53,41 @@ export default function Categorie() {
         };
     return (
     <section className="categorie-mj">
+        <nav className="nav-mj"> 
+                
+                <ul id="ul-mj-1">
+                    <li id="first-li-mj">
+                        <a  href="#">All</a>
+                    </li>
+                    <li >
+                        <a  href="#">Animation</a>
+                    </li>
+                    <li >
+                        <a  href="#">Design</a>
+                    </li>
+                    <li >
+                        <a  href="#">Illustration</a>
+                    </li>
+                    <li >
+                        <a  href="#">Programming</a>
+                    </li>
+                    <li >
+                        <a  href="#">Photo & Film</a>
+                    </li>
+                    <li >
+                        <a  href="#">Marketing</a>
+                    </li>
+                </ul>    
+                <ul id="ul-mj-2">
+                <img id="menu-mj" src="./public/image/BlogImg/blog icons/icons8-menu-50.png" alt="icon" />
+                    <li >
+                        <a  href="#">
+                        Sort by
+                        <img id="img-mj-blog" src="./public/image/BlogImg/blog icons/icon Sort by.svg" alt="icon" />
+                        </a>
+                    </li>
+                </ul>
+    </nav>
         {Object.entries(text_ma).map(([id, text_ma]) => (
             <div className="card-mj" key={id}>
                 <img className="img-mj" src={text_ma.imageUrl} alt={text_ma.title} />
@@ -60,7 +95,7 @@ export default function Categorie() {
                     <h3 className="h3-mj">{text_ma.title}</h3>
                     <p id="p1-mj">{text_ma.job}</p>
                     <p id="p2-mj">{text_ma.description}</p>
-                    <span className="mj-span"><p id="eng-mj-p"><img id="clock" src="./public/image/BlogImg/blog images/Icon clock.png" alt="clock" />{text_ma.read}</p><p>{text_ma.datee}</p></span>
+                    <span className="mj-span"><p id="eng-mj-p"><img id="clock" src="./public/image/BlogImg/blog images/Icon clock.svg" alt="clock" />{text_ma.read}</p><p>{text_ma.datee}</p></span>
                 </div>
             </div>
         ))}
