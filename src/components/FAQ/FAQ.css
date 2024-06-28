@@ -12,3 +12,40 @@
     line-height: 4.38rem;
     color: #19191C;
 }
+@media (max-width:1200px) and (min-width:992px)
+{
+    .HH-F-title
+    {
+        font-size: 2.2rem;
+        line-height: normal;
+        margin-bottom: 3rem;
+    }
+}
+@media (max-width:992px) and (min-width:768px)
+{
+    .HH-F-title
+    {
+        font-size: 2.2rem;
+        line-height: normal;
+        margin-bottom: 2.5rem;
+    }
+}
+@media (max-width:768px) and (min-width:567px)
+{
+    .HH-F-title
+    {
+        font-size: 2.2rem;
+        line-height: normal;
+        margin-bottom: 2rem;
+    }
+}
+@media (max-width:567px) and (min-width:300px)
+{
+    .HH-F-title
+    {
+        font-size: 1.5rem;
+        line-height: normal;
+        margin-bottom: 2rem;
+    }
+
+}

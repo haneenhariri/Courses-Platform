@@ -5,8 +5,7 @@
     justify-content: space-between;
     position: relative;
     overflow: hidden;
-    gap: 8.5%;
-    /* flex-wrap: wrap; */
+/*     gap: 8.5%;*/
 }
 .AM-DISCOVER .div1{
 
@@ -72,7 +71,23 @@
     width:52rem;
     
 }
-
+@media(max-width:1700px) and (min-width:1200px)
+{
+    .AM-DISCOVER
+    {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .AM-DISCOVER .cards
+    {
+        width: 100%;
+        justify-content: end;
+    }
+    .AM-DISCOVER .div1
+    {
+        margin-top: 0;
+    }
+}
 @media (min-width:992px) and (max-width:1200px)
 {
     
@@ -93,126 +108,221 @@
         font-weight: 500;
     }
     .AM-DISCOVER{
-        padding: 186px 12.5% ;
         flex-wrap: wrap;
-        gap: 70px;
+        gap: 50px;
     }
     .AM-DISCOVER .img {
        display: none;
     }
-    .AM-DISCOVER .card1 ,.AM-DISCOVER .div1  {
+    .AM-DISCOVER .div1  {
         margin-top: 0;
     }
-    .AM-DISCOVER .cards .card2 , .AM-DISCOVER .cards .card1{
-        height: 100%;
-        width: 50%;
+    .AM-DISCOVER .cards
+    {
+        width: 100%;
+        justify-content: end;
+        align-items: start;
     }
-    .AM-DISCOVER .div1 p {
-        text-align: center;
+    .AM-DISCOVER .card2 {
+
+        width: max-content;
+        height: max-content;
     }
-     .AM-DISCOVER .div1{
-        align-items: center;
-     }
-   
+    .AM-DISCOVER .card1 {
+        width: max-content;
+        margin-top: 100px;
+        height: max-content;
+    }
+    .card1 h3,.card2 h3 
+    {
+        margin-bottom: 2.5rem;
+    }
+    .AM-DISCOVER .card1 img, .AM-DISCOVER .card2 img {
+        width: 100%;
+        padding: 26px;
+    }
+
 }
 
 @media (min-width:768px) and (max-width:991px){
 
     .AM-DISCOVER{
-        padding: 160px 12.5%;
         flex-wrap: wrap;
-        gap: 70px;
+        gap: 25px;
     }
-    .AM-DISCOVER .div1 h2 {    
-        font-size: 2rem;
+    .AM-DISCOVER .div1 h2
+    {
+        font-size: 2.2rem;
+        line-height: normal;
     }
-    .AM-DISCOVER .card1 ,.AM-DISCOVER .div1  {
+    .AM-DISCOVER .div1 p
+    {
+        font-size: 0.8rem;
+        line-height: 20px;
+        margin-bottom: 42px;
+    }
+    .AM-DISCOVER .div1 button
+    {
+        min-width: min-content;
+        padding: 11px;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .AM-DISCOVER .div1  {
         margin-top: 0;
     }
-    .AM-DISCOVER .cards .card2 , .AM-DISCOVER .cards .card1{
-        height: 100%;
+    .AM-DISCOVER .cards
+    {
+        width: 100%;
+        justify-content: end;
+        align-items: start;
+    }
+    .AM-DISCOVER .card2 {
+
+        width: max-content;
+        height: max-content;
+    }
+    .AM-DISCOVER .card1 {
+        width: max-content;
+        margin-top: 100px;
+        height: max-content;
+    }
+    .card1 h3,.card2 h3 
+    {
+        margin-bottom: 2.5rem;
+    }
+    .AM-DISCOVER .card1 img, .AM-DISCOVER .card2 img {
+        width: 100%;
+        padding: 26px;
+    }
+    .AM-DISCOVER .img {
         width: 50%;
     }
-    .AM-DISCOVER .div1 p {
-        text-align: center;
-    }
-     .AM-DISCOVER .div1{
-        align-items: center;
-     }
-
-
 }
 @media (min-width:567px) and (max-width:767px){
     
-    .AM-DISCOVER .img{
-        display: none;
-    }
-    .AM-DISCOVER .cards .card2 , .AM-DISCOVER .cards .card1{
-        height: 100%;
+    .AM-DISCOVER .img {
         width: 50%;
+    }        
+    .AM-DISCOVER{
+        flex-wrap: wrap;
+        gap: 25px;
     }
     .AM-DISCOVER .card1 ,.AM-DISCOVER .div1  {
         margin-top: 0;
     }
-    .AM-DISCOVER{
-        gap: 50px;
-        padding: 100px 12.5%;
-        flex-wrap: wrap;
+
+    .AM-DISCOVER .div1 p
+    {
+        font-size: 0.8rem;
+        line-height: 20px;
+        margin-bottom: 32px;
     }
-    .AM-DISCOVER .div1 p {
-        text-align: center;
-        margin-bottom: 34px;
+    .AM-DISCOVER .div1 button
+    {
+        width: max-content;
+        padding: 11px;
+        font-size: 1rem;
+        font-weight: 500;
     }
-     .AM-DISCOVER .div1{
-        align-items: center;
-     }
      .AM-DISCOVER .div1 h2{
-        font-size: 2.225rem;
+        font-size: 2.2rem;
+        line-height: normal;
+        width: 25rem;
+        margin-bottom: 10px;
+     }
+     .AM-DISCOVER .cards
+     {
+         width: 100%;
+         justify-content: end;
+         align-items: start;
+         gap: 10px;
+     }
+     .AM-DISCOVER .card2 {
+ 
+         width: max-content;
+         height: max-content;
+     }
+     .AM-DISCOVER .card1 {
+         width: max-content;
+         margin-top: 100px;
+         height: max-content;
+     }
+     .card1 h3,.card2 h3 
+     {
+         margin-bottom: 2.5rem;
+         font-size: 1rem;
+     }
+     .AM-DISCOVER .card1 img, .AM-DISCOVER .card2 img {
+         width: 100%;
+         padding: 18px;
      }
     
 }
 @media (min-width:300px) and (max-width:566px){
+    .AM-DISCOVER .div1 h2
+    {
+        font-size: 1.5rem;
+        width: 15rem;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+    .AM-DISCOVER .div1 button
+    {
+        width: max-content;
+        padding: 11px;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
     
-    .AM-DISCOVER .cards .card2 , .AM-DISCOVER .cards .card1{
-        height: 100%;
-        width: 50%;
-    }
-    .AM-DISCOVER .div1 p {
-        text-align: center;
-        margin-bottom: 34px;
-    }
-     .AM-DISCOVER .div1{
-        align-items: center;
+    .AM-DISCOVER .div1 p
+    {
+        font-size: 0.8rem;
+        line-height: 20px;
+        margin-bottom: 22px;
         width: 100%;
-     }
-     .AM-DISCOVER .card1 ,.AM-DISCOVER .div1  {
+    }
+    .AM-DISCOVER .div1  {
         margin-top: 0;
     }
     
     .AM-DISCOVER .img{
-        display: none;
-    }
-    .AM-DISCOVER .cards .card2 img , .AM-DISCOVER .cards .card1 img{
-        padding: 0;
+        width: 70%;
+        right: 0;
+        bottom: 0;
     }
     .AM-DISCOVER{
-        padding: 60px 12.5%;
-        gap: 70px;
+        gap: 20px;
         flex-wrap: wrap;
     }
-    .AM-DISCOVER .cards .card2 h3, .AM-DISCOVER .cards .card1 h3{
-        font-size: 1.18rem;
-     }
-     .AM-DISCOVER .div1 button {
-        width: 126px;
-        padding: 10px 36px;}
-}
-@media (min-width:1300px){
-    .AM-DISCOVER{
-        padding: 168px 12.5%;
+    .AM-DISCOVER .cards
+    {
+        width: 100%;
+        justify-content: end;
+        align-items: start;
+        gap: 10px;
     }
-    .AM-DISCOVER .cards .card1 , .AM-DISCOVER .cards .card2{
-        height: 364px;
-        width: 273px;
+    .AM-DISCOVER .card2 {
+
+        width: max-content;
+        height: max-content;
     }
+    .AM-DISCOVER .card1 {
+        width: max-content;
+        margin-top: 50px;
+        height: max-content;
+    }
+    .card1 h3,.card2 h3 
+    {
+        margin-bottom: 1rem;
+        font-size: 0.8rem;
+    }
+    .AM-DISCOVER .card1 img, .AM-DISCOVER .card2 img {
+        width: 100%;
+        padding: 10px;
+    }
+
+
 }
+

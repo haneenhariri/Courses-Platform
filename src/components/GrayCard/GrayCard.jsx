@@ -1,4 +1,3 @@
-import React from 'react'
 import Card from './../Card/Card.jsx'
 import {GrayCardData} from '../../const/data/CardData.jsx'
 import './GrayCard.css'
@@ -17,7 +16,7 @@ export default function GrayCard() {
                 <img src='./image/MainPageImg//GrayCardImg/arrow_right.svg' />
             </div>
         </div>
-        <div className='FM-GrayCard-card'>
+             <div className='FM-GrayCard-card'>
                 {GrayCardData.map (element => {
                     return <Card key={element.title} 
                                 header_url={element.headerUrl} 

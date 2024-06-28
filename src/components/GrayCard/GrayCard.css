@@ -1,7 +1,7 @@
 .FM-main-section-7 {
     position: relative;
     width: 100%;
-    padding: 4.281% 12.5% 8.562% 12.5%;
+    padding: 0 12.5%;
     background-color: var(--SecondColor);
 }
 .FM-main-section-7-content {
@@ -21,13 +21,14 @@
     margin-bottom: 1.25%;
 }
 .FM-main-section-7-content p {
-    color: var(--DarkPrimary);
+    color: rgba(109, 109, 119, 1);
     width: 49.306%;
     font-family: 'Inter';
     font-size: 1.125rem;
     font-weight: 400;
     line-height: 156%;
-    margin-bottom: 0;
+    margin-bottom: 11px;
+
 }
 .FM-main-section-7-content-see-more {
     width: max-content;
@@ -50,31 +51,63 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-@media screen and (max-width:1366px){
+/* @media screen and (max-width:1366px){
     .FM-main-section-7 h2{
         font-size: 2.6rem;
     }
-}
-@media screen and (max-width:1200px){
+} */
+@media (max-width:1200px) and (min-width:992px){
     .FM-main-section-7 h2{
         font-size: 2.2rem;
+        width: 25rem;
+        line-height: normal;
     }
     .FM-main-section-7-content p ,
     .FM-main-section-7-content-see-more h6 {
         font-size: 1rem;
+        font-weight: 400;
+        line-height: 20px;
+        width: 35rem;
     }
 }
-@media screen and (max-width:992px){
+@media (max-width:992px) and (min-width:768px){
     .FM-main-section-7 h2{
-        width: 100%;
+        font-size: 2.2rem;
+        width: 25rem;
+        line-height: normal;
     }
-    .FM-main-section-7-content p {
-        width: 100% !important;
-        margin-bottom: 25px;
+    .FM-main-section-7-content p,.FM-main-section-7-content-see-more h6 {
+        font-size: 0.80rem;
+        line-height: 20px;
+        margin-bottom: 15px;
+        width: 35rem;
     }
 }
-@media screen and (max-width:576px){
+@media (max-width:768px) and (min-width:576px)
+{
     .FM-main-section-7 h2{
-        font-size: 1.8rem;
+        font-size: 2.2rem;
+        width: 25rem;
+        line-height: normal;
+    }
+    .FM-main-section-7-content p,.FM-main-section-7-content-see-more h6
+    {
+        font-size: 0.8rem;
+        line-height: 20px;
+        width: 25rem;
+    }
+}
+@media (max-width:576px) and (min-width:300px){
+    .FM-main-section-7 h2{
+        font-size: 1.5rem;
+        width: 15rem;
+        line-height: normal;
+        margin-bottom: 10px;
+    }
+    .FM-main-section-7-content p,.FM-main-section-7-content-see-more h6
+    {
+        font-size: 0.8rem;
+        line-height: 20px;
+        width: 25rem;
     }
 }
