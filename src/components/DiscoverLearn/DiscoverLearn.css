@@ -29,14 +29,14 @@
 .FM-main-section-2-content-links h6{
     font-family: 'Inter';
     font-size: 1.125rem;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 28px;
     margin-right: 4.763%;
 }
-.FM-main-section-2-content-links div:nth-child(1) h6:nth-child(1){
+/* .FM-main-section-2-content-links div:nth-child(1) h6:nth-child(1){
     padding-bottom: 0.625%;
     border-bottom: 4px solid var(--DarkPrimary);
-}
+} */
 .FM-discoverData-card {
     display: flex;
     flex-wrap: wrap;
@@ -53,6 +53,27 @@
     width: max-content !important;
     margin-right: 18px;
     margin-bottom: 0;
+}
+.FM-main-section-2-content-links .after h6{
+    position: relative;
+}
+.FM-main-section-2-content-links .after h6::before{
+   height: 4px;
+   position: absolute;
+   content: "";
+   width: 0;
+   bottom: 0;
+   background-color: var(--DarkPrimary);
+    
+}
+.FM-main-section-2-content-links .after h6:hover::before{
+    width: 100%;
+    transition: .4s;
+    font-weight: 700;
+}
+.FM-main-section-2-content-links .after h6:focus::before{
+    width: 100%;
+    font-weight: 700;
 }
 
 @media (max-width:1200px) and (min-width:576px) {
