@@ -27,8 +27,8 @@ export default function NavBar() {
     <>
       <Navbar className={`BA-navbar ${header? 'BA-navbar-scroll' : 'BA-navbar-normal'}`} expand="lg" fixed="top">
 
-          <NavbarBrand className={`BH-logo ${header ? 'BH-link-light' : 'BH-link-dark'}`}  >
-            <Link to={'/'}>
+          <NavbarBrand   >
+            <Link className={`BH-logo ${header ? 'BH-link-light' : 'BH-link-dark'}`} to={'//'}>
             <img className="BA-img" src={`./image/NavImg/logo${header ? "-2" : ""}.svg`} /> UpDate
             </Link>
           </NavbarBrand>
@@ -45,8 +45,8 @@ export default function NavBar() {
 
               <Offcanvas.Title id="offcanvasNavbarLabel-expand-lg">
 
-                <NavbarBrand  className={`BH-logo ${header ? 'BH-link-light' : 'BH-link-dark'}`}>
-                  <Link to={'/'}><img className='BA-img' src={`./image/NavImg/logo${header ? "-2" : ""}.svg`} /> UpDate</Link>
+                <NavbarBrand  >
+                  <Link className={`BH-logo ${header ? 'BH-link-light' : 'BH-link-dark'}`} to={'/'}><img className='BA-img' src={`./image/NavImg/logo${header ? "-2" : ""}.svg`} /> UpDate</Link>
                 </NavbarBrand>
 
               </Offcanvas.Title>

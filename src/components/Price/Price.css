@@ -1,6 +1,6 @@
 .OE_price {
     background-color: var(--DarkPrimary);
-    padding: 0 12.5%;
+    padding: 8.75% 12.5%;
     font-family:" Inter";
 }
 
@@ -9,11 +9,12 @@
 }
 
 .OE_price_h1 {
-    font-size: 30px;
+    font-size: 3.625rem;
+    font-family: 'Inter';
     font-weight: 700;
-    line-height: 40.19px;
+    line-height: 70.19px;
     color: var(--SecondColor);
-    padding-top: 12%;
+    width: max-content;
 }
 
 .OE_item1 {

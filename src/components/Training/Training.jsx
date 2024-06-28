@@ -38,7 +38,7 @@ export default function AMTrain() {
                   <div key={item.id} className="card" >
                     
                     <h3 >{item.id}</h3>
-                    <div className="line">  </div>
+                    
                     <p>{item.text1}</p>
                     
                   </div>

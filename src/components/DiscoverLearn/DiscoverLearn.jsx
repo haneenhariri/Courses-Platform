@@ -8,7 +8,7 @@ export default function DiscoverLearn() {
         <div className='FM-main-section-2-content'>
             <h2>Discover Lifelong Learning</h2>
             <div className='FM-main-section-2-content-links'>
-                <div>
+                <div className='after'>
                     {H6Data.map(element => {
                         return <h6 key={element.id}>{element.content}</h6>
                     })}

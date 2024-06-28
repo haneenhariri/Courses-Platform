@@ -1,16 +1,17 @@
 .AM-traning{
-    padding: 190px 12.5% ;
+    padding: 168px 12.5% ;
     display: flex;
     justify-content: space-between;
 }
 .AM-traning h2{
-    
     font-size: 3.625rem;
-    
+    font-family: 'Inter';
+    font-weight: 700;
+    line-height: 70.19px;
 }
 .AM-traning .parentCard{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     
 }
 .AM-traning .parentCard {
@@ -21,34 +22,69 @@
 .AM-traning .card{
     position: relative;
     border: none;
-    /* width: 70%; */
-}
-.AM-traning .card .line::after{
 
-    position: absolute;
-    content: "";
-    height: 3px;
-    width: 100%;
-    background-color: black;
-    bottom: 63%;
-    right: 0;
-        
 }
+  
+
 .AM-traning .parentCard .cards .card p{
     color: #6D6D77;
-    ;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 1.125rem;
+    
 }
- 
+.AM-traning .parentCard .cards{
+    width: 38%;
+}
+.AM-traning .h2{
+    width: 37%;
+}
+
+.AM-traning .parentCard .cards .card h3{
+    font-size: 3.75rem;
+    border-bottom: 4px solid black;
+    font-weight: 700;
+    font-family: 'Inter';
+    padding-bottom: 28px;
+}
+@media (min-width:992px) and (max-width:1200px){
+    .AM-traning {
+        padding: 190px 12.5%;
+        flex-wrap: wrap;
+        gap: 30px;
+        
+    }
+    .AM-traning .parentCard .cards .card h3 {
+        font-size: 2.75rem;
+    }
+    .AM-traning .h2 h2 {
+        font-size: 2.2rem;
+        width: 25rem;
+        line-height: normal;
+    }
+    .AM-traning .parentCard{
+        margin-left: 0;
+        justify-content: space-between;
+    }
+    .AM-traning .parentCard .cards .card p{
+        font-size: 0.80rem;
+        font-weight: 400;
+        line-height: 20px;
+    }
+       
+    
+}
 @media (min-width:768px) and (max-width:991px){
     
      .AM-traning {
-        padding: 160px 2.5%;}
-    .AM-traning h2 {    
-        font-size: 2rem;
+        padding: 160px 12.5%;
     }
-    .AM-traning .card .line::after {
-        bottom: 69%;
+    
+    .AM-traning .h2{
+        
+        width: 100%;
     }
+    
  
     .AM-traning  {
         flex-wrap: wrap;
@@ -57,11 +93,26 @@
     .AM-traning .parentCard{
         margin-left: 0;
     }
-   
-
+    .AM-traning .h2 h2 {
+        font-size: 2.2rem;
+        width: 25rem;
+        line-height: normal;
+    }
+    .AM-traning .parentCard .cards .card p{
+        font-size: 0.80rem;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    .AM-traning .parentCard .cards .card h3 {
+        font-size: 2.2rem;
+    }
+    .AM-traning .parentCard{
+        margin-left: 0;
+        justify-content: space-between;
+    }
 
 }
-@media (min-width:567px) and (max-width:767px){
+@media (min-width:576px) and (max-width:767px){
     .AM-traning{
         flex-wrap: wrap;
         gap: 17px;
@@ -72,50 +123,60 @@
     }
     .AM-traning .parentCard{
         margin-left: 0;
+        justify-content: space-between;
     }
-    .AM-traning h2 {
-        text-align: center;
+    .AM-traning .h2{
+        
+        width: 100%;
     }
-    .AM-traning .card .line::after{
-        bottom: 70%;
+    
+    .AM-traning .parentCard .cards {
+        width: 50%;
+    }
+    .AM-traning .parentCard .cards .card p{
+        
+    }
+    .AM-traning .h2 h2{
+        font-size: 1.5rem;
+        width: 15rem;
+        line-height: normal;
+    }
+    .AM-traning .parentCard .cards .card h3 {
+        font-size: 1.5rem;
     }
    
 }
-@media (min-width:300px) and (max-width:566px){
-    .AM-traning{
-        flex-wrap: wrap;
-    }
+@media (min-width:300px) and (max-width:575px){
     .AM-traning .parentCard{
         margin-left: 0;
         flex-wrap: wrap;
     }
-    .AM-traning .card .line::after{
-        bottom: 69%;
-    }
-   
-    .AM-traning h2{
-        font-size: 2rem;
-    }
-        
-
-}
-@media (min-width:1920px){
     .AM-traning .h2{
-        width: 40%;
+        
+        width: 100%;
+     
     }
-    .AM-traning h2 {
-        font-size: 4.5rem;
+    
+  
+    .AM-traning .parentCard .cards {
+        width: 100%;
     }
-    .AM-traning .parentCard .cards .card h3{
-        font-size: 3.75rem;
+    .AM-traning{
+        flex-wrap: wrap;
+        gap: 17px;
+        padding: 60px 12.5%;
     }
-    .AM-traning .parentCard .cards{
-        width: 38%;
+    .AM-traning .parentCard .cards .card p{
+        font-size: 0.80rem;
+        font-weight: 400;
+        line-height: 20px;
     }
-    .AM-traning .card .line::after {
-        bottom: 52%;
+    .AM-traning .h2 h2{
+        font-size: 1.5rem;
+        width: 15rem;
+        line-height: normal;
     }
-    .AM-traning .parentCard {
-        justify-content: space-evenly;
+    .AM-traning .parentCard .cards .card h3 {
+        font-size: 1.5rem;
     }
 }
