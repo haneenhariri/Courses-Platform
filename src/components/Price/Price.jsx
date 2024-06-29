@@ -20,7 +20,7 @@ export default function Price(){
                           <li className='OE_li_2'>{item.item2}</li>
                           <li className='OE_li_3'>{item.item3}</li>
                           <li className='OE_li_4'>{item.item4}</li>
-                          {item.item5 !== ' ' && <li classNa me='OE_li_5'> {item.item5}</li>}
+                          {item.item5 !== ' ' && <li className='OE_li_5'>{item.item5}</li>}
                         </ul>
                       </div>
                       <div>

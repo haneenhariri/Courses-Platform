@@ -1,9 +1,12 @@
+import { Outlet } from "react-router-dom";
+import CrudTable from "../../CrudTable/CrudTable";
 
 
 export default function DashArticles() {
   return (
-    <div>
-      
-    </div>
+    <>
+       <CrudTable titleTable={'Articles'} th1={'Title'} th2={'Tag'} th3={'Content'} th4={'Date of Write'} />
+       <Outlet/>
+    </>
   )
 }

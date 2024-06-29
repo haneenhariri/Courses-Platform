@@ -1,0 +1,20 @@
+.HH-categories
+{
+    padding: 1.56% 12.5%;
+    background-color: var(--DarkPrimary);
+    color: var(--PrimaryColo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.HH-link
+{
+    text-decoration: none;
+    color: var(--PrimaryColo);
+    margin-right: 48px;
+    font-size: 'Inter';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.78px;
+}

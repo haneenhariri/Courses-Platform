@@ -1,5 +1,6 @@
 import { useState }  from 'react'
 import './Sidebar.css'
+import { Link} from 'react-router-dom'
 
 export default function Sidebar() {
 
@@ -12,7 +13,7 @@ const LinksData = [
         content: 'students Say',
         mbClass: 'MJ-mb-link',
         show: 'MJ-dash-sidebarink-show',
-        // href: '/dash/say-students',
+        to:'dashstdsay',
         func : () => setActiveLink(1)
     },
     {
@@ -21,7 +22,7 @@ const LinksData = [
         content: 'Article',
         mbClass: 'MJ-mb-link',
         show: 'MJ-dash-sidebarink-show',
-        // href: '/dash/articls',
+        to: 'articlelist',
         func : () => setActiveLink(2)
     },
     {
@@ -30,7 +31,7 @@ const LinksData = [
         hide: 'log-out-hide',
         content: 'Log out',
         mbClass: 'MJ-center-link',
-        href: './'
+        to:'//',
     }
 ]
 
@@ -38,17 +39,17 @@ const LinksData = [
     <div className='MJ-dash-sidebar'>
         <div className='MJ-dash-sidebar-logo'>
             <img className='MJ-dash-sidebar-logo-svg' src="./image/DashBoard/SideBar/logo.svg" />
-            <a href="#" className='MJ-dash-sidebar-logo-link'>UpDate</a>
+            <Link to={'/dash'} className='MJ-dash-sidebar-logo-link'>UpDate</Link>
+            
         </div>
         {LinksData.map((e, index) => {
             return (
                 <div key={index} className={`MJ-dash-sidebar-links ${activeLink === e.id? 'MJ-links-active' : ''} ${e.mbClass}`} onClick={e.func} >
                     <img className={`MJ-dash-sidebar-links-img ${e.hide}`} src={e.imgURL} />
-                    <a href={e.href} className={e.show}>{e.content}</a>
+                    <Link to={e.to} className={e.show}>{e.content}</Link>
                 </div>
             )
         })}
-        
     </div>
     )
 }
