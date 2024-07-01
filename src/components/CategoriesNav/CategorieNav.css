@@ -1,20 +1,104 @@
-.HH-categories
+.HH-cNav
 {
     padding: 1.56% 12.5%;
     background-color: var(--DarkPrimary);
-    color: var(--PrimaryColo);
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    width: 100%;
 }
-.HH-link
+.HH-ul
 {
-    text-decoration: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:start;
+    list-style: none;
     color: var(--PrimaryColo);
-    margin-right: 48px;
-    font-size: 'Inter';
+    padding: 0;
+    margin: 0;
+}
+.HH-ul .HH-cNav-link{
+    padding-right:48px ;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+    cursor: pointer;
+    display: block;
+}
+.HH-ul .HH-cNav-link::after
+{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    background-color: transparent;
+}
+.HH-ul .HH-cNav-link:hover::after
+{
+    width: 100%;
+    background-color: var(--PrimaryColo);
+    transition: all 0.4s ease 0s;
+}
+.HH-span
+{
+    color: var(--PrimaryColo);
     font-weight: 700;
     font-size: 18px;
     line-height: 21.78px;
+    font-family: 'Inter';
+}
+@media (max-width:1200px) and (min-width:992px)
+{
+    .HH-ul .HH-cNav-link{
+        padding-right:30px ;
+        font-size: 1rem;
+        line-height: 20px;
+    }
+    .HH-span
+    {
+        font-size: 1rem;
+        line-height: 20px;
+    }
+}
+@media (max-width:992px) and (min-width:768px)
+{
+    .HH-ul .HH-cNav-link{
+        padding-right:25px ;
+        font-size: 0.8rem;
+        line-height: 20px;
+    }
+    .HH-span
+    {
+        font-size: 0.8rem;
+        line-height: 20px;
+    }
+}
+@media (max-width:768px) and (min-width:567px)
+{
+    .HH-ul .HH-cNav-link{
+        padding-right:20px ;
+        font-size: 0.8rem;
+        line-height: 20px;
+    }
+    .HH-span
+    {
+        font-size: 0.8rem;
+        line-height: 20px;
+    }
+}
+@media (max-width:567px) and (min-width:300px)
+{
+    .HH-ul .HH-cNav-link{
+        padding-right:15px ;
+        font-size: 0.8rem;
+        line-height: 20px;
+    }
+    .HH-span
+    {
+        font-size: 0.8rem;
+        line-height: 20px;
+    }
 }

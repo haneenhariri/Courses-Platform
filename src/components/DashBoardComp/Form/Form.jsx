@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Form.css";
+import { Outlet } from "react-router-dom";
 
 const Form = ({ label1, label2, label3, label4, title, ...props }) => {
   const [input1, setInput1] = useState(props.input1 ? props.input1 : "");
@@ -8,7 +9,9 @@ const Form = ({ label1, label2, label3, label4, title, ...props }) => {
   const [input4, setInput4] = useState(props.input4 ? props.input4 : "");
 
   return (
+    
     <form className="custom-form">
+       <img src="/image/MainPageImg/HeroImg/Hero_1.png" alt="" />
       <h2>{title}</h2>
       <label>
         <p>
@@ -50,7 +53,9 @@ const Form = ({ label1, label2, label3, label4, title, ...props }) => {
         />
       </label>
       <button>Save</button>
+      <Outlet/>
     </form>
+
   );
 };
 

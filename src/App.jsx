@@ -8,6 +8,7 @@ import { Route,Routes } from 'react-router-dom'
 import Dashboard from './pages/Dashboard/Dashboard'
 import DashStdSay from './components/DashBoardComp/StudentReviews/DashStdSay/DashStdSay'
 import DashArticles from './components/DashBoardComp/DashArticle/DashArticlesList/DashArticles'
+import Form from './components/DashBoardComp/Form/Form'
 
 function App() {
   
@@ -21,6 +22,8 @@ function App() {
         <Route path='/dash' element={<Dashboard/>}>
           <Route path='dashstdsay' element={<DashStdSay/>}/>
           <Route path='articlelist' element={<DashArticles/>}/>
+          <Route path='dashstdsay/add' element={<Form/>}/>
+
         </Route>
       </Routes>
     </>
