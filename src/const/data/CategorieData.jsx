@@ -25,7 +25,7 @@ export const navItem =[
 /* article data  */
 export const text_ma = {
   1: {
-      imageUrl: './public/image/BlogImg/blog images/article 1.png',
+      imageUrl: './image/BlogImg/blog images/article 1.png',
       title: '10 updated Figma features in 2022',
       job: '# UX/UI Design',
       description: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis  occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga...',
@@ -33,7 +33,7 @@ export const text_ma = {
       datee:'April 12, 2022'
   },
   2: {
-      imageUrl: './public/image/BlogImg/blog images/article 2.png',
+      imageUrl: './image/BlogImg/blog images/article 2.png',
       title: 'What new programming languages are in demand now?',
       job: '# Programming ',
       description: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis  occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga...',
@@ -41,7 +41,7 @@ export const text_ma = {
       datee:'March 25, 2022'
   },
   3: {
-      imageUrl: './public/image/BlogImg/blog images/article 3.png',
+      imageUrl: './image/BlogImg/blog images/article 3.png',
       title: 'Top popular styles in illustration 2022',
       job: '# Illustration',
       description: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis  occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga...',
@@ -49,7 +49,7 @@ export const text_ma = {
       datee:'March 18, 2022'
   },
   4: {
-      imageUrl: './public/image/BlogImg/blog images/article 4.png',
+      imageUrl: './image/BlogImg/blog images/article 4.png',
       title: 'The secret of a successful frame. What rules should be followed?',
       job: '# Photo & Film',
       description: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis  occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga...',
@@ -57,7 +57,7 @@ export const text_ma = {
       datee:'March 17, 2022'
   },
   5: {
-      imageUrl: './public/image/BlogImg/blog images/article 5.png',
+      imageUrl: './image/BlogImg/blog images/article 5.png',
       title: 'Brainstorming in design: from the idea to its implementation',
       job: '# UX/UI Design',
       description: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis  occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi...',
@@ -65,7 +65,7 @@ export const text_ma = {
       datee:'March 12, 2022'
   },
   6: {
-      imageUrl: './public/image/BlogImg/blog images/article 6.png',
+      imageUrl: './image/BlogImg/blog images/article 6.png',
       title: 'Who is an Internet marketer and what does he do?',
       job: '# Marketing',
       description: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis  occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga...',
