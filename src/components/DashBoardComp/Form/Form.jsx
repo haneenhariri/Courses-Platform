@@ -8,7 +8,7 @@ const Form = ({ label1, label2, label3, label4, title, ...props }) => {
   const [input4, setInput4] = useState(props.input4 ? props.input4 : "");
 
   return (
-    <form className="custom-form">
+    <form className="BA-custom-form">
       <h2>{title}</h2>
       <label>
         <p>

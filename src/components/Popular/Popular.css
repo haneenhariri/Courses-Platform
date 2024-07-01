@@ -2,7 +2,7 @@
   padding: 0 12.5% !important;
 }
 .BA-Article .styles {
-  padding-top: 168px;
+  padding-top: 8.75% !important;
   padding-left: 6.3% !important;
 }
 .BA-Article .styles p {
@@ -18,7 +18,7 @@
 .BA-Article .styles .BA-Popular {
   display: flex;
   justify-content: space-between;
-  margin-top: 168px;
+  margin-top: 8.75% !important;
 }
 .BA-Article .styles .BA-Popular .image {
   display: flex;
@@ -51,33 +51,8 @@
   max-width: 661px;
 }
 
-.BA-Article .styles h2 {
-  margin-top: 186px;
-  font-size: 58px;
-  font-weight: 700;
-  color: #19191c;
-  margin-bottom: 28px;
-  max-width: 952px;
-}
-.BA-Article .styles span {
-  color: #6d6d77;
-  max-width: 890px;
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 28px;
-  display: block;
-}
-.BA-Article .styles .consequuntur {
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 168px;
-  width: 952px;
-}
-@media (max-width: 1200px) {
-  .BA-Article .styles .consequuntur {
-    width: 300px;
-  }
-}
+
+
 
 @media (max-width: 900px) {
   .BA-Article .styles {
@@ -103,13 +78,7 @@
     margin-right: 0;
   }
 
-  .BA-Article .styles h2 {
-    font-size: 30px;
-    margin-top: 40px;
-  }
-  .BA-Article .styles span {
-    width: 300px;
-  }
+  
 
   .BA-Article .styles .BA-Popular {
     flex-direction: column;
