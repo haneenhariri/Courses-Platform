@@ -111,7 +111,7 @@
     justify-content: space-evenly;
     align-items: center;
 }
-@media (min-width:1201px) and (max-width:1366px) {
+@media (min-width:1200px) and (max-width:1366px) {
     .OE_Table {
         width: 100%;
         margin: 0;
@@ -134,4 +134,8 @@
         margin: 0;
     }
 }
-@
+@media (max-width:576px) {
+    .OE_dashboard_btn {
+        height: 60px;
+    }
+}
