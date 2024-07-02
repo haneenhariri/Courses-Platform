@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.FM-Dash-Header {
+    background-color: var(--primaryColorDash);
+    width: calc(100% - 19.21875%) !important;
+    min-height: 100vh;
+    padding: 4.6875% 5.3125%;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+@media (min-width:769px) and (max-width:992px){
+    .FM-Dash-Header {
+        width: calc(100% - 28%) !important;
+    }
+}
+@media (max-width:768px) {
+    .FM-Dash-Header {
+        margin-top: 100px;
+        width: 100% !important;
+    }
+}
