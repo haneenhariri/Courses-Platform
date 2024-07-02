@@ -1,23 +1,20 @@
-import { useState } from "react";
 import "./Form.css";
 import { Outlet } from "react-router-dom";
 
-const Form = ({ label1, label2, label3, label4, title, ...props }) => {
-  const [input1, setInput1] = useState(props.input1 ? props.input1 : "");
-  const [input2, setInput2] = useState(props.input2 ? props.input2 : "");
-  const [input3, setInput3] = useState(props.input3 ? props.input3 : "");
-  const [input4, setInput4] = useState(props.input4 ? props.input4 : "");
+const Form = ({ label1, label2, label3, label4, title, input1 , input2 , input3 , input4}) => {
 
   return (
-    <form className="BA-custom-form">
+    <section className="FM-Dash-Header">
+      <form className="BA-custom-form">
+
       <h2>{title}</h2>
+      
       <label>
         <p>
           {label1} <span>*</span>
         </p>
         <input
           value={input1}
-          onChange={(e) => setInput1(e.target.value)}
           type="text"
         />
       </label>
@@ -27,7 +24,6 @@ const Form = ({ label1, label2, label3, label4, title, ...props }) => {
         </p>
         <input
           value={input2}
-          onChange={(e) => setInput2(e.target.value)}
           type="text"
         />
       </label>
@@ -37,7 +33,6 @@ const Form = ({ label1, label2, label3, label4, title, ...props }) => {
         </p>
         <textarea
           value={input3}
-          onChange={(e) => setInput3(e.target.value)}
         ></textarea>
       </label>
       <label>
@@ -46,13 +41,14 @@ const Form = ({ label1, label2, label3, label4, title, ...props }) => {
         </p>
         <input
           value={input4}
-          onChange={(e) => setInput4(e.target.value)}
           type="text"
         />
       </label>
       <button>Save</button>
       <Outlet/>
     </form>
+    </section>
+    
 
   );
 };

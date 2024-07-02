@@ -1,11 +1,13 @@
-import { Outlet } from 'react-router-dom'
 import Form from './../../Form/Form'
 
 export default function AddStdSay() {
   return (
-    <div>
-        <Form/>
-        
-    </div>
+    <Form 
+        title={'Add New Student Say'}
+        label1={'Student name'}
+        label2={'Course name'}
+        label3={'What he say'}
+        label4={'date'}
+    />
   )
 }
