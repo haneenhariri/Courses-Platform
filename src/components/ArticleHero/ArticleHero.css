@@ -44,7 +44,7 @@
 }
 
 .BA-ArticleHero .BA-popular .BA-titel p {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   color: #504dee;
   margin-bottom: 0;
@@ -72,17 +72,26 @@
     display: none;
   }
 }
+@media (min-width: 768px) and (max-width: 1200px) {
+  .BA-ArticleHero .BA-popular h1 {
+    font-size: 2.2rem;
+  }
+
+  .BA-ArticleHero .BA-popular .BA-titel p {
+    font-size: 1rem;
+  }
+}
 
 @media (min-width: 768px) and (max-width: 900px) {
   .BA-ArticleHero .BA-popular h1 {
-    font-size: 50px;
+    font-size: 2rem;
     max-width: 700px;
   }
 }
 
 @media (max-width: 500px) {
   .BA-ArticleHero .BA-popular h1 {
-    font-size: 35px;
+    font-size: 1.8rem;
     max-width: 400px;
     color: #504dee;
   }
@@ -94,7 +103,6 @@
     gap: 10px;
   }
   .BA-ArticleHero .BA-popular .BA-titel p {
-    font-size: 30px;
+    font-size: 0.8rem;
   }
-
 }
