@@ -6,24 +6,24 @@
 .FM-CirclePlay-img {
     margin-bottom: 7.192%;
 }
-.HH-card{
+.FM-cards .HH-card{
     height: max-content;
     width: 71.938%;
     margin: 0 auto;
     border: 2px solid #19191C;
     padding: 4.125rem 4.125rem 3.125rem 4.125rem;
 }
-.HH-cardImg
+.FM-cards .HH-cardImg
 {
     margin-right: 16.79px;
 }
-.HH-cardInfo
+.FM-cards .HH-cardInfo
 {
     display: flex;
     align-items: center;
     margin-bottom: 5.22%;
 }
-.HH-cardTitle
+.FM-cards .HH-cardTitle
 {
     height: 35px;
     font-family: 'Inter';
@@ -33,7 +33,7 @@
     font-weight: 700;
     color: var(--DarkPrimary);
 }
-.HH-CardP
+.FM-cards .HH-CardP
 {
     font-family: 'Inter';
     font-size: 1.125rem;
@@ -42,7 +42,7 @@
     line-height:28px;
     color: #6D6D77;
 }
-.HH-CardText
+.FM-cards .HH-CardText
 {
     font-family: 'Inter';
     font-weight: 400;
@@ -52,25 +52,36 @@
     margin-top: 6.76%;
     width: 91.81%;
 }
-.HH-CardText p
+.FM-cards .HH-CardText p
 {
     margin-bottom: 0;
 }
 @media screen and (max-width:1200px) {
-    .HH-card{
-        width: 100%;
+    .FM-cards .HH-card{
+        padding: 2.5rem;
     }
 }
 @media screen and (max-width:576px) {
-    .HH-cardInfo
+    .FM-cards .HH-card{
+        width: 100%;
+    }
+    .FM-cards .HH-cardInfo
     {
        flex-direction: column;
        align-items: flex-start;
        padding-bottom: 20px;
        border-bottom: 1px solid var(--DarkPrimary);
     }
-    .HH-cardImg
+    .FM-cards .HH-cardImg
     {
         margin-bottom: 16.79px;
+    }
+    .FM-cards .HH-cardTitle
+    {
+        font-size: 1.6rem;
+    }
+    .FM-cards .HH-CardText
+    {
+        font-size: 1.125rem;
     }
 }

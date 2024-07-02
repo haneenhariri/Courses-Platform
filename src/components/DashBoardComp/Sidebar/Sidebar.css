@@ -71,12 +71,12 @@
 .MJ-links-active a{
     color: var(--primaryColorDash) !important;
 }
-@media (min-width:993px) and (max-width:1366px){
+@media (min-width:992px) and (max-width:1366px){
     .MJ-dash-sidebar-links {
         width: max-content;
     }
 }
-@media (min-width:769px) and (max-width:992px){
+@media (min-width:768px) and (max-width:992px){
     .MJ-dash-sidebar {
         width: 28%;
     }
