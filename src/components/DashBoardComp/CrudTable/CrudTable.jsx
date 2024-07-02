@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from "react-router-dom"
 import Search from '../../../img/DashBoard/TableDash/Search.svg'
 import notification from '../../../img/DashBoard/TableDash/notifications.svg'

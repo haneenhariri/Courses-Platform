@@ -5,11 +5,11 @@
 }
 .accordion-button::after {
 
-    background-image: url(./public/image/MainPageImg/AccordionIcon/Icon\ plus.svg) !important;
+    background-image: url(./image/MainPageImg/AccordionIcon/Icon\ plus.svg) !important;
 }
 .accordion-button:not(.collapsed)::after
 {
-    background-image: url(./public/image/MainPageImg/AccordionIcon/bx-minus.svg) !important;
+    background-image: url(./image/MainPageImg/AccordionIcon/bx-minus.svg) !important;
 }
 .accordion-button,.accordion-body{
     width: 75%;
