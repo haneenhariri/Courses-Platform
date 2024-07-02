@@ -78,7 +78,7 @@
   margin-inline: auto;
   margin-top: 50px;
 }
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   .BA-custom-form label input,
   .BA-custom-form label textarea {
     width: 100%;
