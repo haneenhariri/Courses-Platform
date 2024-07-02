@@ -47,11 +47,17 @@ export default function CrudTable({ titleTable, th1, th2, th3, th4 }) {
                 <img className="OE_img_edit" src={Edit} />
               </Link>
 
-              <Link to={"/dash="}>
+              <Link
+                onClick={(e) => {
+                  e.target.closest("tr").remove();
+                }}
+                // to={"/dash="}
+              >
                 <img className="OE_img_delete" src={Delete} />
               </Link>
             </td>
           </tr>
+          
         </tbody>
       </table>
     </section>
