@@ -1,8 +1,8 @@
+import { useEffect } from "react";
 import "./Form.css";
 import { Outlet } from "react-router-dom";
 
 const Form = ({ label1, label2, label3, label4, title, input1 , input2 , input3 , input4}) => {
-
   return (
     <section className="FM-Dash-Header">
       <form className="BA-custom-form">
