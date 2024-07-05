@@ -1,33 +1,34 @@
 export const TableSay = [
   {
     keyID: 1,
-    req: 'require',
-    td1: ' Guy Hawkins',
-    td2: 'Write',
+    td1: 'Guy Hawkins',
+    td2: 'Lifestyle',
     td3: 'Ugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem',
     td4: '08-Dec, 2021',
     ViewURL : 'dashstdsay/show/:id',
-    editURL : 'dashstdsay/edit/:id',
+    editURL : 'dashstdsay/edit/:id'
   },
   {
     keyID: 2,
-    td1: ' Mei De Vaux',
-    req: 'require',
+    td1: 'Jane Cooper',
     td2: 'Write',
     td3: 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur',
-    td4: '10-Apr, 2021',
+    td4: '08-Dec, 2021',
     ViewURL : 'dashstdsay/show/:id',
-    editURL : 'dashstdsay/edit/:id',
-  },
-
+    editURL : 'dashstdsay/edit/:id'
+  }
 ]
+
+const jsonTableSay = JSON.stringify(TableSay)
+
+localStorage.setItem('tableSay', jsonTableSay)
 
 export const TableArticle = [
   {
-    KeyID: 1,
+    keyID: 1,
     td1: '10 updated Figma features in 2022',
     td2: 'UX/UI Design',
-    td3: 'Ugit, sed quia consequuntur magni ....',
+    td3: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga...',
     td4: '08-Dec, 2021',
     ViewURL : 'show/:id',
     editURL : 'edit/:id',
@@ -39,7 +40,7 @@ export const TableArticle = [
     keyID: 2,
     td1: 'What new programming languages are in demand now?',
     td2: 'Programming ',
-    td3: 'Ugit, sed quia consequuntur magni ....',
+    td3: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga...',
     td4: '08-Dec, 2021',
     ViewURL : 'show/:id',
     editURL : 'edit/:id',
@@ -51,7 +52,7 @@ export const TableArticle = [
     keyID: 3,
     td1: 'Top popular styles in illustration 2022',
     td2: 'Illustration',
-    td3: 'Ugit, sed quia consequuntur magni ....',
+    td3: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga...',
     td4: '08-Dec, 2021',
     ViewURL : 'show/:id',
     editURL : 'edit/:id',
@@ -63,7 +64,7 @@ export const TableArticle = [
     keyID: 4,
     td1: 'The secret of a successful frame. What rules should be followed?',
     td2: 'Photo & Film',
-    td3: 'Ugit, sed quia consequuntur magni ....',
+    td3: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga...',
     td4: '08-Dec, 2021',
     ViewURL : 'show/:id',
     editURL : 'edit/:id',
@@ -75,7 +76,7 @@ export const TableArticle = [
     keyID: 5,
     td1: 'Brainstorming in design: from the idea to its implementation',
     td2: 'UX/UI Design',
-    td3: 'Ugit, sed quia consequuntur magni ....',
+    td3: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga...',
     td4: '08-Dec, 2021',
     ViewURL : 'show/:id',
     editURL : 'edit/:id',
@@ -87,7 +88,7 @@ export const TableArticle = [
     keyID: 6,
     td1: 'Who is an Internet marketer and what does he do?',
     td2: 'Marketing',
-    td3: 'Ugit, sed quia consequuntur magni ....',
+    td3: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga...',
     td4: '08-Dec, 2021',
     ViewURL : 'show/:id',
     editURL : 'edit/:id',
@@ -99,7 +100,7 @@ export const TableArticle = [
     keyID: 7,
     td1: 'Who is an Internet marketer and what does he do?',
     td2: 'Marketing',
-    td3: 'Ugit, sed quia consequuntur magni ....',
+    td3: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga...',
     td4: '08-Dec, 2021',
     ViewURL : 'show/:id',
     editURL : 'edit/:id',
@@ -108,10 +109,10 @@ export const TableArticle = [
     read:'5 min read',
   },
   {
-    id: 8,
+    keyID: 8,
     td1: 'Who is an Internet marketer and what does he do?',
     td2: 'Marketing',
-    td3: 'Ugit, sed quia consequuntur magni ....',
+    td3: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga...',
     td4: '08-Dec, 2021',
     ViewURL : 'show/:id',
     editURL : 'edit/:id',
@@ -120,10 +121,10 @@ export const TableArticle = [
     read:'5 min read',
   },
   {
-    id: 9,
+    keyID: 9,
     td1: 'Who is an Internet marketer and what does he do?',
     td2: 'Marketing',
-    td3: 'Ugit, sed quia consequuntur magni ....',
+    td3: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga...',
     td4: '08-Dec, 2021',
     ViewURL : 'show/:id',
     editURL : 'edit/:id',
@@ -132,3 +133,7 @@ export const TableArticle = [
     read:'5 min read',
   },
 ]
+
+const jsonTableArticle = JSON.stringify(TableArticle)
+
+localStorage.setItem('tableArticle', jsonTableArticle)

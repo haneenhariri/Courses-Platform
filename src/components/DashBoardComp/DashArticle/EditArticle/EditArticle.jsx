@@ -1,18 +1,41 @@
-import Form from '../../Form/Form'
-import './EditArticle.css'
+import { useParams } from "react-router-dom"
+import Form from "../../Form/Form"
+export default function EditStd() {
 
-export default function EditArticle() {
+  const { id } = useParams()
+
+  const storedJsonTableArticle = JSON.parse(localStorage.getItem('tableArticle'))
+  
+  var input_1 
+  var input_2 
+  var input_3 
+  var input_4 
+
+  const k = id.substring(3)
+
+  if (storedJsonTableArticle) {
+    input_1 = storedJsonTableArticle[k].td1
+    input_2 = storedJsonTableArticle[k].td2
+    input_3 = storedJsonTableArticle[k].td3
+    input_4 = storedJsonTableArticle[k].td4
+  }
+
+  
+  
   return (
     <Form 
-      title={'Edit Article'}
-      label1={'Title '}
-      label2={'Tag'}
-      label3={'Content'}
+      title={'Edit Student'}
+      label1={'Student name'}
+      label2={'Course name'}
+      label3={'What he say'}
       label4={'date'}
-      input1={'10 updated Figma features in 2022'}
-      input2={'Illustration'}
-      input3={'Ugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem'}
-      input4={'08-Dec, 2021'}
+      input1={input_1}
+      input2={input_2}
+      input3={input_3}
+      input4={input_4}
+      TdData={'tableArticle'}
+      i={k}
+      func={'edit'}
     />
   )
 }

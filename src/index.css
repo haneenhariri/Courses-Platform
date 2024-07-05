@@ -25,5 +25,17 @@
   --SecondColorDash:#504DEE;/* for button and icon  */
   --buttonChange: #1F1C39;
   --inputColor:#F8FAFC; /* input and textarea regist */
+  --inputColorManagement:#504dee1f; /* input and textarea regist */
   --TableHeadColor:#ACACAC; 
+  --lableColor: #6F7482;
+  --lableRequire: #ED0131;
+  --formBTN: #FEFAFA;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom left, var(--SecondColorDash), var(--SecondColorDash), var(--primaryColorSide), var(--buttonChange), var(--buttonChange) );
+  border-radius: 100px;
 }

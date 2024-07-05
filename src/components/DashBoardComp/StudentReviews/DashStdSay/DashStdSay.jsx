@@ -1,10 +1,9 @@
-import CrudTable from "../../CrudTable/CrudTable";
-import { TableSay } from "../../../../const/data/CrudData"
+import CrudTable from "../../CrudTable/CrudTable"
 
 
 export default function DashStdSay() {
   return (
-    <div>
+    <>
     <CrudTable 
               titleTable={'Students say List'} 
               th1={'Name'} 
@@ -12,10 +11,10 @@ export default function DashStdSay() {
               th3={'content'} 
               th4={'Date of say'}
               btnContent={'STUDENT Say'}
-              Data={TableSay}
+              DataKey={'tableSay'}
               AddURL={'dashstdsay/add'}
     />
 
-    </div>
+    </>
   )
 }

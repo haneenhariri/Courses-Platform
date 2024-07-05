@@ -1,86 +1,76 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
-.BA-custom-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 728px;
-}
-.BA-custom-form h2 {
+.FM-form-title {
   font-family: 'Montserrat';
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 700;
   line-height: 26.82px;
-  margin: 10.99% 0 15.11% 0;
-  color: black;
+  margin-bottom: 8.548%;
+  color: #000;
 }
-
-.BA-custom-form label {
+.FM-form {
+  width: 100%;
+  padding: 4.455% 2.228% 4.01%;
+}
+.FM-lable-input {
+  display: flex;
+  flex-direction: column;
+  width: 56.566%;
+  margin-bottom: 4.396%;
+}
+.FM-lable {
   font-family: 'IBM Plex Sans';
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.01em;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 32px;
+  color: var(--lableColor);
+  cursor: pointer;
 }
-
-.BA-custom-form label p {
-  color: #6f7482;
-  font-size: 16px;
-  margin-bottom: 2px;
+.FM-input-require{
+  color: var(--lableRequire);
 }
-
-.BA-custom-form label p span {
-  color: #ed0131;
+.FM-input {
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--inputColor);
 }
-
-.BA-custom-form label input{
+.FM-textarea {
+  height: 220px;
+}
+.FM-input:focus {
+  outline: 1px solid var(--lableRequire);
+}
+.FM-btn-parent{
+  width: 56.566%;
+}
+.FM-form-btn {
+  display: block;
   font-family: 'Inter';
   font-size: 1rem;
   font-weight: 400;
   line-height: 19.36px;
-  text-align: left;
-}
-.BA-custom-form label input,
-.BA-custom-form label textarea {
-  resize: none;
-  padding-block: 5px;
-  padding-inline: 10px;
-  background-color: #f8fafc;
+  width: 183px;
+  height: 41px;
+  margin: 0 auto;
+  text-align: center;
   border: none;
-  outline: none;
-  border-radius: 4px;
-}
-
-.BA-custom-form label input:focus,
-.BA-custom-form label textarea:focus {
-  outline: 1px solid #999;
-}
-
-.BA-custom-form label textarea {
-  height: 150px;
-}
-
-.BA-custom-form label textarea::-webkit-scrollbar {
-  display: none;
-}
-
-.BA-custom-form button {
-  width: fit-content;
-  padding-block: 11px;
-  padding-inline: 70px;
   border-radius: 8px;
-  border: none;
-  outline: none;
-  background-color: #504dee;
-  color: white;
-  margin-inline: auto;
-  margin-top: 50px;
+  color: var(--formBTN);
+  background-color: var(--SecondColorDash);
 }
 @media (max-width: 992px) {
-  .BA-custom-form label input,
-  .BA-custom-form label textarea {
+  .FM-lable-input , .FM-btn-parent {
     width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .FM-form-title{
+    font-size: 1.125rem;
+  }
+  .FM-lable {
+    font-size: 0.8rem;
   }
 }
