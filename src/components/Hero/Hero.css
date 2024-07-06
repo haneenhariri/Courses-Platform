@@ -47,6 +47,32 @@
 .OE-hero-left-div .OE-hero-left-div-span1{
     color: var(--priceCard2);
 }
+@-webkit-keyframes heartbeat {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    20% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    40% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    60% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    80% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
 .OE-hero-left-div .OE-hero-left-div-btn{
     display: block;
     padding: 1.39vh 2.7629vw;
@@ -54,6 +80,8 @@
     background-color: var(--priceCard2);
     color: var(--SecondColor);
     margin-bottom: 16.98%;
+    -webkit-animation: heartbeat 2.5s ease-in-out infinite both;
+    animation: heartbeat 2.5s ease-in-out infinite both;
 }
 .OE-hero-left-div-footer {
     position: relative;
@@ -97,11 +125,20 @@
     align-items: end;
     justify-content: flex-end;
 }
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 .OE-hero-right-div-imgs {
     position: relative;
     height: 75vh;
     display: flex;
     align-items: end;
+    animation-delay: 1s;
 }
 .OE-hero-right-div-imgs .OE-hero-right-div-img1{
     display: block;
@@ -125,29 +162,51 @@
     font-weight: 600;
     line-height: 2.016vh;
 }
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 .OE-hero-right-div .OE-hero-right-div-btn1{
     top: 0;
     right: 30%;
+    animation: slideDown 1s forwards; 
+    animation-delay: 1.3s;
 }
 .OE-hero-right-div .OE-hero-right-div-btn2{
     top: 9%;
     left: 16%;
+    animation: slideDown 1s forwards; 
+    animation-delay: 1.4s;
 }
 .OE-hero-right-div .OE-hero-right-div-btn3{
     top: 10%;
     right: 0;
+    animation: slideDown 1s forwards; 
+    animation-delay: 1.3s;
 }
 .OE-hero-right-div .OE-hero-right-div-btn4{
     top: 30.6577%;
     left: -2.583%;
+    animation: slideDown 1s forwards; 
+    animation-delay: 2s;
 }
 .OE-hero-right-div .OE-hero-right-div-btn5{
     top: 50%;
     left: -20%;
+    animation: slideDown 1s forwards; 
+    animation-delay: 1.8s;
 }
 .OE-hero-right-div .OE-hero-right-div-btn6{
     bottom: 25%;
     left: -8%;
+    animation: slideDown 1s forwards; 
+    animation-delay: 1.5s;
 }
 .OE-show {
     display: block !important;

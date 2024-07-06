@@ -59,24 +59,37 @@
     top: 88px;
     left: 78%;
 }
+@keyframes moveAndReturn {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(200px); }
+    100% { transform: translateY(0); }
+}
+@keyframes moveAndReturntop {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-200px); }
+    100% { transform: translateY(0); }
+}
 .HH-rectangle1
 {
     position: absolute;
     left:29.43% ;
     top: -13px;
     height: max-content;
+    animation: moveAndReturn 7s infinite;
 }
 .HH-Ellipse1
 {
     position: absolute;
     left: 23.7%;
     bottom: -9px;
+    animation: moveAndReturntop 10s infinite;
 }
 .HH-rectangle2
 {
     position: absolute;
     left: 50.6%;
     bottom: -13.88px;
+    animation: moveAndReturntop 14s infinite;
     
 }
 .HH-Ellipse2
@@ -84,14 +97,28 @@
     position: absolute;
     left: 57.87%;
     top: 60px;
+    animation: moveAndReturn 12s infinite;
 }
+@keyframes scaleAnimation {
+    0% {
+    width: 180px;
+    }
+    50% {
+    width: 100px;
+    }
+    100% {
+    width: 180px;
+    }}
 .HH-Vector
 {
  position: absolute;
  left: 67.3%;
  top: 37.03px;
-
-
+ animation-name: scaleAnimation;
+ animation-duration: 6s; 
+ animation-timing-function: ease-in-out; 
+ animation-iteration-count: infinite; 
+ z-index: 3;
 }
 .HH-rectangle3
 {
@@ -100,6 +127,7 @@
     height: 28px;
     bottom: 41.4px;
     left: 78%;
+    animation: moveAndReturntop 9s infinite;
 
 }
 .HH-Ellipse3
@@ -107,6 +135,7 @@
     position: absolute;
     left: 84.21%;
     top: -23px;
+    animation: moveAndReturn 15s infinite;
 }
 .HH-div2
 {

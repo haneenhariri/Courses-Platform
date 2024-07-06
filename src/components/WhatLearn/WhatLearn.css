@@ -54,25 +54,71 @@
     margin-bottom: 22px !important;
     width: 71px !important;
 }
+@keyframes moveAndDisappear {
+    0% {
+        bottom: 20px;
+        opacity: 1;
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0.75;
+    }
+    70% {
+        opacity: 0.5;
+    }
+    80% {
+        opacity: 0.25;
+    }
+    90% {
+        bottom: 250px;
+        opacity: 0.1;
+    }
+    100% {
+        bottom: 0;
+        opacity: 0;
+    }
+}
 .FM-Rectangle-1 {
     position: absolute;
     bottom: 7.07%;
     right: 41.61%;
+    animation: moveAndDisappear 7s infinite;
+    animation-timing-function: ease-in-out; 
 }
 .FM-Rectangle-2 {
     position: absolute;
     bottom: -35.05px;
     right: 12.50%;
+    animation: moveAndDisappear 5s infinite;
+    animation-timing-function: ease-in-out;
 }
 .FM-Ellipse-1 {
     position: absolute;
     bottom: -14px;
     right: 30.52%;
+    animation: moveAndDisappear 9s infinite;
+    animation-timing-function: ease-in-out;
 }
 .FM-Ellipse-2 {
     position: absolute;
     bottom: 13.51%;
     right: 20.94%;
+    animation: moveAndDisappear 4s infinite;
+    animation-timing-function: ease-in-out; 
 }
 @media(max-width:1500px) and (min-width:1200px){
     .FM-main-section-1-content h2{
