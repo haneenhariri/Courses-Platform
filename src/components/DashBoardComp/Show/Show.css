@@ -25,7 +25,6 @@
 }
 .FM-cards .HH-cardTitle
 {
-    height: 35px;
     font-family: 'Inter';
     font-size: 1.5rem;
     line-height: 26px;
@@ -49,16 +48,29 @@
     font-size: 1.625rem;
     line-height: 49px;
     color: #6D6D77;
-    margin-top: 6.76%;
+    margin-top: 5.46%;
     width: 91.81%;
 }
 .FM-cards .HH-CardText p
 {
     margin-bottom: 0;
 }
+@media screen and (max-width:1366px){
+    .FM-cards .HH-card{
+        padding: 2rem 3rem ;
+    }
+    .FM-cards .HH-CardText
+    {
+        font-size: 1.5rem;
+        line-height:28px;
+    }
+    .FM-CirclePlay-img {
+        margin-bottom: 0;
+    }
+}
 @media screen and (max-width:1200px) {
     .FM-cards .HH-card{
-        padding: 2.5rem;
+        padding: 1rem;
     }
 }
 @media screen and (max-width:576px) {
@@ -72,7 +84,7 @@
        padding-bottom: 20px;
        border-bottom: 1px solid var(--DarkPrimary);
     }
-    .FM-cards .HH-cardImg
+    .FM-cards .HH-cardImg , .FM-CirclePlay-img
     {
         margin-bottom: 16.79px;
     }
