@@ -25,7 +25,13 @@ export default function StudentSay() {
                         <p>{info.td3}</p>
                     </div>
                 </div>
-        ))) : ('')}
+        ))) : (Swal.fire({
+                  icon: "error",
+                  title: "OOPS...",
+                  text: "No Results Found!",
+                  confirmButtonColor: '#504DEE'
+              }))
+      }
       </div>
     </section>
   )

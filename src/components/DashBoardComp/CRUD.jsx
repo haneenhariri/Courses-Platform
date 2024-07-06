@@ -37,17 +37,20 @@ export function DeleteRow(Datakey , k) {
                 const filteredArray = storedJsonTable.filter((_ , index) => index !== k)
                 localStorage.setItem(Datakey, JSON.stringify(filteredArray))
             } 
+            else {
+                Swal.fire({
+                    icon: "error",
+                    title: "OOPS...",
+                    text: "No Results Found!",
+                    confirmButtonColor: '#504DEE'
+                })
+            }
         }
     )
 
 }
 
-export function AddEditRow(TdData , id, func) {
-    
-    let I1 = document.querySelector('#input-1').value
-    let I2 = document.querySelector('#input-2').value
-    let I3 = document.querySelector('#input-3').value
-    let I4 = document.querySelector('#input-4').value
+export function AddEditRow(TdData , id, func , I1, I2, I3, I4) {
 
     if (func === 'edit') {
         AlertSwalConfirm ("You want to SAVE Changes!", 
@@ -66,7 +69,12 @@ export function AddEditRow(TdData , id, func) {
                             // window.history.back()
                             localStorage.setItem(TdData, JSON.stringify(storedJsonTable))
                         }
-                    })) : ('')
+                    })) : (Swal.fire({
+                            icon: "error",
+                            title: "OOPS...",
+                            text: "No Results Found!",
+                            confirmButtonColor: '#504DEE'
+                        }))
                 }
                 
             }
@@ -74,7 +82,7 @@ export function AddEditRow(TdData , id, func) {
         )
     }
     if(func === 'add') {
-        if (I1.trim() === '' || I2.trim() === '' || I3.trim() === '' || I4.trim() === ''){
+        if (!I1 || !I2 || !I3 || !I4){
             Swal.fire("Sorry, You can't save Empty Data. Please Fill all Fileds!")
         }
         else{
@@ -93,9 +101,7 @@ export function AddEditRow(TdData , id, func) {
                         editURL: TdData === 'tableSay' ? 'dashstdsay/edit/:id' : 'edit/:id',
                         colorClass: 'FM-New-Edit'
                     }
-                    if (storedJsonTable) {
-                        storedJsonTable.push(newRow)
-                    }
+                    {storedJsonTable ? storedJsonTable.push(newRow) : Swal.fire("Sorry, No Results!")}
                     if (TdData === 'tableSay') {
                         k1++
                         localStorage.setItem('SayKEY', k1)
