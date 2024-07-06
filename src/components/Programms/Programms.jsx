@@ -20,15 +20,16 @@ export default function Programm(){
           text1 : 'ProtoPie'
         }
       ];
+      const duble=AMbutton.concat(AMbutton);
     return(
         <>
         <section className='AM-Programm'>
-        <div className='button'>
-          {AMbutton.map((item) => (
-            <button key={item.text1}>{item.text1}</button>
-          ))}
-        </div>
-      </section>
+          <div className='button'>
+            {duble.map((item) => (
+              <button key={item.text1}>{item.text1}</button>
+            ))}
+          </div>
+        </section>
         
         
         
