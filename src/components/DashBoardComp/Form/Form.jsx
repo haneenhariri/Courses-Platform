@@ -10,7 +10,7 @@ const Form = ({ label1, label2, label3, label4, title ,input1, input2 , input3 ,
 
   const FormStructure = [
     {
-      id: 1,
+      id: 1, 
       LableFor: 'input-1',
       Lable: label1,
       input: <input className="FM-input" type="text" id="input-1" value={setValue1} onChange={() => setInputValue1()} required/>

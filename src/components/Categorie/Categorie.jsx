@@ -13,7 +13,7 @@ export default function Categorie() {
     chunkedArticles.push(articleEntries.slice(i * itemsPerPage, (i + 1) * itemsPerPage));
   }
   return (
-    <section>
+    <section className="HH-blog-section">
       <Swiper className="mySwiper">
         {chunkedArticles.map((chunk, index) => (
           <SwiperSlide key={index}>
@@ -23,7 +23,7 @@ export default function Categorie() {
                   <img className="img-mj" src={item.imageUrl} alt={item.td2} />
                   <div className="ddd-mj">
                     <h2 className="h3-mj"><Link to={'/article'} className="h3-mj">{item.td1}</Link></h2>
-                    <p id="p1-mj">{item.td2}</p>
+                    <p id="p1-mj">#{item.td2}</p>
                     <p id="p2-mj">{item.td3}</p>
                     <div className="mj-span">
                       <p className="p-mj-c"><img src="./image/BlogImg/blog icons/Icon clock.svg" alt="clock" id="clock" />{item.read}</p>
@@ -36,6 +36,16 @@ export default function Categorie() {
           </SwiperSlide>
         ))}
       </Swiper>
+      <div className="HH-arrow">
+        <img src="./image/BlogImg/blog icons/arrow left.svg" alt="" />
+        <div className="HH-num">
+          <span className="HH-one">1</span>
+          <span>2</span>
+          <span>3...</span>
+          <span>10</span>
+        </div>
+        <img src="./image/BlogImg/blog icons/arrow right.svg" alt="" />
+      </div>
     </section>
   );
 }

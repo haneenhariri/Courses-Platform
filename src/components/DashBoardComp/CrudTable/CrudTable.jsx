@@ -13,7 +13,7 @@ import Swal from "sweetalert2";
 export default function CrudTable({ titleTable, th1, th2, th3, th4, btnContent, DataKey, AddURL }) {
 
     const storedJsonTable = JSON.parse(localStorage.getItem(DataKey))
-
+    const [alertShown, setAlertShown] = useState(false);
     const [search, setSearch] = useState('');
     /* for  change color row  */
     const [colorRows, setColorRows] = useState([]);
@@ -22,9 +22,9 @@ export default function CrudTable({ titleTable, th1, th2, th3, th4, btnContent, 
     /* close pop up and set table to start state  */
     const ClosePopup = () => {
         setNotFound(false);
+        setAlertShown(false);
         setSearch('');
         setColorRows([]);
-
     };
     /* start useEffect  */
     useEffect(() => {
@@ -37,15 +37,9 @@ export default function CrudTable({ titleTable, th1, th2, th3, th4, btnContent, 
             const matchingRows = storedJsonTable.filter((e) =>
                 e.td1.toLowerCase().includes(search.toLowerCase())).map(e => e.id);
             setColorRows(matchingRows);
-            if (matchingRows.length === 0) {
+            if (matchingRows.length === 0  && !alertShown) {
                 setNotFound(true);
-                Swal.fire({
-                    icon: "error",
-                    title: "Oops...",
-                    text: "No results found!",
-                    willClose: ClosePopup,
-                    confirmButtonColor: '#504DEE'
-                });
+                setAlertShown(true);
             }
             else {
                 setNotFound(false);
@@ -59,8 +53,19 @@ export default function CrudTable({ titleTable, th1, th2, th3, th4, btnContent, 
         return () => {
             debouncedSearch.cancel();
         };
-    }, [search, storedJsonTable]);
+    }, [search,alertShown,storedJsonTable]);
     /* end useEffect  */
+    useEffect(() => {
+        if (notFound) {
+            Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "No results found!",
+                willClose: ClosePopup,
+                confirmButtonColor: '#504DEE'
+            });
+        }
+    }, [notFound]);
     return (
         <section className="FM-Dash-Header">
             <div className='OE_Dashboard'>

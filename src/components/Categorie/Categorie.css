@@ -1,5 +1,10 @@
-.categorie-mj{
+.HH-blog-section
+{
     padding: 8.75% 18.85%;
+    overflow: hidden;
+}
+.categorie-mj{
+    margin-bottom: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,11 +27,10 @@
     text-align: center;
     font-size: 18px;
     background: #fff;
-  
-    /* Center slide text vertically */
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100% !important;
   }
   
 
@@ -93,7 +97,30 @@ margin-bottom: 5rem;
 #clock{
     margin-right: 5px;
 }
-
+.HH-arrow
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.78px;
+}
+.HH-num
+{
+    margin: 0 3rem;
+    width: 10.375rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.HH-one
+{
+    border: 2px solid #19191C;
+    padding: 7px 13px;
+    
+}
 @media (max-width:1700px) and (min-width:1200px)
 {
     .card-mj{
@@ -115,6 +142,12 @@ margin-bottom: 5rem;
         font-size: 1rem;
         line-height: 20px;
     }
+    .HH-arrow,.HH-num
+    {
+        font-size: 1rem;
+        line-height: 20px;
+    }
+
 }
 @media (max-width:992px) and (min-width:768px)
 {
@@ -136,6 +169,13 @@ margin-bottom: 5rem;
     .img-mj
     {
         width: 100%;
+    }
+    .HH-arrow,.HH-num
+    {
+        font-size: 0.8rem;
+        line-height: 20px;
+        width: auto;
+        margin: auto;
     }
 }
 @media (max-width:768px) and (min-width:567px)
@@ -168,6 +208,13 @@ margin-bottom: 5rem;
     {
         width: 100%;
     }
+    .HH-arrow,.HH-num
+    {
+        font-size: 0.8rem;
+        line-height: 20px;
+        width: auto;
+        margin: auto;
+    }
 }
 @media (max-width:567px) and (min-width:300px)
 {
@@ -196,7 +243,14 @@ margin-bottom: 5rem;
         margin-bottom: 3rem;
     }
     .img-mj
-{
-    width: 100%;
-}
+    {
+        width: 100%;
+    }
+    .HH-arrow,.HH-num
+    {
+        font-size: 0.8rem;
+        line-height: 20px;
+        width: auto;
+        margin: auto;
+    }
 }
