@@ -4,6 +4,19 @@
     background-color: #FBFBFC;
 
 }
+.HH-Std .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+.HH-Std .swiper-slide {
+    text-align: start !important;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    width: 100% !important;
+  }
+  
 .HH-h2
 {
     width: 38.25rem;

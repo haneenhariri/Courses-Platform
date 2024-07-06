@@ -26,11 +26,10 @@
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background:transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100% !important;
   }
   
 
@@ -121,6 +120,7 @@ margin-bottom: 5rem;
     padding: 7px 13px;
     
 }
+
 @media (max-width:1700px) and (min-width:1200px)
 {
     .card-mj{

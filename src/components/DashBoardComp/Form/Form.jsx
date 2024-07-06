@@ -7,7 +7,6 @@ const Form = ({ label1, label2, label3, label4, title ,input1, input2 , input3 ,
   const [setValue2, setInputValue2] = useState(input2)
   const [setValue3, setInputValue3] = useState(input3)
   const [setValue4, setInputValue4] = useState(input4)
-
   const FormStructure = [
     {
       id: 1, 
@@ -34,20 +33,6 @@ const Form = ({ label1, label2, label3, label4, title ,input1, input2 , input3 ,
       input: <input className="FM-input" type="text" id="input-4" value={setValue4} onChange={() => setInputValue4()} required/>
     }
   ]
-
-  });
-  const handelSave = (event) =>{
-    event.preventDefault();
-    
-
-  }
-  function handel(e) {
-    const newData = { ...Data }
-    newData[e.target]= e.target.value
-    setData(newData)
-    console.log(newData)
-    
-  }
   return (
     <section className="FM-Dash-Header">
 

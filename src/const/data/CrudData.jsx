@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react"
 export const TableSay = [
   {
     keyID: 1,
@@ -19,9 +20,6 @@ export const TableSay = [
   }
 ]
 
-const jsonTableSay = JSON.stringify(TableSay)
-
-localStorage.setItem('tableSay', jsonTableSay)
 
 export const TableArticle = [
   {
@@ -134,6 +132,15 @@ export const TableArticle = [
   },
 ]
 
-const jsonTableArticle = JSON.stringify(TableArticle)
+export default function CrudData() {
+  const [jsonTableSay] = useState(TableSay)
+  const [jsonTableArticle] = useState(TableArticle)
 
-localStorage.setItem('tableArticle', jsonTableArticle)
+  useEffect(() => {
+    localStorage.setItem('tableSay', JSON.stringify(jsonTableSay))
+  }, [jsonTableSay])
+
+  useEffect(() => {
+    localStorage.setItem('tableArticle', JSON.stringify(jsonTableArticle))
+  }, [jsonTableArticle])
+}

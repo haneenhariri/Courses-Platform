@@ -1,22 +1,41 @@
 import "./Categorie.css"
-import {TableArticle} from '../../const/data/CrudData'
+import { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 export default function Categorie() {
-  const itemsPerPage = 6;
-  const articleEntries = Object.entries(TableArticle);
-  const numPages = Math.ceil(articleEntries.length / itemsPerPage); 
-  const chunkedArticles = [];
-  for (let i = 0; i < numPages; i++) {
-    chunkedArticles.push(articleEntries.slice(i * itemsPerPage, (i + 1) * itemsPerPage));
-  }
+  const storedJsonTableArticle = JSON.parse(localStorage.getItem('tableArticle') || '{}');
+  const [articles, setArticles] = useState([]);
+
+  useEffect(() => {
+    if (Object.keys(storedJsonTableArticle).length > 0) {
+      const itemsPerPage = 6;
+      const entries = Object.entries(storedJsonTableArticle);
+      const numPages = Math.ceil(entries.length / itemsPerPage);
+
+      const chunkedArticles = [];
+      for (let i = 0; i < numPages; i++) {
+        chunkedArticles.push(entries.slice(i * itemsPerPage, (i + 1) * itemsPerPage));
+      }
+
+      setArticles(chunkedArticles);
+    }
+    else{
+      Swal.fire({
+        icon: "error",
+        title: "OOPS...",
+        text: "No Results Found!",
+        confirmButtonColor: '#504DEE'
+    })
+    }
+  }, []);
+
   return (
     <section className="HH-blog-section">
       <Swiper className="mySwiper">
-        {chunkedArticles.map((chunk, index) => (
-          <SwiperSlide key={index}>
+        {articles.map((chunk, pageIndex) => (
+          <SwiperSlide key={pageIndex}>
             <div className="categorie-mj">
               {chunk.map(([id, item]) => (
                 <div className="card-mj" key={id}>
