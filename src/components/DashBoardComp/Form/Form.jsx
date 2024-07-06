@@ -70,8 +70,8 @@ const Form = ({ label1, label2, label3, label4, title ,input1, input2 , input3 ,
     </section>
     
 
-  )
-}
+  );
 
+}
 export default Form;
 
