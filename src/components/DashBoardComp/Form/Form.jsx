@@ -35,6 +35,19 @@ const Form = ({ label1, label2, label3, label4, title ,input1, input2 , input3 ,
     }
   ]
 
+  });
+  const handelSave = (event) =>{
+    event.preventDefault();
+    
+
+  }
+  function handel(e) {
+    const newData = { ...Data }
+    newData[e.target]= e.target.value
+    setData(newData)
+    console.log(newData)
+    
+  }
   return (
     <section className="FM-Dash-Header">
 
@@ -60,4 +73,5 @@ const Form = ({ label1, label2, label3, label4, title ,input1, input2 , input3 ,
   )
 }
 
-export default Form
+export default Form;
+
