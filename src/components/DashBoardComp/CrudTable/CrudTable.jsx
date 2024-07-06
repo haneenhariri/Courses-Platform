@@ -110,7 +110,12 @@ export default function CrudTable({ titleTable, th1, th2, th3, th4, btnContent, 
                                             </td>
                                         </tr>
                                     )
-                                })) : ('')
+                                })) : (Swal.fire({
+                                            icon: "error",
+                                            title: "OOPS...",
+                                            text: "No Results Found!",
+                                            confirmButtonColor: '#504DEE'
+                                        }))
 
                             }
                         </tbody>

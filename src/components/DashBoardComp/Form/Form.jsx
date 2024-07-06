@@ -13,25 +13,25 @@ const Form = ({ label1, label2, label3, label4, title ,input1, input2 , input3 ,
       id: 1,
       LableFor: 'input-1',
       Lable: label1,
-      input: <input className="FM-input" type="text" id="input-1" value={setValue1} onChange={() => setInputValue1()} required/>
+      input: <input className="FM-input" type="text" id="input-1" value={setValue1} onChange={(e) => setInputValue1(e.target.value)} required/>
     },
     {
       id: 2,
       LableFor: 'input-2',
       Lable: label2,
-      input: <input className="FM-input" type="text" id="input-2" value={setValue2} onChange={() => setInputValue2()} required/>
+      input: <input className="FM-input" type="text" id="input-2" value={setValue2} onChange={(e) => setInputValue2(e.target.value)} required/>
     },
     {
       id: 3,
       LableFor: 'input-3',
       Lable: label3,
-      input: <textarea className="FM-input FM-textarea" id="input-3" value={setValue3} onChange={() => setInputValue3()} required></textarea>
+      input: <textarea className="FM-input FM-textarea" id="input-3" value={setValue3} onChange={(e) => setInputValue3(e.target.value)} required></textarea>
     },
     {
       id: 4,
       LableFor: 'input-4',
       Lable: label4,
-      input: <input className="FM-input" type="text" id="input-4" value={setValue4} onChange={() => setInputValue4()} required/>
+      input: <input className="FM-input" type="text" id="input-4" value={setValue4} onChange={(e) => setInputValue4(e.target.value)} required/>
     }
   ]
 
@@ -51,7 +51,7 @@ const Form = ({ label1, label2, label3, label4, title ,input1, input2 , input3 ,
         )
       })}
 
-      <div className="FM-btn-parent"><button className="FM-form-btn" onClick={(event) => { event.preventDefault(); AddEditRow(TdData, i, func); }}>Save</button></div>
+      <div className="FM-btn-parent"><button className="FM-form-btn" onClick={(event) => { event.preventDefault(); AddEditRow(TdData, i, func, setValue1, setValue2, setValue3, setValue4); }}>Save</button></div>
       
     </form>
     </section>
