@@ -9,6 +9,8 @@ export default function AddArticle() {
         label2={'Tag'}
         label3={'Content'}
         label4={'date'}
+        TdData={'tableArticle'}
+        func={'add'}
     />
   )
 }

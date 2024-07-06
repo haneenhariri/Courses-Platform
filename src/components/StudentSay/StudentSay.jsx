@@ -1,38 +1,31 @@
 import './StudentSay.css'
-
 export default function StudentSay() {
+
+  const storedJsonTableSay = JSON.parse(localStorage.getItem('tableSay'))
+
   return (
     <section className='HH-Std'>
       <h2 className='HH-h2'>What our students have to say</h2>
       <div className='HH-icon'>
-        <img className='HH-icon-arow' src="./image/MainPageImg/StudentSayImg/Icon_arrow_left.svg" alt="" />
-        <img className='HH-icon-arow' src="./image/MainPageImg/StudentSayImg/Icon_arow_right.svg" alt="" />
+        <img className='HH-icon-arow' src="./image/MainPageImg/StudentSayImg/Icon_arrow_left.svg" alt="arrow left" />
+        <img className='HH-icon-arow' src="./image/MainPageImg/StudentSayImg/Icon_arow_right.svg" alt="arrow right" />
       </div>
       <div className='HH-cards'>
-        <div className='HH-card'>
-            <div className='HH-cardInfo'>
-                <img className='HH-cardImg' src="./image/MainPageImg/StudentSayImg/user_icon_left.svg" alt="" />
-                <div>
-                    <h3 className='HH-cardTitle'> Guy Hawkins</h3>
-                    <p className='HH-CardP'>Lifestyle</p>
+        {storedJsonTableSay ?
+        (storedJsonTableSay.map((info,index)=>(
+                    <div className='HH-card' key={index}>
+                    <div className='HH-cardInfo'>
+                        <img className='HH-cardImg' src="./image/MainPageImg/StudentSayImg/user_icon_left.svg" alt="user" />
+                        <div>
+                            <h3 className='HH-cardTitle'>{info.td1}</h3>
+                            <p className='HH-CardP'>{info.td2}</p>
+                        </div>
+                    </div>
+                    <div className='HH-CardText'>
+                        <p>{info.td3}</p>
+                    </div>
                 </div>
-            </div>
-            <div className='HH-CardText'>
-                <p>Ugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem</p>
-            </div>
-        </div>
-        <div className='HH-card'>
-        <div className='HH-cardInfo'>
-                <img className='HH-cardImg' src="./image/MainPageImg/StudentSayImg/user_icon_left.svg" alt="" />
-                <div>
-                    <h3 className='HH-cardTitle'> Jane Cooper</h3>
-                    <p className='HH-CardP'>Write</p>
-                </div>
-            </div>
-            <div>
-                <p className='HH-CardText'>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
-            </div>
-        </div>
+        ))) : ('')}
       </div>
     </section>
   )

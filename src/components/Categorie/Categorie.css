@@ -12,10 +12,24 @@
     position: relative;
     gap: 4.25rem;
 }
-.img-mj
-{
+
+.swiper {
     width: 100%;
-}
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
 .ddd-mj 
 {
     width: 100%;
@@ -119,6 +133,10 @@ margin-bottom: 5rem;
         line-height: 20px;
         width: auto;
     }
+    .img-mj
+    {
+        width: 100%;
+    }
 }
 @media (max-width:768px) and (min-width:567px)
 {
@@ -145,6 +163,10 @@ margin-bottom: 5rem;
     #p2-mj
     {
         margin-bottom: 3rem;
+    }
+    .img-mj
+    {
+        width: 100%;
     }
 }
 @media (max-width:567px) and (min-width:300px)
@@ -173,4 +195,8 @@ margin-bottom: 5rem;
     {
         margin-bottom: 3rem;
     }
+    .img-mj
+{
+    width: 100%;
+}
 }

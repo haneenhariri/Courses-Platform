@@ -8,6 +8,8 @@ export default function AddStdSay() {
         label2={'Course name'}
         label3={'What he say'}
         label4={'date'}
+        TdData={'tableSay'}
+        func={'add'}
     />
   )
 }
