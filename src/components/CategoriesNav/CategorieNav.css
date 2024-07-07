@@ -4,14 +4,12 @@
     background-color: var(--DarkPrimary);
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
     width: 100%;
 }
 .HH-ul
 {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     justify-content:start;
     list-style: none;
@@ -20,7 +18,8 @@
     margin: 0;
 }
 .HH-ul .HH-cNav-link{
-    padding-right:48px ;
+    margin-right:48px ;
+    padding-bottom: 12px;
     font-family: 'Inter';
     font-size: 18px;
     font-weight: 400;
@@ -28,20 +27,11 @@
     cursor: pointer;
     display: block;
 }
-.HH-ul .HH-cNav-link::after
-{
-    content: '';
-    display: block;
-    height: 4px;
-    width: 0;
-    background-color: transparent;
-}
-.HH-ul .HH-cNav-link:hover::after
-{
-    width: 100%;
-    background-color: var(--PrimaryColo);
-    transition: all 0.4s ease 0s;
-}
+
+.HH-cNav-link.active {
+    border-bottom: 4px solid var(--PrimaryColo);
+    
+  }
 .HH-span
 {
     color: var(--PrimaryColo);
@@ -53,7 +43,7 @@
 @media (max-width:1200px) and (min-width:992px)
 {
     .HH-ul .HH-cNav-link{
-        padding-right:30px ;
+        margin-right:30px ;
         font-size: 1rem;
         line-height: 20px;
     }
@@ -66,7 +56,7 @@
 @media (max-width:992px) and (min-width:768px)
 {
     .HH-ul .HH-cNav-link{
-        padding-right:25px ;
+        margin-right:25px ;
         font-size: 0.8rem;
         line-height: 20px;
     }
@@ -79,7 +69,7 @@
 @media (max-width:768px) and (min-width:567px)
 {
     .HH-ul .HH-cNav-link{
-        padding-right:20px ;
+        margin-right:20px ;
         font-size: 0.8rem;
         line-height: 20px;
     }
@@ -92,7 +82,7 @@
 @media (max-width:567px) and (min-width:300px)
 {
     .HH-ul .HH-cNav-link{
-        padding-right:15px ;
+        margin-right:15px ;
         font-size: 0.8rem;
         line-height: 20px;
     }

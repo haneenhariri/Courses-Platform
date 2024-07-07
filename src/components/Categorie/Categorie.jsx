@@ -1,40 +1,44 @@
+// Categorie.js
 import "./Categorie.css"
 import { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import Swal from 'sweetalert2';
 
-export default function Categorie() {
+export default function Categorie({ selectedCategory }) {
   const storedJsonTableArticle = JSON.parse(localStorage.getItem('tableArticle') || '{}');
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
     if (Object.keys(storedJsonTableArticle).length > 0) {
+      const filteredArticles = selectedCategory === 'All'
+        ? Object.entries(storedJsonTableArticle)
+        : Object.entries(storedJsonTableArticle).filter(([id, item]) => item.td2 === selectedCategory);
+
       const itemsPerPage = 6;
-      const entries = Object.entries(storedJsonTableArticle);
-      const numPages = Math.ceil(entries.length / itemsPerPage);
+      const numPages = Math.ceil(filteredArticles.length / itemsPerPage);
 
       const chunkedArticles = [];
       for (let i = 0; i < numPages; i++) {
-        chunkedArticles.push(entries.slice(i * itemsPerPage, (i + 1) * itemsPerPage));
+        chunkedArticles.push(filteredArticles.slice(i * itemsPerPage, (i + 1) * itemsPerPage));
       }
 
       setArticles(chunkedArticles);
-    }
-    else{
+    } else {
       Swal.fire({
         icon: "error",
         title: "OOPS...",
         text: "No Results Found!",
         confirmButtonColor: '#504DEE'
-    })
+      });
     }
-  }, []);
+  }, [selectedCategory]);
 
   return (
     <section className="HH-blog-section">
       <Swiper className="mySwiper">
-        {articles.map((chunk, pageIndex) => (
+        { articles.map((chunk, pageIndex) => (
           <SwiperSlide key={pageIndex}>
             <div className="categorie-mj">
               {chunk.map(([id, item]) => (

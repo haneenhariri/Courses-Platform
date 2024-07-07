@@ -57,25 +57,108 @@
 .AM-willLearn .smallCircle , .AM-willLearn .smallSquare{
     width: 1.7rem;
 }
+@keyframes moveAndDisappear {
+    0% {
+        bottom: 20px;
+        opacity: 1;
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0.75;
+    }
+    70% {
+        opacity: 0.5;
+    }
+    80% {
+        opacity: 0.25;
+    }
+    90% {
+        bottom: 250px;
+        opacity: 0.1;
+    }
+    100% {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+@keyframes moveAndDisappeartop {
+    0% {
+        top: 90%;
+        opacity: 1;
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0.75;
+    }
+    70% {
+        opacity: 0.5;
+    }
+    80% {
+        opacity: 0.25;
+    }
+    90% {
+        opacity: 0.1;
+    }
+    100% {
+        top: 70%;
+        opacity: 0;
+    }
+}
 .AM-willLearn  .bigCircle{
     position: absolute;
     top: 36.91rem;
     left: 24.5rem;
+    animation: moveAndDisappeartop 8s infinite;
+    animation-timing-function: ease-in-out;
 }
 .AM-willLearn .bigSquare{
     position: absolute;
     top: 30rem;
     left: 33rem;
+    animation: moveAndDisappeartop 9s infinite;
+    animation-timing-function: ease-in-out;
 }
 .AM-willLearn .smallCircle{
     position: absolute;
     top: 34rem;
     right: 77rem;
+    animation: moveAndDisappeartop 5s infinite;
+    animation-timing-function: ease-in-out;
 }
 .AM-willLearn .smallSquare{
     position: absolute;
     bottom: 4rem;
     left: 15rem;
+    animation: moveAndDisappear 7s infinite;
+    animation-timing-function: ease-in-out;
 }
 @media (min-width:992px) and (max-width:1200px){
     .AM-willLearn{

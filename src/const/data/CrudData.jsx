@@ -97,7 +97,7 @@ export const TableArticle = [
   {
     keyID: 7,
     td1: 'Who is an Internet marketer and what does he do?',
-    td2: 'Marketing',
+    td2: 'Programming',
     td3: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga...',
     td4: '08-Dec, 2021',
     ViewURL : 'show/:id',
@@ -109,7 +109,7 @@ export const TableArticle = [
   {
     keyID: 8,
     td1: 'Who is an Internet marketer and what does he do?',
-    td2: 'Marketing',
+    td2: 'Animation',
     td3: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga...',
     td4: '08-Dec, 2021',
     ViewURL : 'show/:id',
@@ -121,7 +121,7 @@ export const TableArticle = [
   {
     keyID: 9,
     td1: 'Who is an Internet marketer and what does he do?',
-    td2: 'Marketing',
+    td2: 'Design',
     td3: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga...',
     td4: '08-Dec, 2021',
     ViewURL : 'show/:id',
