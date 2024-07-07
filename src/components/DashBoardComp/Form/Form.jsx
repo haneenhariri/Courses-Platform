@@ -1,12 +1,14 @@
 import { useState } from "react"
 import { AddEditRow } from "../CRUD"
 import "./Form.css"
+import { useNavigate } from "react-router-dom"
 
 const Form = ({ label1, label2, label3, label4, title ,input1, input2 , input3 , input4, TdData, i, func}) => {
   const [setValue1, setInputValue1] = useState(input1)
   const [setValue2, setInputValue2] = useState(input2)
   const [setValue3, setInputValue3] = useState(input3)
   const [setValue4, setInputValue4] = useState(input4)
+  const navigate = useNavigate();
   const FormStructure = [
     {
       id: 1, 
@@ -32,7 +34,12 @@ const Form = ({ label1, label2, label3, label4, title ,input1, input2 , input3 ,
       Lable: label4,
       input: <input className="FM-input" type="text" id="input-4" value={setValue4} onChange={(e) => setInputValue4(e.target.value)} required/>
     }
-  ]
+  ];
+  const handleSave = (event) => {
+    event.preventDefault();
+    AddEditRow(TdData, i, func, setValue1, setValue2, setValue3, setValue4);
+    navigate("/dash");
+  };
   return (
     <section className="FM-Dash-Header">
 
@@ -49,7 +56,7 @@ const Form = ({ label1, label2, label3, label4, title ,input1, input2 , input3 ,
         )
       })}
 
-      <div className="FM-btn-parent"><button className="FM-form-btn" onClick={(event) => { event.preventDefault(); AddEditRow(TdData, i, func, setValue1, setValue2, setValue3, setValue4); }}>Save</button></div>
+      <div className="FM-btn-parent"><button className="FM-form-btn" onClick={handleSave}>Save</button></div>
       
     </form>
     </section>
