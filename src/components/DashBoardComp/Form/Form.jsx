@@ -38,7 +38,8 @@ const Form = ({ label1, label2, label3, label4, title ,input1, input2 , input3 ,
   const handleSave = (event) => {
     event.preventDefault();
     AddEditRow(TdData, i, func, setValue1, setValue2, setValue3, setValue4);
-    navigate("/dash");
+    {TdData === 'tableSay' ? navigate("/dash") : navigate("/dash/articlelist")}
+
   };
   return (
     <section className="FM-Dash-Header">

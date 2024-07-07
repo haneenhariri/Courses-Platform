@@ -1,14 +1,15 @@
 import { useEffect, useState } from 'react';
-import './StudentSay.css'
+import './StudentSay.css';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Swal from "sweetalert2";
 
 export default function StudentSay() {
-  const storedJsonTableSay = JSON.parse(localStorage.getItem('tableSay') || '{}');
   const [stdSay, setStdSay] = useState([]);
 
   useEffect(() => {
+    const storedJsonTableSay = JSON.parse(localStorage.getItem('tableSay') || '{}');
+    
     if (Object.keys(storedJsonTableSay).length > 0) {
       const itemsPerPage = 2;
       const entries = Object.entries(storedJsonTableSay);
@@ -28,7 +29,7 @@ export default function StudentSay() {
         confirmButtonColor: '#504DEE'
       });
     }
-  }, [storedJsonTableSay]);
+  }, []);
 
   return (
     <section className='HH-Std'>
@@ -37,7 +38,7 @@ export default function StudentSay() {
         <img className='HH-icon-arow' src="./image/MainPageImg/StudentSayImg/Icon_arrow_left.svg" alt="arrow left" />
         <img className='HH-icon-arow' src="./image/MainPageImg/StudentSayImg/Icon_arow_right.svg" alt="arrow right" />
       </div>
-      <Swiper >
+      <Swiper>
         {stdSay.map((chunk, pageIndex) => (
           <SwiperSlide className='HH-cards' key={`slide-${pageIndex}`}>
             {chunk.map(([id, item]) => (
@@ -58,5 +59,5 @@ export default function StudentSay() {
         ))}
       </Swiper>
     </section>
-  )
+  );
 }
