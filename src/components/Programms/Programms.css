@@ -6,11 +6,11 @@
 }
 .AM-Programm .button button{
     outline: none;
-    padding: 8px 116px;
+    padding: 1.125rem 4.69rem;
     background-color: white;
     font-size: 18px;
     font-weight: bold;
-    border: 1px solid black;
+    border: 2px solid black;
 }
 .AM-Programm{
     position: relative;
@@ -38,7 +38,7 @@
         transform: translateX(0);
     }
     to{
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
 .AM-Programm:hover .button{
