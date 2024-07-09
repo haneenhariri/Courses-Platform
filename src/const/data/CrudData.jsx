@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Swal from 'sweetalert2';
+
 
 const TableSay = [
   {
@@ -147,25 +147,13 @@ export default function CrudData() {
   const [jsonTableArticle] = useState(TableArticle);
 
   useEffect(() => {
-    if (!localStorage.getItem('tableSay')) {
       localStorage.setItem('tableSay', JSON.stringify(jsonTableSay));
-      Swal.fire('Data Restored', 'tableSay data has been restored to localStorage.', 'success');
-    }
+    
   }, [jsonTableSay]);
 
   useEffect(() => {
-    if (!localStorage.getItem('tableArticle')) {
       localStorage.setItem('tableArticle', JSON.stringify(jsonTableArticle));
-      Swal.fire('Data Restored', 'tableArticle data has been restored to localStorage.', 'success');
-    }
+    
   }, [jsonTableArticle]);
 
-  useEffect(() => {
-    if (!localStorage.getItem('SayKEY')) {
-      localStorage.setItem('SayKEY', 4);
-    }
-    if (!localStorage.getItem('ArticleKEY')) {
-      localStorage.setItem('ArticleKEY', 10);
-    }
-  }, []);
 }
