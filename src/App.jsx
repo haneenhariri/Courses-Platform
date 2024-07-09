@@ -19,6 +19,7 @@ function App() {
   
   return (
     <>
+    <CrudData/>
       <Routes>
         <Route path='/' element={<MainPage />} />
         <Route path='/courses' element={<Courses />} />
