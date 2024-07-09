@@ -7,11 +7,11 @@
 }
 .accordion-button::after {
 
-    --bs-accordion-btn-icon: url(../../AccordionIcon/Icon plus.svg) !important;
+    --bs-accordion-btn-icon: url(./image/MainPageImg/AccordionIcon/Icon plus.svg) !important;
 }
 .accordion-button:not(.collapsed)::after
 {
-    --bs-accordion-btn-active-icon: url(../../AccordionIcon/bx-minus.svg) !important;
+    --bs-accordion-btn-active-icon: url(./image/MainPageImg/AccordionIcon/bx-minus.svg) !important;
 }
 .accordion-button,.accordion-body{
     width: 75%;

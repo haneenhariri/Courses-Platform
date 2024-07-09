@@ -156,4 +156,10 @@ export default function CrudData() {
     
   }, [jsonTableArticle]);
 
+  useEffect(() => {
+
+      localStorage.setItem('SayKEY', 4);
+      localStorage.setItem('ArticleKEY', 10);
+    
+  }, []);
 }
