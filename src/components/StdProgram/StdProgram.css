@@ -195,6 +195,7 @@
         transform: rotate(-180deg);
         width: 100px;
         height: max-content;
+        animation: none;
       }
       #h2-prog
       {
