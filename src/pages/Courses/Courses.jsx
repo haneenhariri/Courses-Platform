@@ -29,6 +29,7 @@ export default function Courses() {
             imgURL = {'./image/CoursesImg/HeroCourses/employment-female.png'}
             BtnsData = {BtnsCoursesData}
             show = {'OE-show'}
+            courses={'OE-hero-left-div-courses'}
       />
        <UiDesign />
       <AMwhatLearn />

@@ -13,6 +13,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
     "framer-motion": "^11.2.12",
     "lodash": "^4.17.21",

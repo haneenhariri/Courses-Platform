@@ -8,12 +8,14 @@ export default function ProjStd() {
         <div className='FM-coursrs-section-3-content'>
             <h2>Projects of our students</h2>
             <div className='FM-ProjStd-card'>
-                {ProjStdData.map (element => {
-                    return <Card key={element.title} 
+                {ProjStdData.map ((element, index) => {
+                    const delay = (index * 100) + 50
+                    return <Card key={index} 
                                 header_url={element.headerUrl} 
                                 title={element.title}
                                 title_mb={element.title_mb}
                                 card_mt_p={element.card_class}
+                                delay={delay}
                             />
                     }
                 )}

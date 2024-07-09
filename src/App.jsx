@@ -1,4 +1,6 @@
 import './App.css'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import MainPage from './pages/MainPage/MainPage'
 import Courses from './pages/Courses/Courses'
 import Blog from './pages/Blog/Blog'
@@ -14,8 +16,16 @@ import EditArticle from './components/DashBoardComp/DashArticle/EditArticle/Edit
 import EditStd from './components/DashBoardComp/StudentReviews/EditStd/EditStd'
 import ShowStd from './components/DashBoardComp/StudentReviews/ShowStd/ShowStd'
 import ShowArticle from './components/DashBoardComp/DashArticle/ShowArticle/ShowArticle'
+import { useEffect } from 'react'
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: false,
+      mirror: false });
+  }, [])
   
   return (
     <>

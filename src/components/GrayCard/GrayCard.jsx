@@ -17,7 +17,8 @@ export default function GrayCard() {
             </div>
         </div>
              <div className='FM-GrayCard-card'>
-                {GrayCardData.map (element => {
+                {GrayCardData.map ((element , index) => {
+                    const delay = (index * 100) + 50
                     return <Card key={element.title} 
                                 header_url={element.headerUrl} 
                                 title={element.title}
@@ -25,6 +26,7 @@ export default function GrayCard() {
                                 card_show={element.card_show}
                                 footer_url={element.footerUrl}
                                 card_mt_p={element.card_mt}
+                                delay={delay}
                             />
                     }
                 )}

@@ -3,6 +3,8 @@ import {discoverData , H6Data} from '../../const/data/CardData.jsx'
 import './DiscoverLearn.css'
 
 export default function DiscoverLearn() {
+
+
   return (
     <section className='FM-main-section-2'>
         <div className='FM-main-section-2-content'>
@@ -19,13 +21,16 @@ export default function DiscoverLearn() {
                 </div>
             </div>
             <div className='FM-discoverData-card'>
-                {discoverData.map (element => {
-                    return <Card key={element.title} className="FM-MJ-card" header_url={element.headerUrl} 
+                {discoverData.map ((element , index)=> {
+                    const delay = (index * 100) + 50
+                    return <Card key={index} header_url={element.headerUrl} 
                                 title={element.title} 
                                 desc={element.description} 
                                 card_show={element.card_show}
-                                footer_url={element.footerUrl} />
-                    }
+                                footer_url={element.footerUrl}
+                                delay={delay} 
+                            />
+                }
                 )}
             </div>
             

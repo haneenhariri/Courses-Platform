@@ -9,7 +9,7 @@
 }
 .FM-card .header-img{
     width: 100%;
-    margin-bottom: 8.12% !important;
+    margin-bottom: 28px !important;
 }
 .FM-card .header-img img{
     width: 100%;
@@ -44,10 +44,10 @@
     margin-bottom: 0;
 }
 .desc-mb-normal {
-    margin-bottom: 12.825% !important;
+    margin-bottom: 35px !important;
 }
 .desc-mb-double {
-    margin-bottom: 71px !important;
+    margin-bottom: 106px !important;
 }
 @media (max-width:1366px) {
     .FM-card-title {
@@ -64,7 +64,7 @@
 }
 @media (min-width:992px) {
     .card-mt{
-        margin-top: 122px !important;
+        margin-top: 162px !important;
     }
 }
 @media (max-width:993px) {
