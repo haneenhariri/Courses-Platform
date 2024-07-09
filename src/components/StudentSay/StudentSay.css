@@ -35,9 +35,15 @@
 }
 .HH-icon-arow
 {
-    width: 36px;
-    height: 20px;
-    margin-left: 29px;
+    width: 36px !important;
+    height: 20px !important;
+    margin-left: 29px !important;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  position: static !important;
+  background: none;
+  color: #504DEE !important;
 }
 .HH-cards
 {
@@ -119,9 +125,9 @@
     }
     .HH-icon-arow
     {
-        width: 30px;
-        height: 20px;
-        margin-left: 29px;
+        width: 30px !important;
+        height: 20px !important;
+        margin-left: 29px !important;
     }
     .HH-cards
     {
@@ -144,13 +150,13 @@
     }
     .HH-icon
     {
-        margin-bottom: 12px;
+        margin-bottom: 12px !important;
     }
     .HH-icon-arow
     {
-        width: 28px;
-        height: 20px;
-        margin-left: 29px;
+        width: 28px !important;
+        height: 20px !important;
+        margin-left: 29px !important;
     }
     .HH-cards
     {
@@ -174,13 +180,13 @@
     }
     .HH-icon
     {
-        margin-bottom: 8px;
+        margin-bottom: 8px !important;
     }
     .HH-icon-arow
     {
-        width: 20px;
-        height: 20px;
-        margin-left: 19px;
+        width: 20px !important;
+        height: 20px !important;
+        margin-left: 19px !important;
     }
     .HH-cards
     {

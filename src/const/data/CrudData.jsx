@@ -17,6 +17,15 @@ export const TableSay = [
     td4: '08-Dec, 2021',
     ViewURL : 'dashstdsay/show/:id',
     editURL : 'dashstdsay/edit/:id'
+  },
+  {
+    keyID: 3,
+    td1: 'Jane Cooper',
+    td2: 'Write',
+    td3: 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur',
+    td4: '08-Dec, 2021',
+    ViewURL : 'dashstdsay/show/:id',
+    editURL : 'dashstdsay/edit/:id'
   }
 ]
 

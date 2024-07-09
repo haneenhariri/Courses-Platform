@@ -1,17 +1,14 @@
 .BA-Article {
-  padding: 0 12.5% !important;
+  padding: 8.75% 18.80%;
 }
-.BA-Article .styles {
-  padding-top: 8.75% !important;
-  padding-left: 6.3% !important;
-}
-.BA-Article .styles p {
-  font-size: 20px;
+
+.BA-Article .styles .BA-p {
+  font-size: 1.125rem;
   font-weight: 400;
   color: #6d6d77;
-  line-height: normal;
-
-  max-width: 952px;
+  line-height: 28px;
+  font-family: 'Inter';
+  width: 78.35%;
 }
 .BA-Article .styles p:first-of-type {
   margin-bottom: 28px;
@@ -20,91 +17,139 @@
   display: flex;
   justify-content: space-between;
   margin-top: 8.75% !important;
+  gap: 4.25rem;
 }
 .BA-Article .styles .BA-Popular .image {
   display: flex;
+  align-items: flex-end;
+  gap: 20px;
 }
 
 .BA-Article .styles .BA-Popular img:first-of-type {
-  margin-right: 20px;
-  width: 223px;
 
-  height: 302px;
+  margin-bottom: 5.375rem;
 }
 .BA-Article .styles .BA-Popular img:last-of-type {
-  height: 302px;
-  width: 243px;
 
-  margin-top: 104px;
-  margin-right: 60px;
 }
 
 .BA-Article .styles .BA-Popular1 h1 {
-  font-size: 50px;
+  font-size: 3.625rem;
   font-weight: 700;
   color: #19191c;
   margin-bottom: 28px;
 }
 .BA-Article .styles .BA-Popular1 p {
-  font-size: 20px;
+  font-size: 1.125rem;
   font-weight: 400;
   color: #6d6d77;
-  max-width: 661px;
-  line-height: normal;
+  line-height: 28px;
+  font-family: 'Inter';
 }
-@media (max-width: 1200px) {
+
+@media (max-width: 1700px) and (min-width: 1200px)
+{
+  .BA-Article .styles .BA-Popular
+  {
+    flex-wrap: wrap;
+  }
+  .BA-Article .styles .BA-Popular1 p 
+  {
+    width: 78.35%;
+  }
+} 
+@media (max-width: 1200px) and (min-width:992px) {
   .BA-Article .styles .BA-Popular1 h1 {
     font-size: 2.2rem;
+    line-height: normal;
   }
-  .BA-Article .styles .BA-Popular1 p {
+  .BA-Article .styles .BA-Popular1 p,.BA-Article .styles .BA-p {
     font-size: 1rem;
+  }
+  .BA-Article .styles .BA-Popular
+  {
+    flex-wrap: wrap;
+  }
+  .BA-Article .styles .BA-Popular1 p 
+  {
+    width: 78.35%;
   }
 }
-
-@media (max-width: 900px) {
-  .BA-Article .styles p {
-    max-width: 400px;
-    line-height: normal;
-    font-size: 1rem;
-  }
-  .BA-Article .styles .BA-Popular {
-    margin-top: 70px;
-  }
-
+@media (max-width: 992px) and (min-width:786px) {
   .BA-Article .styles .BA-Popular1 h1 {
     font-size: 2rem;
-    max-width: 400px;
+    line-height: normal;
   }
-  .BA-Article .styles .BA-Popular .image {
-    gap: 20px;
-  }
-
-  .BA-Article .styles .BA-Popular .image img {
-    margin-right: 0;
-  }
-
-  .BA-Article .styles .BA-Popular {
-    flex-direction: column;
-    gap: 25px;
-  }
-  .BA-Article .styles .BA-Popular img:last-of-type {
-    margin-top: 0;
-  }
-}
-@media (max-width: 550px) {
-  .BA-Article .styles .BA-Popular .image {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .BA-Article .styles .BA-Popular .image img {
-    width: 300px;
-    margin: 0 auto;
-  }
-  .BA-Article .styles .BA-Popular1 h1 {
-    font-size: 1.8rem;
-  }
-  .BA-Article .styles p {
+  .BA-Article .styles .BA-Popular1 p,.BA-Article .styles .BA-p {
     font-size: 0.8rem;
   }
+  .BA-Article .styles .BA-Popular
+  {
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  .BA-Article .styles .BA-Popular1 p 
+  {
+    width: 78.35%;
+  }
 }
+@media (max-width:786px) and (min-width:567px)
+{
+  .BA-Article .styles .BA-Popular1 h1 {
+    font-size: 2rem;
+    line-height: normal;
+  }
+  .BA-Article .styles .BA-Popular1 p,.BA-Article .styles .BA-p {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+  .BA-Article .styles .BA-Popular
+  {
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  .BA-Article .styles .BA-Popular1 p 
+  {
+    width: 100%;
+  }
+  .BA-Article .styles .BA-Popular img:first-of-type {
+    margin-bottom: 4.375rem;
+    width: 40%;
+}
+.BA-Article .styles .BA-Popular img:last-of-type {
+  width: 40%;
+}
+}
+@media (max-width:567px) and (min-width:300px)
+{
+  .BA-Article .styles .BA-Popular1 h1 {
+    font-size: 1.5rem;
+    line-height: normal;
+  }
+  .BA-Article .styles .BA-Popular1 p,.BA-Article .styles .BA-p {
+    font-size: 0.8rem;
+    width: 100%;
+    line-height: 20px;
+  }
+  .BA-Article .styles .BA-Popular
+  {
+    flex-wrap: wrap;
+    gap: 2.7rem;
+  }
+  .BA-Article .styles .BA-Popular1 p 
+  {
+    width: 100%;
+  }
+  .BA-Article .styles .BA-Popular img:first-of-type {
+    margin-bottom: 4.375rem;
+    width: 45%;
+}
+.BA-Article .styles .BA-Popular img:last-of-type {
+  width: 45%;
+}
+.Popular .image {
+  gap: 10px;
+}
+}
+
+

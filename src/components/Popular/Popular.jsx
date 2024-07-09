@@ -3,13 +3,13 @@ const Popular = () => {
   return (
     <div className="BA-Article">
       <div className="styles">
-        <p>
+        <p className="BA-p">
           At vero eos et accusamus et iusto odio dignissimos ducimus qui
           blanditiis occaecati cupiditate non provident, similique sunt in culpa
           qui officia deserunt mollitia animi, id est laborum et dolorum fuga.{" "}
         </p>
 
-        <p>
+        <p className="BA-p">
           Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
           suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
           autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
