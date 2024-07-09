@@ -1,4 +1,5 @@
 import Swal from 'sweetalert2'
+
 var k1 = 4
 var k2 = 10
 

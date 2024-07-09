@@ -14,7 +14,7 @@ import EditArticle from './components/DashBoardComp/DashArticle/EditArticle/Edit
 import EditStd from './components/DashBoardComp/StudentReviews/EditStd/EditStd'
 import ShowStd from './components/DashBoardComp/StudentReviews/ShowStd/ShowStd'
 import ShowArticle from './components/DashBoardComp/DashArticle/ShowArticle/ShowArticle'
-
+import CrudData from './const/data/CrudData'
 function App() {
   
   return (
