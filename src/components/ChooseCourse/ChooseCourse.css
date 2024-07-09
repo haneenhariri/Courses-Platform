@@ -58,6 +58,7 @@
     position: absolute;
     top: 88px;
     left: 78%;
+    z-index:2;
 }
 @keyframes moveAndReturn {
     0% { transform: translateY(0); }
@@ -280,6 +281,7 @@
         position: static;
         width: 100px;
         margin-bottom: 15px;
+        animation: none;
     }
     .HH-rectangle3 {
         bottom: 20px;
