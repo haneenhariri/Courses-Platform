@@ -1,5 +1,7 @@
-import { useEffect, useState } from "react"
-export const TableSay = [
+import { useEffect, useState } from "react";
+import Swal from 'sweetalert2';
+
+const TableSay = [
   {
     keyID: 1,
     td1: 'Guy Hawkins',
@@ -27,10 +29,9 @@ export const TableSay = [
     ViewURL : 'dashstdsay/show/:id',
     editURL : 'dashstdsay/edit/:id'
   }
-]
+];
 
-
-export const TableArticle = [
+const TableArticle = [
   {
     keyID: 1,
     td1: '10 updated Figma features in 2022',
@@ -139,17 +140,32 @@ export const TableArticle = [
     imageUrl: './image/BlogImg/blog images/article 5.png',
     read:'5 min read',
   },
-]
+];
 
 export default function CrudData() {
-  const [jsonTableSay] = useState(TableSay)
-  const [jsonTableArticle] = useState(TableArticle)
+  const [jsonTableSay] = useState(TableSay);
+  const [jsonTableArticle] = useState(TableArticle);
 
   useEffect(() => {
-    localStorage.setItem('tableSay', JSON.stringify(jsonTableSay))
-  }, [jsonTableSay])
+    if (!localStorage.getItem('tableSay')) {
+      localStorage.setItem('tableSay', JSON.stringify(jsonTableSay));
+      Swal.fire('Data Restored', 'tableSay data has been restored to localStorage.', 'success');
+    }
+  }, [jsonTableSay]);
 
   useEffect(() => {
-    localStorage.setItem('tableArticle', JSON.stringify(jsonTableArticle))
-  }, [jsonTableArticle])
+    if (!localStorage.getItem('tableArticle')) {
+      localStorage.setItem('tableArticle', JSON.stringify(jsonTableArticle));
+      Swal.fire('Data Restored', 'tableArticle data has been restored to localStorage.', 'success');
+    }
+  }, [jsonTableArticle]);
+
+  useEffect(() => {
+    if (!localStorage.getItem('SayKEY')) {
+      localStorage.setItem('SayKEY', 4);
+    }
+    if (!localStorage.getItem('ArticleKEY')) {
+      localStorage.setItem('ArticleKEY', 10);
+    }
+  }, []);
 }

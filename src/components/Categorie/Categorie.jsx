@@ -49,7 +49,7 @@ export default function Categorie({ selectedCategory }) {
             <div className="categorie-mj">
               {chunk.map(([id, item]) => (
                 <div className="card-mj" key={id}>
-                  <img className="img-mj" src={item.imageUrl} alt={item.td2} />
+                  <img className="img-mj" src={item.imageUrl || './image/BlogImg/blog images/article 6.png'} alt={item.td2} />
                   <div className="ddd-mj">
                     <h2 className="h3-mj"><Link to={'/article'} className="h3-mj">{item.td1}</Link></h2>
                     <p id="p1-mj">#{item.td2}</p>
@@ -66,7 +66,7 @@ export default function Categorie({ selectedCategory }) {
         ))}
       </Swiper>
       <div className="HH-arrow">
-        <img className="swiper-button-prev" src="./image/BlogImg/blog icons/arrow left.svg" alt="arrow left" />
+        <img className=" swiper-button-prev " src="./image/BlogImg/blog icons/arrow left.svg" alt="arrow left" />
         <div className="HH-num">
           <span className="HH-one">1</span>
           <span>2</span>
