@@ -1,7 +1,6 @@
 .AM-Programm .button{
     display: flex;
     gap: 21px;
-    padding: 30px 0;
     animation: 35s slide infinite linear;
 }
 .AM-Programm .button button{
@@ -11,10 +10,13 @@
     font-size: 18px;
     font-weight: bold;
     border: 2px solid black;
+    font-family: 'Inter';
+    line-height: 21.78px;
 }
 .AM-Programm{
     position: relative;
     overflow: hidden;
+    padding: 69px 0;
 }
 .AM-Programm::after , .AM-Programm::before{
     position: absolute;
@@ -64,13 +66,16 @@
 }
 @media (min-width:567px) and (max-width:767px){
     .AM-Programm .button {
-        gap: 1rem;
-        flex-wrap: wrap;
-        justify-content: center;
+        gap: 7px;
+       
     }
     .AM-Programm .button button {
         padding: 2px 11px;
     }
+    .AM-Programm::after , .AM-Programm::before{
+        display: none;
+    }
+    .AM-Programm{padding: 40px 0;}
 }
 @media (min-width:300px) and (max-width:566px){
     .AM-Programm .button button {
@@ -80,12 +85,11 @@
         flex-wrap: wrap;
         justify-content: center;
         animation: none !important;
+        gap: 4px;
     }
     .AM-Programm::after , .AM-Programm::before{
         display: none;
     }
-    .AM-Programm .button {
-        gap: 4px;
-    }
+    
         
 }

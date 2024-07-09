@@ -13,7 +13,8 @@
 
 .AM-willLearn .parentCard {
     display: flex;
-    gap: 3rem;
+    gap: 3.87rem;
+    flex-direction: column;
 }
 .AM-willLearn .parentCard .cards .card{
     background-color: var(--DarkPrimary);
@@ -23,15 +24,22 @@
 }
 .AM-willLearn .div1 h2{
     font-size: 3.6rem;
-    padding-bottom: 1rem;
+    padding-bottom: 1.75rem;
 }
 .AM-willLearn .div1 p ,.AM-willLearn .parentCard .cards .card p{
     font-size: 18px;
     color: #EFEFF2;
+    font-family: 'Inter';
+    font-weight: 400;
+    line-height: 28px;
     
 }
+.AM-willLearn .parentCard .cards{
+    display: flex;
+    gap: 4.31rem;
+}
 .AM-willLearn .div1 .p{
-    width: 67%;
+    width: 73%;
 
 }
 
@@ -41,13 +49,17 @@
 }
 .AM-willLearn .parentCard .cards .card h6{
     font-size: 18px;
+    padding: 28px 0 12px 0;
+    font-family: 'Inter';
+    font-weight: 700;
+    line-height: 21.78px;
 }
 
 .AM-willLearn .parentCard .cards .card  h3{
     text-align: center;
     border: 1px solid white;
-    width: 2rem;
-    height: 2.2rem;
+    width: 2.2rem;
+    height: 2.3rem;
     
 
 }
@@ -100,16 +112,14 @@
         left: 7rem;
     }
     .AM-willLearn .div1 .p {
-        width: 80%;
-        text-align: center;
-        margin-left: 72px;
+        width: 100%;
+        
+        margin-left: 0;
     }
     .AM-willLearn .div1, .AM-willLearn .parentCard {
         width: 100%;
     }
-    .AM-willLearn .div1 h2{
-        text-align: center;
-    }
+    
 
 
 }
@@ -120,16 +130,13 @@
         align-items: center;
     }
     .AM-willLearn .div1 .p {
-        width: 80%;
-        text-align: center;
-        margin-left: 72px;
+        width: 100%;
+       
     }
     .AM-willLearn .div1, .AM-willLearn .parentCard {
         width: 100%;
     }
-    .AM-willLearn .div1 h2{
-        text-align: center;
-    }
+    
 
     .AM-willLearn .bigCircle {
         top: 54.5rem;
@@ -155,8 +162,6 @@
     .AM-willLearn{
         flex-direction: column;
         gap: 20px;
-    }.AM-willLearn .div1 p{
-        text-align: center;
     }
     .AM-willLearn .bigCircle {
         top: 63.7rem;
@@ -179,8 +184,8 @@
     .AM-willLearn .div1 .p {
         width: 100%;
     }
-    .AM-willLearn .div1 h2 {
-        text-align: center;
+    .AM-willLearn .parentCard .cards{
+        flex-wrap: wrap;
     }
     
 
@@ -188,12 +193,14 @@
 @media (min-width:300px) and (max-width:566px){
     .AM-willLearn .div1, .AM-willLearn .parentCard {
         width: 100%;
+        gap: 1rem;
     }
     .AM-willLearn{
         flex-direction: column;
         gap: 20px;
+        padding: 70px 12.5%;
     }.AM-willLearn .div1 p{
-        text-align: center;
+        
         font-size: 0.7rem;
     }
 
@@ -223,8 +230,12 @@
     .AM-willLearn .parentCard .cards .card p{
         font-size: 0.7rem;
     }
-    .AM-willLearn .parentCard {
+    .AM-willLearn .parentCard .cards{
         flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .AM-willLearn .parentCard .cards .card h3 {
+        height: 2.2rem;
     }
 }
 
