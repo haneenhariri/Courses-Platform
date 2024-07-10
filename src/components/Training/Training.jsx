@@ -6,15 +6,15 @@ export default function AMTrain() {
           id: '1.',
           text1:'Study the material on the platform at any convenient time'
           },
-          {
-            id: '3.',
-            text1:'Prepare a project and add it to your portfolio'
-          }
+          {id: '2.',
+            text1:'Do practical tasks, get feedback and consolidate knowledge'}
           ]
         },
         { ID :1 ,
-          div : [{id: '2.',
-            text1:'Do practical tasks, get feedback and consolidate knowledge'},
+          div : [ {
+            id: '3.',
+            text1:'Prepare a project and add it to your portfolio'
+          },
             {id: '4.',
               text1:'Prepare a project and add it to your portfolio'}
            ]

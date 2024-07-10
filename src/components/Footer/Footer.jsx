@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Footer.css'
 
 export default function FOOTER(){
@@ -5,9 +6,9 @@ export default function FOOTER(){
         { title: 'Courses', listItems: ['Animation', 'Design', 'Illustration', 'Programming', 'Photo & film','Marketing'] },
         { title: 'Teachers', listItems: ['All teachers', 'Become a teacher'] },
         { title: 'Information', listItems: [
-            { URL: './../../pages/Blog', text: 'Blog' },
+            { URL: '/Blog', text: 'Blog' },
             { URL: '#', text: 'About Us' },
-            { URL: './../../components/FAQ', text: 'FAQ' },
+            { URL: 'components/FAQ', text: 'FAQ' },
           ]},
         { title: 'En', listItems: ['English', 'french', 'Ressian'] }
       ];
@@ -21,12 +22,12 @@ export default function FOOTER(){
                         <img src="./image/FooterImg/logo-2.svg" className='logo'alt="logo" />
                         <p className='p1'>Update</p>
                     </div>
-                    <a href="#" className='size a'>support@update.com</a>
+                    <Link to={'#'} className='size a'>support@update.com</Link>
                     <span className='size'>+1 (213) 677 10 24</span>
                     <div className='icon'>
-                       <a href="#"><img src="./image/FooterImg/Facebook.png" alt="facebook" /></a>
-                        <a href="#"><img src="./image/FooterImg/Youtube.png" alt="youtube" /></a>
-                        <a href="#"><img src="./image/FooterImg/Twitter.png" alt="twitter" /></a>
+                       <Link to={'#'}><img src="./image/FooterImg/Facebook.png" alt="facebook" /></Link>
+                        <Link to={'#'}><img src="./image/FooterImg/Youtube.png" alt="youtube" /></Link>
+                        <Link to={'#'}><img src="./image/FooterImg/Twitter.png" alt="twitter" /></Link>
                     </div>
 
 
@@ -39,7 +40,7 @@ export default function FOOTER(){
                             {list.listItems.map((listItem) => (
                             <li key={listItem}>
                                 {typeof listItem === 'object' ? (
-                                <a href={listItem.URL}>{listItem.text}</a>
+                                <Link to={listItem.URL}>{listItem.text}</Link>
                                 ) : (
                                 <li>{listItem}</li>
                                 )}
