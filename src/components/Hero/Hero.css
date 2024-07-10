@@ -215,6 +215,9 @@
     display: block !important;
 }
 @media screen and (max-width:1366px){
+    .OE-hero-left-div-courses {
+        margin-top: 16vh;
+    }
     .OE-hero-left-div .OE-hero-left-div-h1{
         font-size: 2.6rem;
     }

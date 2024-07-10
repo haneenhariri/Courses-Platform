@@ -1,10 +1,10 @@
 import './Hero.css'
 
-export default function Hero({top_h6, top_p, title, mb_p, p, span1, btn, num1, num2, img_vector, imgURL, BtnsData , show}) {
+export default function Hero({top_h6, top_p, title, mb_p, p, span1, btn, num1, num2, img_vector, imgURL, BtnsData , show, courses}) {
 
     return (
         <section className='OE-hero'>
-            <div className='OE-hero-left-div'>
+            <div className={`OE-hero-left-div ${courses}`}>
                 <h6 className={`OE-top-h6 ${show}`}>{top_h6}</h6>
                 <p className={`OE-hero-left-div-p OE-top-p ${show}`}>{top_p}</p>
                 <h1 className='OE-hero-left-div-h1'>{title}</h1>
