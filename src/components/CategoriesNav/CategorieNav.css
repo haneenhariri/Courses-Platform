@@ -59,6 +59,7 @@
         margin-right:25px ;
         font-size: 0.8rem;
         line-height: 20px;
+        padding-top: 12px;
     }
     .HH-span
     {
@@ -72,6 +73,7 @@
         margin-right:20px ;
         font-size: 0.8rem;
         line-height: 20px;
+        padding-top: 12px;
     }
     .HH-span
     {
@@ -81,10 +83,15 @@
 }
 @media (max-width:567px) and (min-width:300px)
 {
+    .HH-ul
+    {
+        justify-content: space-between;
+    }
     .HH-ul .HH-cNav-link{
         margin-right:15px ;
         font-size: 0.8rem;
         line-height: 20px;
+        padding-top: 12px;
     }
     .HH-span
     {

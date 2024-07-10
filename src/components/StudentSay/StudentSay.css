@@ -96,6 +96,20 @@
     margin-top: 6.76%;
     width: 91.81%;
 }
+@media (max-width:1400px) and (min-width:1200px)
+{
+    .HH-cardTitle
+    {
+        font-size: 1.5rem;
+        line-height: 20px;
+    }
+    .HH-CardText,.HH-CardP
+    {
+        font-size:1rem;
+        line-height:20px;
+    }
+
+}
 @media (max-width:1200px) and (min-width:992px)
 {
     .HH-h2

@@ -27,6 +27,7 @@
     background:transparent;
     display: flex;
     align-items: center;
+    width: 100% !important;
   }
   
 
@@ -183,7 +184,6 @@ margin-bottom: 5rem;
     {
         font-size: 0.8rem;
         line-height: 20px;
-        width: auto;
         margin: auto;
     }
 }
@@ -221,7 +221,6 @@ margin-bottom: 5rem;
     {
         font-size: 0.8rem;
         line-height: 20px;
-        width: auto;
         margin: auto;
     }
 }
@@ -259,7 +258,15 @@ margin-bottom: 5rem;
     {
         font-size: 0.8rem;
         line-height: 20px;
-        width: auto;
-        margin: auto;
+
+    }
+    .HH-num
+    {
+        margin:0 10px;
+    }
+    .HH-arrow .swiper-button-prev,.HH-arrow .swiper-button-next {
+        width: 2rem!important;
+        height: 2rem !important;
+        margin-top: auto !important;
     }
 }
