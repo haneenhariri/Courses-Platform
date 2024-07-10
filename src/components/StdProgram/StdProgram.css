@@ -102,6 +102,7 @@
     top: -90px;
     right: -162px;
     rotate: 132deg;
+    animation: none;
   }
   #h2-prog{
     font-size: 2.2rem;
@@ -126,6 +127,7 @@
     font-weight: 400;
     line-height: 20px;
   }
+  
 }
 @media (max-width:992px) and (min-width: 768px){
   .ma-prog{
@@ -146,6 +148,7 @@
     top: 0;
     left: 40px;
     transform: rotate(-180deg);
+    animation: none;
     }
   #h2-prog{
     font-size: 2.2rem;
@@ -195,6 +198,7 @@
         transform: rotate(-180deg);
         width: 100px;
         height: max-content;
+        animation: none;
       }
       #h2-prog
       {
@@ -245,6 +249,7 @@
         transform: rotate(-180deg);
         width: 100px;
         height: max-content;
+        animation: none;
       }
       #h2-prog
       {

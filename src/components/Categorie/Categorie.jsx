@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Swal from 'sweetalert2';
+import { Navigation } from 'swiper/modules'
+import 'swiper/css/navigation';
 
 export default function Categorie({ selectedCategory }) {
   const storedJsonTableArticle = JSON.parse(localStorage.getItem('tableArticle') || '{}');
@@ -36,13 +38,18 @@ export default function Categorie({ selectedCategory }) {
 
   return (
     <section className="HH-blog-section">
-      <Swiper className="mySwiper">
+      <Swiper className="mySwiper"
+        modules={[Navigation]}
+        navigation={{
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        }}>
         { articles.map((chunk, pageIndex) => (
           <SwiperSlide key={pageIndex}>
             <div className="categorie-mj">
               {chunk.map(([id, item]) => (
                 <div className="card-mj" key={id}>
-                  <img className="img-mj" src={item.imageUrl} alt={item.td2} />
+                  <img className="img-mj" src={item.imageUrl || './image/BlogImg/blog images/article 6.png'} alt={item.td2} />
                   <div className="ddd-mj">
                     <h2 className="h3-mj"><Link to={'/article'} className="h3-mj">{item.td1}</Link></h2>
                     <p id="p1-mj">#{item.td2}</p>
@@ -59,14 +66,14 @@ export default function Categorie({ selectedCategory }) {
         ))}
       </Swiper>
       <div className="HH-arrow">
-        <img src="./image/BlogImg/blog icons/arrow left.svg" alt="" />
+        <img className=" swiper-button-prev " src="./image/BlogImg/blog icons/arrow left.svg" alt="arrow left" />
         <div className="HH-num">
           <span className="HH-one">1</span>
           <span>2</span>
           <span>3...</span>
           <span>10</span>
         </div>
-        <img src="./image/BlogImg/blog icons/arrow right.svg" alt="" />
+        <img className="swiper-button-next" src="./image/BlogImg/blog icons/arrow right.svg" alt="arrow right" />
       </div>
     </section>
   );

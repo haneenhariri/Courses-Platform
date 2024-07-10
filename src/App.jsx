@@ -17,7 +17,7 @@ import EditStd from './components/DashBoardComp/StudentReviews/EditStd/EditStd'
 import ShowStd from './components/DashBoardComp/StudentReviews/ShowStd/ShowStd'
 import ShowArticle from './components/DashBoardComp/DashArticle/ShowArticle/ShowArticle'
 import { useEffect } from 'react'
-
+import CrudData from './const/data/CrudData'
 function App() {
   useEffect(() => {
     AOS.init({
@@ -29,6 +29,7 @@ function App() {
   
   return (
     <>
+    <CrudData/>
       <Routes>
         <Route path='/' element={<MainPage />} />
         <Route path='/courses' element={<Courses />} />

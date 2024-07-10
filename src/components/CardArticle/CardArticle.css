@@ -1,6 +1,6 @@
 .FM-article-section-4  {
     width: 100%;
-    padding: 8.75% 18.85%;
+    padding: 8.75% 18.80%;
     background-color: var(--PrimaryColo);
     background-image: url(./image/MainPageImg/HeroImg/Hero_2.png);
     background-position: center;
@@ -13,9 +13,10 @@
 .FM-article-section-4-content h2{
     color: var(--DarkPrimary);
     font-family: 'Inter';
-    font-size: 2.48rem;
+    font-size: 3.625rem;
     font-weight: 700;
-    margin-bottom: 3.8%;
+    margin-bottom: 68px;
+    line-height: 70.19px;
 }
 .FM-CardArticle-card {
     display: flex;
@@ -27,7 +28,32 @@
 }
 @media (min-width:1200px) {
     .FM-article-section-4-content h2 {
+@media (max-width:1200px) and (min-width:992px)
+{
+    .FM-article-section-4-content h2{
         font-size: 2.2rem;
+        line-height:normal;
+    }
+}
+@media (max-width:992px) and (min-width:768px)
+{
+    .FM-article-section-4-content h2{
+        font-size: 2rem;
+        line-height:normal;
+    }
+}
+@media (max-width:768px) and (min-width:567px)
+{
+    .FM-article-section-4-content h2{
+        font-size: 2rem;
+        line-height:normal;
+    }
+}
+@media (max-width:567px) and (min-width:300px)
+{
+    .FM-article-section-4-content h2{
+        font-size: 1.5rem;
+        line-height:normal;
     }
 }
 @media (min-width:993px) {

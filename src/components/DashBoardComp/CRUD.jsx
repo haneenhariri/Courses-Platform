@@ -1,6 +1,8 @@
 import Swal from 'sweetalert2'
-var k1 = 3
+
+var k1 = 4
 var k2 = 10
+
 localStorage.setItem('SayKEY', k1) 
 localStorage.setItem('ArticleKEY', k2) 
 

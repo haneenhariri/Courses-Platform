@@ -3,8 +3,8 @@ import "./ArticleHero.css";
 const ArticleHero = () => {
   return (
     <div className="BA-ArticleHero">
+       <img className="Ellipse20" src="./image/ArticlePageImg/ArticleHero/Ellipse 20.svg" alt="Ellipse" />
       <div className="BA-popular">
-        <img className="Ellipse20" src="./image/ArticlePageImg/ArticleHero/Ellipse 20.png" alt="Ellipse" />
         <h1>Top popular styles in illustration 2022</h1>
         <div className="BA-titel">
           <p># Illustration</p>

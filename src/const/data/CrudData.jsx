@@ -1,5 +1,7 @@
-import { useEffect, useState } from "react"
-export const TableSay = [
+import { useEffect, useState } from "react";
+
+
+const TableSay = [
   {
     keyID: 1,
     td1: 'Guy Hawkins',
@@ -17,11 +19,19 @@ export const TableSay = [
     td4: '08-Dec, 2021',
     ViewURL : 'dashstdsay/show/:id',
     editURL : 'dashstdsay/edit/:id'
+  },
+  {
+    keyID: 3,
+    td1: 'Jane Cooper',
+    td2: 'Write',
+    td3: 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur',
+    td4: '08-Dec, 2021',
+    ViewURL : 'dashstdsay/show/:id',
+    editURL : 'dashstdsay/edit/:id'
   }
-]
+];
 
-
-export const TableArticle = [
+const TableArticle = [
   {
     keyID: 1,
     td1: '10 updated Figma features in 2022',
@@ -130,17 +140,20 @@ export const TableArticle = [
     imageUrl: './image/BlogImg/blog images/article 5.png',
     read:'5 min read',
   },
-]
+];
 
 export default function CrudData() {
-  const [jsonTableSay] = useState(TableSay)
-  const [jsonTableArticle] = useState(TableArticle)
+  const [jsonTableSay] = useState(TableSay);
+  const [jsonTableArticle] = useState(TableArticle);
 
   useEffect(() => {
-    localStorage.setItem('tableSay', JSON.stringify(jsonTableSay))
-  }, [jsonTableSay])
+      localStorage.setItem('tableSay', JSON.stringify(jsonTableSay));
+    
+  }, [jsonTableSay]);
 
   useEffect(() => {
-    localStorage.setItem('tableArticle', JSON.stringify(jsonTableArticle))
-  }, [jsonTableArticle])
+      localStorage.setItem('tableArticle', JSON.stringify(jsonTableArticle));
+    
+  }, [jsonTableArticle]);
+
 }

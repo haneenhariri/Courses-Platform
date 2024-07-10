@@ -58,6 +58,7 @@
     position: absolute;
     top: 88px;
     left: 78%;
+    z-index:2;
 }
 @keyframes moveAndReturn {
     0% { transform: translateY(0); }
@@ -182,6 +183,7 @@
     }
     .HH-Vector {
         top: 10px;
+        animation: none;
     }
     .HH-rectangle3 {
         bottom: 20px;
@@ -231,6 +233,7 @@
         position: static;
         width: 100px;
         margin-bottom: 20px;
+        animation: none;
     }
     .HH-rectangle3 {
         bottom: 20px;
@@ -280,6 +283,7 @@
         position: static;
         width: 100px;
         margin-bottom: 15px;
+        animation: none;
     }
     .HH-rectangle3 {
         bottom: 20px;
@@ -334,6 +338,7 @@
         width: 90px;
         margin-bottom: 15px;
         transform: rotate(22deg);
+        animation: none;
     }
     
     .HH-rectangle3 {

@@ -3,6 +3,8 @@ import './StudentSay.css';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Swal from "sweetalert2";
+import { Navigation } from 'swiper/modules'
+import 'swiper/css/navigation';
 
 export default function StudentSay() {
   const [stdSay, setStdSay] = useState([]);
@@ -35,10 +37,16 @@ export default function StudentSay() {
     <section className='HH-Std'>
       <h2 className='HH-h2'>What our students have to say</h2>
       <div className='HH-icon'>
-        <img className='HH-icon-arow' src="./image/MainPageImg/StudentSayImg/Icon_arrow_left.svg" alt="arrow left" />
-        <img className='HH-icon-arow' src="./image/MainPageImg/StudentSayImg/Icon_arow_right.svg" alt="arrow right" />
+        <img className='HH-icon-arow swiper-button-prev' src="./image/MainPageImg/StudentSayImg/Icon_arrow_left.svg" alt="arrow left" />
+        <img className='HH-icon-arow swiper-button-next' src="./image/MainPageImg/StudentSayImg/Icon_arow_right.svg" alt="arrow right" />
       </div>
-      <Swiper>
+      
+      <Swiper
+              modules={[Navigation]}
+              navigation={{
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              }}>
         {stdSay.map((chunk, pageIndex) => (
           <SwiperSlide className='HH-cards' key={`slide-${pageIndex}`}>
             {chunk.map(([id, item]) => (

@@ -2,7 +2,7 @@ import React from 'react'
 import './ArticleM.css'
 export default function ArticleM({ title, content1, content2 }) {
   return (
-    <section className='OE_ArticleM'>
+    <section className='OE_ArticleM '>
 
 
     <h2 className='OE_ArticleM_h2'> {title}</h2>
