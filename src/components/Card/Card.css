@@ -3,7 +3,7 @@
     margin: 2.778% 0;
 }
 .FM-card-padding {
-    padding: 2.5% !important;
+    padding: 36px !important;
     background-color: var(--SecondColor);
     height: max-content;
 }

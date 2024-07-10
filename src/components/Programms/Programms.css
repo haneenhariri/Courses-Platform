@@ -83,7 +83,6 @@
         padding: 0px 17px;
     }
     .AM-Programm .button{
-        flex-wrap: wrap;
         justify-content: center;
     }
     .AM-Programm::after , .AM-Programm::before{
