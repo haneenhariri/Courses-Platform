@@ -281,4 +281,14 @@
     .OE-hero-right-div .OE-hero-right-div-btn3{
         top: 15%;
     }
+    .OE-hero-left-div-footer {
+        padding-right: 0;
+    }
+    .FM-sm-responsive {
+        bottom: 6px !important;
+        transform: scale(0.6);
+    }
+    .OE-hero-left-div-courses {
+        margin-top: 10vh;
+    }
 }

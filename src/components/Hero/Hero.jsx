@@ -16,7 +16,7 @@ export default function Hero({top_h6, top_p, title, mb_p, p, span1, btn, num1, n
                         <h6>{num2} Days</h6>
                         <h6>17:44:16</h6>
                     </div>
-                    <img className={img_vector} src="./image/MainPageImg/HeroImg/Vector.png"/>
+                    <img className={`${img_vector} FM-sm-responsive`} src="./image/MainPageImg/HeroImg/Vector.png"/>
                 </div>
                 
             </div>
