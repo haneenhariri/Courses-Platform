@@ -91,7 +91,7 @@
     font-family: 'Inter';
     font-weight: 400;
     font-size: 1.125rem;
-    line-height: 23.4px;
+    line-height: 28px;
     color: #6D6D77;
     margin-top: 6.76%;
     width: 91.81%;
@@ -113,6 +113,16 @@
     {
         width: 100%;
         margin-bottom: 20px;
+    }
+    .HH-cardTitle
+    {
+        font-size: 1rem;
+        line-height: 20px;
+    }
+    .HH-CardText,.HH-CardP
+    {
+        font-size:0.8rem;
+        line-height:20px;
     }
 }
 @media (max-width:992px) and (min-width:768px)
@@ -138,6 +148,16 @@
     {
         width: 100%;
         margin-bottom: 20px;
+    }
+    .HH-cardTitle
+    {
+        font-size: 1rem;
+        line-height: 20px;
+    }
+    .HH-CardText,.HH-CardP
+    {
+        font-size:0.8rem;
+        line-height:20px;
     }
 }
 @media (max-width:768px) and (min-width:576px)
@@ -169,6 +189,16 @@
         margin-bottom: 20px;
         padding: 2rem;
     }
+    .HH-cardTitle
+    {
+        font-size: 1rem;
+        line-height: 20px;
+    }
+    .HH-CardText,.HH-CardP
+    {
+        font-size:0.8rem;
+        line-height:20px;
+    }
 }
 @media (max-width:576px) and (min-width:300px)
 {
@@ -199,5 +229,15 @@
         height: max-content;
         margin-bottom: 20px;
         padding: 1rem;
+    }
+    .HH-cardTitle
+    {
+        font-size: 1rem;
+        line-height: 20px;
+    }
+    .HH-CardText,.HH-CardP
+    {
+        font-size:0.8rem;
+        line-height:normal;
     }
 }

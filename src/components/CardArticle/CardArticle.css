@@ -26,8 +26,7 @@
 .FM-article-section-4-content .FM-card {
     padding: 36px !important;
 }
-@media (min-width:1200px) {
-    .FM-article-section-4-content h2 {
+
 @media (max-width:1200px) and (min-width:992px)
 {
     .FM-article-section-4-content h2{
