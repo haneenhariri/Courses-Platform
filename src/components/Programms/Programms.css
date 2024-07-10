@@ -1,7 +1,8 @@
 .AM-Programm .button{
     display: flex;
+    flex-wrap: nowrap !important;
     gap: 21px;
-    animation: 35s slide infinite linear;
+    animation: 20s slide infinite linear;
 }
 .AM-Programm .button button{
     outline: none;
@@ -16,7 +17,7 @@
 .AM-Programm{
     position: relative;
     overflow: hidden;
-    padding: 69px 0;
+    padding: 3.594% 0;
 }
 .AM-Programm::after , .AM-Programm::before{
     position: absolute;
@@ -84,8 +85,6 @@
     .AM-Programm .button{
         flex-wrap: wrap;
         justify-content: center;
-        animation: none !important;
-        gap: 4px;
     }
     .AM-Programm::after , .AM-Programm::before{
         display: none;
